@@ -86,7 +86,8 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 .cv-meta{font-size:20px;color:var(--soft);margin-top:26px;letter-spacing:.22em;text-transform:uppercase;}
 /* STORY LEFT */
 .story{position:absolute;left:120px;top:108px;width:710px;z-index:5;}
-.story .htitle{font-size:58px;font-weight:700;color:var(--navy);line-height:1.02;margin:20px 0 20px;letter-spacing:-.01em;}
+.story .htitle{font-size:58px;font-weight:700;color:var(--navy);line-height:1.02;margin:20px 0 12px;letter-spacing:-.01em;}
+.story .profilebar{position:relative;width:100%;max-width:710px;min-height:40px;margin:0 0 16px;display:flex;align-items:center;gap:9px;flex-wrap:wrap;z-index:1;}
 .story .narr{font-size:24px;line-height:1.5;color:var(--grey);margin:0 0 20px;}
 .hero-fig{font-size:72px;font-weight:300;color:var(--navy);margin:0 0 8px;letter-spacing:-.01em;}
 .quote{border-left:4px solid var(--red);background:#FEF5F5;padding:15px 22px;border-radius:0 10px 10px 0;font-size:22px;font-style:italic;color:var(--navy);margin:0 0 22px;}
@@ -102,7 +103,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 .mockbody{flex:1;overflow:hidden;}
 /* Instagram mock */
 .ig{background:#fafafa;flex:1;padding:0;overflow:hidden;}
-.screen.screen-ig{left:930px;right:auto;width:550px;height:780px;top:108px;max-height:none;}
+.screen.screen-ig{left:870px;right:90px;width:auto;height:820px;top:100px;max-height:none;}
 .screen.screen-ig .browser{height:100%;display:flex;flex-direction:column;box-shadow:0 24px 56px rgba(16,32,70,.18);}
 .screen.screen-ig .mockbody.ig{flex:1;display:flex;flex-direction:column;overflow:hidden;}
 .screen.screen-ig .ig-post{flex:1;display:flex;flex-direction:column;margin:12px;min-height:0;}
@@ -119,11 +120,25 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 .ig-post .cta{padding:14px;background:var(--navy);color:#fff;text-align:center;font-weight:700;font-size:15px;}
 .screen.screen-ig .ig-post .cta{display:none;}
 .creative-img{width:100%;display:block;object-fit:cover;border-radius:12px;}
-.product-shot{width:100%;height:100%;object-fit:contain;object-position:left top;display:block;border-radius:14px;border:1px solid #DCE3EE;background:#fff;}
-.product-shot-wrap{width:100%;height:100%;overflow:hidden;border-radius:16px;box-shadow:0 24px 60px rgba(16,32,70,.14);background:#f8fafc;}
-.screen.screen-device{left:930px;right:auto;width:550px;height:780px;top:108px;}
-.device-shot-wrap{width:100%;height:100%;display:flex;align-items:flex-start;justify-content:center;}
-.device-shot{width:100%;height:100%;object-fit:contain;object-position:center top;display:block;filter:drop-shadow(0 20px 48px rgba(16,32,70,.16));}
+.product-shot{width:100%;height:auto;max-height:min(880px,calc(100vh - 120px));object-fit:contain;object-position:left top;display:block;border-radius:14px;border:1px solid #DCE3EE;background:#fff;}
+.product-shot-wrap{width:100%;height:auto;overflow:hidden;border-radius:16px;box-shadow:0 24px 60px rgba(16,32,70,.14);background:#f8fafc;}
+.screen.screen-product{left:820px;right:60px;width:auto;height:auto;top:90px;bottom:auto;}
+.screen.screen-product .product-shot-wrap{max-height:none;}
+.product-shot-wrap.journey-wrap{background:#0a0a0a;box-shadow:0 24px 60px rgba(0,0,0,.35);}
+.product-shot.journey-shot{border:none;background:transparent;}
+.slide.marc-aep-click .screen.screen-product{left:880px;right:32px;top:108px;bottom:108px;height:auto;transform:none;display:flex;align-items:flex-start;justify-content:flex-end;overflow:hidden;}
+.slide.marc-aep-click .screen.screen-product .product-shot-wrap{width:auto;max-width:100%;max-height:100%;}
+.slide.marc-aep-click .screen.screen-product .product-shot{width:auto;max-width:min(820px,100%);max-height:100%;height:auto;object-fit:contain;object-position:right top;}
+.slide.marc-aep-known .screen.screen-product{left:880px;right:48px;top:108px;bottom:108px;height:auto;transform:none;display:flex;align-items:flex-start;justify-content:center;overflow:hidden;}
+.slide.marc-aep-known .screen.screen-product .product-shot-wrap{width:100%;max-width:100%;max-height:100%;}
+.slide.marc-aep-known .screen.screen-product .product-shot{width:100%;max-width:100%;max-height:100%;height:auto;object-fit:contain;object-position:center top;}
+.screen.screen-device{left:830px;right:24px;width:auto;height:min(880px,calc(100vh - 120px));top:90px;background:transparent;display:flex;justify-content:center;align-items:flex-start;}
+.device-shot-wrap{width:auto;height:100%;display:block;flex-shrink:0;background:transparent;}
+.device-shot{width:auto;height:100%;max-width:none;object-fit:contain;object-position:left top;display:block;background:transparent;filter:drop-shadow(0 16px 36px rgba(16,32,70,.14));}
+.phone-frame.device-frame{height:100%;width:auto;aspect-ratio:472/1024;background:linear-gradient(165deg,#48484a 0%,#1c1c1e 45%,#000 100%);border-radius:50px;padding:13px 11px 17px;box-shadow:0 28px 64px rgba(16,32,70,.24),inset 0 0 0 1px rgba(255,255,255,.08);position:relative;flex-shrink:0;}
+.phone-frame.device-frame::before{content:"";position:absolute;top:14px;left:50%;transform:translateX(-50%);width:30%;height:28px;background:#0a0a0a;border-radius:18px;z-index:2;pointer-events:none;}
+.phone-frame.device-frame .device-in-frame{width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:38px;display:block;background:#fff;}
+.slide.instant-approval .screen.screen-device{right:24px;}
 .ig-post .img .copy{color:#fff;}
 .ig-post .img .copy h3{margin:0 0 8px;font-size:28px;font-weight:700;}
 .ig-post .img .copy p{margin:0;font-size:16px;opacity:.9;}
@@ -217,30 +232,40 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 .tg.cust{background:var(--navy);color:#fff;}.tg.prac{background:var(--red);color:#fff;}
 /* Journey overview */
 .journey{position:absolute;inset:0;background:linear-gradient(170deg,#0E2A5E 0%,#173A87 55%,#1E3A6E 100%);overflow:hidden;}
-.journey .sea{position:absolute;inset:0;background:radial-gradient(ellipse at 70% 18%,rgba(235,16,0,.12),transparent 55%);}
+.journey .sea{position:absolute;inset:0;background:radial-gradient(ellipse at 70% 18%,rgba(255,255,255,.08),transparent 55%);}
 .journey h2{position:absolute;top:84px;left:120px;font-size:64px;font-weight:800;color:#fff;letter-spacing:.01em;margin:0;}
 .journey .sub{position:absolute;top:170px;left:124px;font-size:22px;color:rgba(255,255,255,.7);max-width:700px;line-height:1.4;}
-.jpath{fill:none;stroke:rgba(255,255,255,.85);stroke-width:5;stroke-linecap:round;stroke-dasharray:3400;stroke-dashoffset:3400;}
+.jpath{fill:none;stroke:rgba(255,255,255,.9);stroke-width:4;stroke-linecap:round;stroke-dasharray:2800;stroke-dashoffset:2800;}
 .slide.active .jpath{animation:draw 2.4s .3s ease forwards;}
 @keyframes draw{to{stroke-dashoffset:0;}}
-.jnode{position:absolute;transform:translate(-50%,-50%);text-align:center;opacity:0;}
-.slide.active .jnode{animation:pop .6s both cubic-bezier(.22,1,.36,1);}
-.jnode .disc{width:84px;height:84px;border-radius:50%;background:#fff;display:grid;place-items:center;margin:0 auto 14px;box-shadow:0 12px 30px rgba(0,0,0,.25);font-size:28px;}
-.jnode.key .disc{background:var(--red);}
-.jnode .nl{font-size:21px;font-weight:700;color:#fff;}
-.jnode .ns{font-size:14px;color:rgba(255,255,255,.7);margin-top:2px;letter-spacing:.04em;text-transform:uppercase;}
+.jnode{position:absolute;left:0;top:0;transform:translate(-50%,-38px);text-align:center;opacity:0;}
+.slide.active .jnode{animation:jfade .55s both cubic-bezier(.22,1,.36,1);}
+.slide.active .jnode .disc{animation:pop .55s both cubic-bezier(.22,1,.36,1);}
+.slide.active .jnode:nth-child(5){animation-delay:.35s;}
+.slide.active .jnode:nth-child(5) .disc{animation-delay:.35s;}
+.slide.active .jnode:nth-child(6){animation-delay:.45s;}
+.slide.active .jnode:nth-child(6) .disc{animation-delay:.45s;}
+.slide.active .jnode:nth-child(7){animation-delay:.55s;}
+.slide.active .jnode:nth-child(7) .disc{animation-delay:.55s;}
+.slide.active .jnode:nth-child(8){animation-delay:.65s;}
+.slide.active .jnode:nth-child(8) .disc{animation-delay:.65s;}
+.slide.active .jnode:nth-child(9){animation-delay:.75s;}
+.slide.active .jnode:nth-child(9) .disc{animation-delay:.75s;}
+.slide.active .jnode:nth-child(10){animation-delay:.85s;}
+.slide.active .jnode:nth-child(10) .disc{animation-delay:.85s;}
+@keyframes jfade{from{opacity:0}to{opacity:1}}
+.jnode .disc{width:76px;height:76px;border-radius:50%;background:#fff;display:grid;place-items:center;margin:0 auto 10px;box-shadow:0 10px 28px rgba(0,0,0,.22);color:var(--navy);}
+.jnode .jicon{width:34px;height:34px;display:block;}
+.jnode .jicon svg{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.jnode .nl{font-size:20px;font-weight:700;color:#fff;}
+.jnode .ns{font-size:13px;color:rgba(255,255,255,.65);margin-top:2px;letter-spacing:.04em;text-transform:uppercase;}
 /* Closing */
 .closing{position:absolute;inset:0;background:#fff;display:grid;place-items:center;text-align:center;padding:0 200px;}
 .closing .glow{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 10%,rgba(235,16,0,.10),transparent 55%);pointer-events:none;}
 .closing .big{font-size:96px;font-weight:300;color:var(--navy);margin:0 0 10px;}
 .closing p{font-size:28px;line-height:1.55;color:var(--ink);margin:0 0 22px;}
 .closing .em{color:var(--red);font-weight:700;}
-.profilebar{position:fixed;left:930px;bottom:40px;width:800px;display:flex;align-items:center;gap:9px;z-index:6;flex-wrap:wrap;}
-/* Keep pills in the story column on mobile mocks — not over the device image */
-.slide:has(.screen-device) .profilebar,
-.slide:has(.screen-ig) .profilebar,
-.slide:has(.phone-wrap) .profilebar{position:static;left:auto;bottom:auto;width:100%;max-width:710px;margin:0 0 18px;z-index:1;}
-.profilebar .plab{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-right:2px;}
+.profilebar .plab{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-right:2px;flex-shrink:0;}
 .profilebar .pp{font-size:15px;font-weight:600;color:var(--navy);background:#EEF2F8;border:1px solid var(--line);padding:6px 13px;border-radius:999px;white-space:nowrap;}
 .profilebar .pp.np{background:linear-gradient(120deg,#FEF0F0,#fff);border-color:var(--red);color:#a00;}
 .slide.active .profilebar .pp.np{animation:pop .55s .7s both cubic-bezier(.22,1,.36,1);}
@@ -305,7 +330,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
     </div>
     <div class="cv-rule a3"></div>
     <h1 class="cv-title a3">One Platform.<br>Every Signal.</h1>
-    <p class="cv-sub a4">Acquisition · Retention · Deepening · Referral</p>
+    <p class="cv-sub a4">Acquisition · Retention · Referral</p>
     <p class="cv-meta a5">Swisscard · June 2026</p>
   </div>
 </section>
@@ -313,18 +338,35 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 <!-- SLIDE 1: FULL JOURNEY -->
 <section class="slide journey">
   <div class="sea"></div>
-  <h2 class="a1">Four Acts, One Platform</h2>
+  <h2 class="a1">Three Acts, One Platform</h2>
   <p class="sub a2">Marc acquires. Sofia is won back when life changes. Marc refers Lukas — the loop closes. Claudia proves it in CJA.</p>
-  <svg style="position:absolute;inset:0;width:100%;height:100%;" viewBox="0 0 1920 1080">
-    <path class="jpath" d="M100,680 C280,520 360,520 450,610 C540,700 580,480 740,430 C880,390 920,680 1060,720 C1180,755 1220,520 1360,500 C1480,485 1520,660 1640,670 C1720,676 1760,650 1800,660"/>
+  <svg class="journey-svg" style="position:absolute;inset:0;width:100%;height:100%;" viewBox="0 0 1920 1080" aria-hidden="true">
+    <path class="jpath" d="M 120 540 C 320 540 380 460 560 460 C 740 460 800 540 980 540 C 1160 540 1220 460 1400 460 C 1580 460 1640 540 1800 540"/>
   </svg>
-  <div class="jnode" style="left:100px;top:680px;animation-delay:.35s"><div class="disc">📱</div><div class="nl">Ad</div><div class="ns">Acquisition</div></div>
-  <div class="jnode" style="left:450px;top:610px;animation-delay:.45s"><div class="disc">🌐</div><div class="nl">Landing</div><div class="ns">AEM</div></div>
-  <div class="jnode" style="left:740px;top:430px;animation-delay:.55s"><div class="disc">📲</div><div class="nl">Mobile web</div><div class="ns">Apply · then app</div></div>
-  <div class="jnode key" style="left:1060px;top:720px;animation-delay:.65s"><div class="disc">🔄</div><div class="nl">Retention</div><div class="ns">AJO · push</div></div>
-  <div class="jnode" style="left:1360px;top:500px;animation-delay:.75s;opacity:.35"><div class="disc">✈</div><div class="nl">Deepening</div><div class="ns">Hidden · v2</div></div>
-  <div class="jnode" style="left:1640px;top:670px;animation-delay:.85s"><div class="disc">🎁</div><div class="nl">Referral</div><div class="ns">Marc → Lukas</div></div>
-  <div class="jnode" style="left:1800px;top:660px;animation-delay:.95s"><div class="disc">📊</div><div class="nl">CJA</div><div class="ns">ROI proof</div></div>
+  <div class="jnode">
+    <div class="disc"><span class="jicon"><svg viewBox="0 0 24 24"><path d="M15 8.5a5 5 0 0 1 0 7"/><path d="M11 6v12"/><path d="M11 6H7a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4"/></svg></span></div>
+    <div class="nl">Ad</div><div class="ns">Acquisition</div>
+  </div>
+  <div class="jnode">
+    <div class="disc"><span class="jicon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18"/><path d="M8 21h8"/><path d="M12 18v3"/></svg></span></div>
+    <div class="nl">Landing</div><div class="ns">AEM</div>
+  </div>
+  <div class="jnode">
+    <div class="disc"><span class="jicon"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></span></div>
+    <div class="nl">Mobile web</div><div class="ns">Apply · then app</div>
+  </div>
+  <div class="jnode">
+    <div class="disc"><span class="jicon"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg></span></div>
+    <div class="nl">Retention</div><div class="ns">AJO · push</div>
+  </div>
+  <div class="jnode">
+    <div class="disc"><span class="jicon"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span></div>
+    <div class="nl">Referral</div><div class="ns">Marc → Lukas</div>
+  </div>
+  <div class="jnode">
+    <div class="disc"><span class="jicon"><svg viewBox="0 0 24 24"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 17V9"/><path d="M12 17V7"/><path d="M16 17v-5"/></svg></span></div>
+    <div class="nl">CJA</div><div class="ns">ROI proof</div>
+  </div>
 </section>
 
 <!-- SLIDE 2: TWO PERSPECTIVES -->
@@ -337,7 +379,17 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   </div>
 </section>
 
-<!-- SLIDE 3: MEET MARCO -->
+<!-- ACT 01 TITLE -->
+<section class="slide divider">
+  <div class="glw"></div>
+  <div class="pk a1">01</div>
+  <h1 class="a2">Acquisition</h1>
+  <p class="ph-tag a3">Win the right customer</p>
+  <p class="ph-sub a4">Collaboration audience → personalised ad → apply on web → instant approval → email &amp; SMS → app, wallet, ranked home.</p>
+  <div class="pill a5">Marc Weber · SWISS Miles &amp; More Gold</div>
+</section>
+
+<!-- MEET MARC -->
 <section class="slide">
   <div class="pintro">
     <div class="portrait has-photo a1"><img src="assets/marc-weber.png" alt="Marc Weber"><div class="tag">The Customer</div></div>
@@ -348,12 +400,12 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
       <div class="pblock"><div class="bl">Who he is</div><div class="bt">Successful career, busy schedule — discovers new places whenever work or personal travel takes him abroad. <strong>Loyal SWISS traveller</strong> across Europe.</div></div>
       <div class="pblock"><div class="bl">Loyalty today</div><div class="bt">Active <strong>Miles &amp; More</strong> member — earns miles on flights. <strong>Not a Swisscard customer.</strong> Ideal acquisition: high travel affinity, strong purchasing power, loyalty already engaged.</div></div>
       <div class="pblock"><div class="bl">How Swisscard finds him</div><div class="bt"><strong>RTCDP Collaboration</strong> — M&amp;M audience of active members without a Miles &amp; More Swisscard. Privacy-safe overlap — no sensitive data shared.</div></div>
-      <div class="pblock"><div class="bl">Starting audience</div><div class="chips"><span>M&amp;M Active · No Co-brand</span><span>High Propensity</span><span>Collaboration Audience</span></div></div>
+      <div class="pblock"><div class="bl">Starting audience</div><div class="chips"><span>Active Miles &amp; More Members (30–45)</span><span>High Travel Affinity Prospects</span><span>Frequent SWISS Travelers Switzerland</span></div></div>
     </div>
   </div>
 </section>
 
-<!-- SLIDE 4: MEET CLAUDIA -->
+<!-- MEET CLAUDIA -->
 <section class="slide">
   <div class="pintro">
     <div class="portrait has-photo a1"><img src="assets/claudia-meier.png" alt="Claudia Meier"><div class="tag">The Practitioner</div></div>
@@ -368,28 +420,18 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   </div>
 </section>
 
-<!-- ACT 01 TITLE -->
-<section class="slide divider">
-  <div class="glw"></div>
-  <div class="pk a1">01</div>
-  <h1 class="a2">Acquisition</h1>
-  <p class="ph-tag a3">Win the right customer</p>
-  <p class="ph-sub a4">Collaboration audience → personalised ad → apply on web → instant approval → email &amp; SMS → app, wallet, ranked home.</p>
-  <div class="pill a5">Marc Weber · SWISS Miles &amp; More Gold</div>
-</section>
-
 <!-- SLIDE 6: RTCDP COLLABORATION -->
-<section class="slide" data-phase="acq">
+<section class="slide instant-approval" data-phase="acq">
   <div class="phase-pill a1">01 · Acquisition</div>
   <div class="story a1">
     <div class="numdisc a1">1</div>
     <h2 class="htitle a2">Find Marc — without sharing customer data</h2>
-    <p class="narr a3">Claudia opens <strong>RTCDP Collaboration → Miles &amp; More → Audiences</strong>. Partner segments are privacy-safe — no PII shared. Marc qualifies via <strong>Zurich-based Business Travelers</strong> and <strong>Active M&amp;M Members (30–45)</strong>. Claudia activates to Instagram.</p>
+    <p class="narr a3">Claudia opens <strong>RTCDP Collaboration → Miles &amp; More → Audiences</strong>. Partner segments are privacy-safe — no PII shared. Marc qualifies via <strong>Active Miles &amp; More Members (30–45)</strong>, <strong>High Travel Affinity Prospects</strong>, and <strong>Frequent SWISS Travelers Switzerland</strong>. Claudia activates to Instagram.</p>
     <div class="claudia-lab a4">Claudia's screen</div>
     <div class="prodcard a5">Seven partner audiences available · overlap analysis in each environment · <strong>Activate</strong> to Meta, Google, Display from one hub.</div>
     <div class="takeaway a5">Identify ideal prospects like Marc — partner data without raw customer exchange.</div>
   </div>
-  <div class="screen a3">
+  <div class="screen screen-product a3">
     <div class="product-shot-wrap">
       <img class="product-shot" src="assets/collaboration-portal.png" alt="Adobe RTCDP Collaboration — Miles &amp; More partner audiences">
     </div>
@@ -405,11 +447,11 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="story a1">
     <div class="numdisc a1">2</div>
     <h2 class="htitle a2">The ad that speaks to how he already lives</h2>
-    <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp">Collaboration Audience</span><span class="pp np">M&amp;M Active · No Co-brand</span><span class="pp np">Meta Custom Audience</span></div>
+    <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp">Active Miles &amp; More Members (30–45)</span><span class="pp np">High Travel Affinity Prospects</span><span class="pp np">Frequent SWISS Travelers Switzerland</span></div>
     <p class="narr a3">Marc scrolls Instagram. Not a generic card ad — a message tied to behaviour he already values: <strong>"You already earn miles when you fly. Now earn miles every day."</strong> Coffee, shopping, restaurants, subscriptions — all toward his next flight.</p>
     <div class="quote a4">"You already earn miles when you fly. Now earn miles every day."</div>
     <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">Collaboration audience activated to Meta. Personalised creative for <strong>M&amp;M Collaboration · High Propensity</strong> — not a mass cashback banner.</div>
+    <div class="prodcard a5">Collaboration audiences activated to Meta — <strong>Active Miles &amp; More Members (30–45)</strong>, <strong>High Travel Affinity Prospects</strong>, <strong>Frequent SWISS Travelers Switzerland</strong>.</div>
     <div class="takeaway a5">He isn't joining a new programme — he's maximising one he already uses.</div>
   </div>
   <div class="screen screen-ig a3">
@@ -429,34 +471,21 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="adobe-foot"><img src="adobe-wordmark-red.svg" alt="Adobe"></div>
 </section>
 
-<!-- SLIDE 8: CAMPAIGN CLICK + EDGE SEGMENTATION -->
-<section class="slide" data-phase="acq">
+<!-- SLIDE 8: CAMPAIGN CLICK + EDGE PROFILE -->
+<section class="slide marc-aep-click" data-phase="acq">
   <div class="phase-pill a1">01 · Acquisition</div>
   <div class="story a1">
     <div class="numdisc a1">3</div>
     <h2 class="htitle a2">Marc explores the offer</h2>
-    <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp">ECID created</span><span class="pp np">utm_campaign=mm_collab_q2</span><span class="pp np">Collaboration · High Propensity</span></div>
-    <p class="narr a3">Marc clicks the ad. AEP Web SDK captures <strong>ECID + campaign ID</strong>. RTCDP edge segmentation evaluates in real time → <strong>Travel Card Intent</strong> — collaboration audience context preserved.</p>
+    <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp">ECID created</span><span class="pp np">Collaboration audiences</span><span class="pp np">Travel Card Intent</span></div>
+    <p class="narr a3">Marc clicks the ad. AEP Web SDK creates an <strong>ECID</strong> — Claudia sees an <strong>anonymous edge profile</strong>: collaboration audiences attached, <strong>Travel Card Interest 0.87</strong>, and a new <strong>Travel Card Intent</strong> segment in real time.</p>
     <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">RTCDP Edge Profile → <strong>AJO Experience Decisioning</strong>. Campaign attributes and segment feed every personalised surface.</div>
-    <div class="takeaway a5">Personalisation starts at the click — profile attributes power Experience Decisioning on web, app, and email.</div>
+    <div class="prodcard a5">RTCDP Profile (edge) — <strong>Active Miles &amp; More Members (30–45)</strong>, <strong>High Travel Affinity Prospects</strong>, <strong>Frequent SWISS Travelers Switzerland</strong>, <strong>Travel Card Intent</strong>. Name and email still unknown — identity starts with ECID.</div>
+    <div class="takeaway a5">Personalisation starts at the click — even before Marc is a known customer, the profile is rich enough to power the landing.</div>
   </div>
-  <div class="screen a3">
-    <div class="datacard" style="padding:36px 40px;">
-      <div class="gleam"></div>
-      <div style="font-size:15px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#ff8888;margin-bottom:18px;">Edge segmentation flow</div>
-      <div class="chain" style="margin-bottom:24px;">
-        <div class="node"><div class="disc">Click</div></div>
-        <div class="node"><div class="disc">ECID</div></div>
-        <div class="node key"><div class="disc">Segment</div></div>
-        <div class="node"><div class="disc">Fragment</div></div>
-        <div class="node"><div class="disc">AEM</div></div>
-      </div>
-      <div class="knows" style="color:#fff;">
-        <div class="row" style="border-color:rgba(255,255,255,.2);color:#fff;"><span class="k" style="color:rgba(255,255,255,.7)">Segment</span><span class="v" style="color:#fff">Travel Card Intent</span></div>
-        <div class="row" style="border-color:rgba(255,255,255,.2);"><span class="k" style="color:rgba(255,255,255,.7)">Campaign</span><span class="v" style="color:#fff">Q2_M&amp;M_Collab_Instagram</span></div>
-        <div class="row" style="border-color:rgba(255,255,255,.2);"><span class="k" style="color:rgba(255,255,255,.7)">Latency</span><span class="v" style="color:#fff">&lt; 200ms edge</span></div>
-      </div>
+  <div class="screen screen-product a3">
+    <div class="product-shot-wrap">
+      <img class="product-shot" src="assets/marc-aep-profile-click.png" alt="Adobe RTCDP Profile at ad click — anonymous ECID, Travel Card Interest 0.87, collaboration audiences and Travel Card Intent segment">
     </div>
   </div>
   <div class="persona a5"><div class="av">M</div><div class="nm">Marc</div></div>
@@ -510,14 +539,36 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="adobe-foot"><img src="adobe-wordmark-red.svg" alt="Adobe"></div>
 </section>
 
-<!-- SLIDE 11: APPLICATION RECEIVED — EMAIL -->
-<section class="slide" data-phase="acq">
+<!-- SLIDE 11: RICH PROFILE ON SUBMIT -->
+<section class="slide marc-aep-known" data-phase="acq">
   <div class="phase-pill a1">01 · Acquisition</div>
   <div class="story a1">
     <div class="numdisc a1">6</div>
+    <h2 class="htitle a2">Marc's rich profile — on submit</h2>
+    <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp">Application submitted</span><span class="pp np">Marc Weber</span><span class="pp np">Email identified</span></div>
+    <p class="narr a3">Marc hits <strong>Continue</strong>. Application data merges into the CDP profile — <strong>Marc Weber</strong>, <strong>marc.weber@email.com</strong>, Miles &amp; More loyalty, collaboration audiences, and apply propensity preserved from first click.</p>
+    <div class="claudia-lab a4">Claudia's screen</div>
+    <div class="prodcard a5">RTCDP Profile — <strong>Active Miles &amp; More Members (30–45)</strong>, <strong>High Travel Affinity Prospects</strong>, <strong>Frequent SWISS Travelers Switzerland</strong>, <strong>Premium Urban Professionals</strong>, <strong>High Conversion Propensity</strong>.</div>
+    <div class="takeaway a5">Submit doesn't reset the story — every signal from the anonymous visit survives in one profile.</div>
+  </div>
+  <div class="screen screen-product a3">
+    <div class="product-shot-wrap">
+      <img class="product-shot" src="assets/marc-aep-profile-rich.png" alt="Adobe RTCDP Profile — Marc Weber after application submit, collaboration loyalty, audiences and apply propensity scores">
+    </div>
+  </div>
+  <div class="persona a5"><div class="av" style="background:linear-gradient(150deg,var(--red),var(--red-dk))">C</div><div class="nm">Claudia</div></div>
+  <div class="phasebar a5"><span class="ph on">Acquisition</span><span class="ph">Retention</span><span class="ph">Deepening</span><span class="ph">Referral</span></div>
+  <div class="adobe-foot"><img src="adobe-wordmark-red.svg" alt="Adobe"></div>
+</section>
+
+<!-- SLIDE 12: APPLICATION RECEIVED — EMAIL -->
+<section class="slide" data-phase="acq">
+  <div class="phase-pill a1">01 · Acquisition</div>
+  <div class="story a1">
+    <div class="numdisc a1">7</div>
     <h2 class="htitle a2">Confirmation email — instantly</h2>
     <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp">Application submitted</span><span class="pp np">Email triggered</span><span class="pp np">AEM fragment</span></div>
-    <p class="narr a3">Marc hits <strong>Continue</strong>. AJO fires on <strong>application_submitted</strong> — confirmation email in his inbox within seconds. AEM fragment <strong>apply-received-v1</strong>, personalised with his name.</p>
+    <p class="narr a3">With the profile enriched, AJO fires on <strong>application_submitted</strong> — confirmation email in Marc's inbox within seconds. AEM fragment <strong>apply-received-v1</strong>, personalised with his name.</p>
     <div class="quote a4">"Thank you, Marc! We've received your Miles &amp; More Swisscard application."</div>
     <div class="claudia-lab a4">Claudia's screen</div>
     <div class="prodcard a5">AJO journey <strong>application_received</strong> → email branch · same CDP profile · campaign attribution preserved.</div>
@@ -525,7 +576,9 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   </div>
   <div class="screen screen-device a3">
     <div class="device-shot-wrap">
-      <img class="device-shot" src="assets/marc-application-email.png" alt="Swisscard application received email — Thank you Marc">
+      <div class="phone-frame device-frame">
+        <img class="device-in-frame" src="assets/marc-application-email-screen.png" alt="Swisscard application received email — Thank you Marc">
+      </div>
     </div>
   </div>
   <div class="persona a5"><div class="av">M</div><div class="nm">Marc</div></div>
@@ -537,28 +590,18 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 <section class="slide" data-phase="acq">
   <div class="phase-pill a1">01 · Acquisition</div>
   <div class="story a1">
-    <div class="numdisc a1">7</div>
+    <div class="numdisc a1">8</div>
     <h2 class="htitle a2">Instant approval</h2>
     <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp">Application submitted</span><span class="pp np">Instant decision</span><span class="pp np">Approved</span></div>
     <p class="narr a3">For Marc's collaboration segment, decisioning returns in seconds — <strong>instant approval</strong>. AJO journey <strong>approval_instant</strong> branches: approval SMS and web confirmation, app download link queued.</p>
-    <div class="quote a4">"You're approved, Marc. Your Miles &amp; More Gold is ready."</div>
+    <div class="quote a4">"You're all set, Marc! Your SWISS Miles &amp; More Gold has been received and approved."</div>
     <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">AJO — apply event → decisioning → <strong>approval_instant</strong> journey entry. Attribution preserved from collaboration audience through approval.</div>
+    <div class="prodcard a5">AJO journey — <strong>Application submitted</strong> → <strong>Check For Approval</strong> → approved: confirmation email + SMS · not yet: information email → wait for confirmation.</div>
     <div class="takeaway a5">The moment of highest intent — don't wait for batch processing or a call centre callback.</div>
   </div>
-  <div class="screen a3">
-    <div class="phone-wrap">
-      <div class="phone-frame">
-        <div class="browser">
-          <div class="bbar"><span class="d" style="background:#ff5f57"></span><span class="d" style="background:#febc2e"></span><span class="d" style="background:#28c840"></span><span class="u">swisscard.ch/apply/confirmation</span></div>
-          <div class="mockbody" style="background:#fff;padding:28px 20px;text-align:center;">
-            <div style="width:72px;height:72px;border-radius:50%;background:#E8F5E9;color:#2E7D32;display:grid;place-items:center;font-size:36px;margin:20px auto;">✓</div>
-            <h3 style="font-size:26px;color:var(--navy);margin:0 0 12px;">You're approved, Marc</h3>
-            <p style="color:var(--grey);line-height:1.5;margin:0 0 20px;">SWISS Miles &amp; More Gold · Check your email and SMS for next steps.</p>
-            <div class="btn" style="display:inline-block;background:var(--red);color:#fff;font-weight:700;padding:12px 24px;border-radius:8px;">Download the app</div>
-          </div>
-        </div>
-      </div>
+  <div class="screen screen-device a3">
+    <div class="device-shot-wrap">
+      <img class="device-shot" src="assets/marc-approval-confirmation.png" alt="Swisscard instant approval — You're all set Marc, download the app">
     </div>
   </div>
   <div class="persona a5"><div class="av">M</div><div class="nm">Marc</div></div>
@@ -570,26 +613,17 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 <section class="slide" data-phase="acq">
   <div class="phase-pill a1">01 · Acquisition</div>
   <div class="story a1">
-    <div class="numdisc a1">8</div>
+    <div class="numdisc a1">9</div>
     <h2 class="htitle a2">Approval SMS — same minute</h2>
-    <p class="narr a3">Seconds after approval, Marc gets an <strong>SMS</strong> — download the app, add to Wallet, welcome bonus waiting. Parallel to the web confirmation screen.</p>
+    <p class="narr a3">Seconds after approval, Marc gets a mobile message — <strong>SMS or RCS via AJO</strong> — with app download, Wallet setup, and welcome bonus context. Parallel to the web confirmation screen.</p>
     <div class="quote a4">"Marc, your Swisscard Miles &amp; More Gold is approved. Download the app: swisscard.ch/app"</div>
-    <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">AJO <strong>approval_instant</strong> → SMS branch · deep link to App Store · same journey as web confirmation.</div>
+    <div class="claudia-lab a4">Marc's phone</div>
+    <div class="prodcard a5">AJO <strong>approval_instant</strong> → mobile message branch (SMS/RCS) · deep link to App Store · same journey as web confirmation.</div>
     <div class="takeaway a5">Omni-channel activation — SMS reaches Marc even if he leaves the browser.</div>
   </div>
-  <div class="screen a3">
-    <div class="panel" style="padding:36px 44px;">
-      <h3>AJO · Instant approval journey</h3>
-      <div class="knows" style="margin-bottom:20px;">
-        <div class="row"><span class="k">Trigger</span><span class="v">application_approved · instant</span></div>
-        <div class="row"><span class="k">Branch A</span><span class="v">Web confirmation</span></div>
-        <div class="row"><span class="k">Branch B</span><span class="v">SMS → app download</span></div>
-      </div>
-      <div style="background:#F4F7FB;border:1px solid var(--line);border-radius:14px;padding:18px 20px;font-size:17px;color:var(--ink);line-height:1.5;">
-        <strong>SMS · Swisscard</strong><br>
-        Marc, you're approved! Your Miles &amp; More Gold is ready. Download the app to add to Wallet: swisscard.ch/app
-      </div>
+  <div class="screen screen-device a3">
+    <div class="device-shot-wrap">
+      <img class="device-shot" src="assets/marc-approval-sms.png" alt="Swisscard approval SMS — Marc, your Miles &amp; More Gold is approved, download the app">
     </div>
   </div>
   <div class="persona a5"><div class="av">M</div><div class="nm">Marc</div></div>
@@ -601,17 +635,17 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 <section class="slide" data-phase="acq">
   <div class="phase-pill a1">01 · Acquisition</div>
   <div class="story a1">
-    <div class="numdisc a1">9</div>
+    <div class="numdisc a1">10</div>
     <h2 class="htitle a2">Download app — add to Wallet</h2>
-    <p class="narr a3">Marc downloads the Swisscard app from the SMS link. First open: a <strong>push notification</strong> on his lock screen — approval confirmed, <strong>Add to Apple Wallet</strong> in one tap.</p>
-    <div class="quote a4">"Welcome, Marc. Your Miles &amp; More Swisscard has been approved. Add your card to Apple Wallet and start using it today."</div>
-    <div class="claudia-lab a4">Claudia's screen</div>
+    <p class="narr a3">Marc downloads the Swisscard app from the SMS link. On his lock screen, a <strong>push notification</strong> nudges him to <strong>Add to Apple Wallet</strong> — one tap to activate.</p>
+    <div class="quote a4">"Hi Marc, thank you for installing our app. Don't forget to add your card to Apple Wallet for the easiest way to pay."</div>
+    <div class="claudia-lab a4">Marc's phone</div>
     <div class="prodcard a5">Mobile SDK links Customer ID · <strong>wallet_add_started</strong> event → RTCDP · activation tracked for CJA.</div>
     <div class="takeaway a5">App is the activation surface — but only after web apply and approval earned the relationship.</div>
   </div>
   <div class="screen screen-device a3">
     <div class="device-shot-wrap">
-      <img class="device-shot" src="assets/marc-approval-push.png" alt="Swisscard push notification — Welcome Marc, add Miles &amp; More card to Apple Wallet">
+      <img class="device-shot" src="assets/marc-wallet-push.png" alt="Swisscard push — Hi Marc, thank you for installing our app, add card to Apple Wallet">
     </div>
   </div>
   <div class="persona a5"><div class="av">M</div><div class="nm">Marc</div></div>
@@ -620,27 +654,20 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 </section>
 
 <!-- SLIDE 14: UNIFIED CUSTOMER PROFILE -->
-<section class="slide" data-phase="acq">
+<section class="slide marc-aep-known" data-phase="acq">
   <div class="phase-pill a1">01 · Acquisition</div>
   <div class="story a1">
-    <div class="numdisc a1">10</div>
+    <div class="numdisc a1">11</div>
     <h2 class="htitle a2">Unified profile — known customer</h2>
-    <p class="narr a3">Marc is now a known customer. RTCDP merges anonymous edge profile with Application ID and Customer ID — collaboration campaign attribution preserved from first Instagram click.</p>
+    <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp">Marc Weber</span><span class="pp np">Email identified</span><span class="pp np">SWISScard M&amp;M owner</span></div>
+    <p class="narr a3">Marc is now a known customer. RTCDP merges anonymous edge profile with Application ID and Customer ID — <strong>marc.weber@gmail.com</strong>, collaboration audiences, and <strong>Travel Card Interest 0.87</strong> preserved from first Instagram click.</p>
     <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">Profile: ECID → Application ID → Customer ID · segments · experience events · campaign <strong>Q2_M&amp;M_Collab_Instagram</strong>.</div>
+    <div class="prodcard a5">RTCDP Profile — <strong>Marc Weber</strong> · <strong>Active Miles &amp; More Members (30–45)</strong>, <strong>High Travel Affinity Prospects</strong>, <strong>Frequent SWISS Travelers Switzerland</strong>, <strong>SWISScard Miles&amp;More Card owner</strong>.</div>
     <div class="takeaway a5">Everything from the anonymous visit survives authentication — no attribution gap.</div>
   </div>
-  <div class="screen a3">
-    <div class="panel">
-      <h3>RTCDP · Marc Weber</h3>
-      <div class="knows">
-        <div class="row"><span class="k">Product</span><span class="v">SWISS Miles &amp; More Gold</span></div>
-        <div class="row"><span class="k">Segments</span><span class="v">New Customer · Travel Intent</span></div>
-        <div class="row"><span class="k">Campaign</span><span class="v">Q2_M&amp;M_Collab_Instagram</span></div>
-        <div class="row"><span class="k">Identity</span><span class="v">ECID → App ID → Cust ID</span></div>
-        <div class="row"><span class="k">Events</span><span class="v">ad_click · apply · approve · wallet_add</span></div>
-      </div>
-      <div class="img-ph" style="min-height:200px;margin-top:12px;">RTCDP Profile UI placeholder</div>
+  <div class="screen screen-product a3">
+    <div class="product-shot-wrap">
+      <img class="product-shot" src="assets/marc-aep-profile-known.png" alt="Adobe RTCDP Profile — Marc Weber, known customer, collaboration audiences and Travel Card Interest 0.87">
     </div>
   </div>
   <div class="persona a5"><div class="av" style="background:linear-gradient(150deg,var(--red),var(--red-dk))">C</div><div class="nm">Claudia</div></div>
@@ -652,7 +679,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 <section class="slide" data-phase="acq">
   <div class="phase-pill a1">01 · Acquisition</div>
   <div class="story a1">
-    <div class="numdisc a1">11</div>
+    <div class="numdisc a1">12</div>
     <h2 class="htitle a2">App home — ranked for Marc</h2>
     <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp">New customer</span><span class="pp np">Wallet added</span><span class="pp np">Travel intent</span></div>
     <p class="narr a3">Marc opens the app. AJO Decisioning ranks his home screen — <strong>welcome bonus</strong> first, then <strong>SWISS partner benefits</strong>, then everyday miles offers. Not a generic banner rotation.</p>
@@ -675,7 +702,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 <section class="slide" data-phase="acq">
   <div class="phase-pill a1">01 · Acquisition</div>
   <div class="story a1">
-    <div class="numdisc a1">12</div>
+    <div class="numdisc a1">13</div>
     <h2 class="htitle a2">Web matches app</h2>
     <p class="narr a3">Logged in on desktop, Marc sees the same offer ranking as in the app. One policy — <strong>home-offers-v2</strong> — across app and web.</p>
     <div class="quote a4">"Good Morning, Marc — same welcome bonus, partner benefits, and everyday miles on swisscard.ch."</div>
@@ -683,7 +710,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
     <div class="prodcard a5">Same decisioning policy <strong>home-offers-v2</strong> deployed to app surface + web surface. Single policy, multiple channels.</div>
     <div class="takeaway a5">One conversation across channels — not a website team and an app team guessing independently.</div>
   </div>
-  <div class="screen a3">
+  <div class="screen screen-product a3">
     <div class="product-shot-wrap">
       <img class="product-shot" src="assets/marc-web-home.png" alt="Swisscard web home — Good Morning Marc, welcome bonus and ranked offers">
     </div>
@@ -697,20 +724,20 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 <section class="slide" data-phase="acq">
   <div class="phase-pill a1">01 · Acquisition</div>
   <div class="story a1">
-    <div class="numdisc a1">13</div>
+    <div class="numdisc a1">14</div>
     <h2 class="htitle a2">Paid media closes the loop</h2>
-    <p class="narr a3">Marc activated. Automatically: suppressed from acquisition campaigns. His profile seeds a lookalike audience. Claudia sees cost-per-activation by segment.</p>
+    <p class="narr a3">Marc activated on <strong>Miles &amp; More Gold</strong>. Automatically: suppressed from acquisition campaigns. His profile joins the <strong>activated travel</strong> seed — powering the next lookalike wave on Meta and Google.</p>
     <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">RTCDP Destinations — Meta + Google. <strong>New Customers → suppression list.</strong> <strong>High-LTV Travel Activated → lookalike seed.</strong> Sync latency &lt; 15 min.</div>
+    <div class="prodcard a5">RTCDP Destinations — Meta + Google. <strong>New Customers → suppression</strong> (incl. Marc Weber). <strong>Activated M&amp;M Travellers → lookalike seed</strong> → <strong>High Travel Affinity Lookalike</strong> for prospecting.</div>
     <div class="takeaway a5">The CDP doesn't just power personalisation — it makes paid media smarter automatically.</div>
   </div>
   <div class="screen a3">
     <div class="panel">
       <h3>RTCDP · Destinations</h3>
       <div class="seglist">
-        <div class="seg"><div><div class="sn">High-LTV Travel Lookalike</div><div class="sm">Meta · Google · 240,000 profiles</div></div><span class="badge sync">Synced 4m ago</span></div>
         <div class="seg"><div><div class="sn">New Customers — Suppression</div><div class="sm">Meta · Google · incl. Marc Weber</div></div><span class="badge suppress">Suppression active</span></div>
-        <div class="seg"><div><div class="sn">Activated Travel Spenders — Seed</div><div class="sm">Meta Lookalike · 12,400 profiles</div></div><span class="badge sync">Synced 11m ago</span></div>
+        <div class="seg"><div><div class="sn">Activated M&amp;M Travellers — Seed</div><div class="sm">Meta Lookalike seed · 12,400 profiles</div></div><span class="badge sync">Synced 11m ago</span></div>
+        <div class="seg"><div><div class="sn">High Travel Affinity Lookalike</div><div class="sm">Meta · Google · 240,000 profiles</div></div><span class="badge sync">Synced 4m ago</span></div>
       </div>
       <div style="margin-top:28px;display:flex;gap:40px;">
         <div><div style="font-size:14px;color:var(--soft);">Acquisition waste saved</div><div class="big cu" data-to="180" data-pre="CHF " data-suf="K/qtr" style="font-size:56px;color:var(--navy);">CHF 0K/qtr</div></div>
@@ -755,16 +782,14 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="story a1">
     <div class="numdisc a1">8</div>
     <h2 class="htitle a2">Life-stage shift detected</h2>
-    <p class="narr a3">Claudia builds <strong>Win-Back · Life-Stage Shift</strong> — prior top-quartile LTV, spend down ~70%, categories pivot from fashion/dining to household. Sofia Müller matches: Cashback holder 5 years, engagement collapsed after marriage and a child.</p>
+    <p class="narr a3">Claudia builds <strong>High Churn Risk — Existing Cardholders</strong> — active customers 12+ months with spend down, TWINT rising, and engagement collapsing. Sofia Müller matches: Cashback holder 5 years, categories pivot from fashion/dining to household.</p>
     <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">RTCDP Audience Builder — historical spend bands, category mix, propensity. Not "no app opens" — a customer who changed, not left.</div>
+    <div class="prodcard a5">RTCDP Audience Builder — spend decline, share-of-wallet shift, alternative payment use, and no email or offer engagement in 6–12 months. Not "no app opens" — a customer who changed, not left.</div>
     <div class="takeaway a5">The signal isn't silence. It's a life change written in transaction data.</div>
   </div>
-  <div class="screen a3">
-    <div class="panel">
-      <h3>RTCDP · Audience Builder</h3>
-      <div class="img-ph" style="min-height:280px;margin-bottom:16px;">Segment builder UI placeholder<span>Drag: Propensity to Churn · Card spend · App opens</span></div>
-      <div class="seg"><div><div class="sn">Win-Back · Life-Stage Shift</div><div class="sm">412 profiles · incl. Sofia Müller</div></div><span class="badge sync">Active</span></div>
+  <div class="screen screen-product a3">
+    <div class="product-shot-wrap">
+      <img class="product-shot" src="assets/sofia-audience.png" alt="Adobe RTCDP Audience — High Churn Risk Existing Cardholders, behavioral and engagement rules, 2,460 profiles">
     </div>
   </div>
   <div class="persona a5"><div class="av" style="background:linear-gradient(150deg,#c9a24a,#8a6c25)">S</div><div class="nm">Sofia</div></div>
@@ -783,16 +808,9 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
     <div class="prodcard a5">RTCDP unified profile — spend category evolution + campaign history overlay. The issue wasn't the card. It was the conversation.</div>
     <div class="takeaway a5">Partner overlap replaced by a story Swisscard owns: life-stage relevance from first-party data.</div>
   </div>
-  <div class="screen a3">
-    <div class="panel">
-      <h3>Profile timeline · Sofia Müller</h3>
-      <div class="knows" style="margin-bottom:16px;">
-        <div class="row"><span class="k">2019–2021</span><span class="v">Online · dining · fashion · high engagement</span></div>
-        <div class="row"><span class="k">2022</span><span class="v">Married · spend mix shifts</span></div>
-        <div class="row"><span class="k">2023–now</span><span class="v">Groceries · pharmacy · TWINT ↑ · card spend ↓70%</span></div>
-        <div class="row"><span class="k">Campaigns sent</span><span class="v" style="color:var(--red);">Lifestyle · Fashion (misaligned)</span></div>
-      </div>
-      <div class="seg"><div><div class="sn">Household · Relevance Win-Back</div><div class="sm">412 profiles qualified</div></div><span class="badge sync">Published</span></div>
+  <div class="screen screen-product a3">
+    <div class="product-shot-wrap">
+      <img class="product-shot" src="assets/sofia-aep-profile.png" alt="Adobe RTCDP Profile — Sofia Müller, dormant family-oriented cardholder, win-back eligibility and profile insights">
     </div>
   </div>
   <div class="persona a5"><div class="av" style="background:linear-gradient(150deg,#c9a24a,#8a6c25)">S</div><div class="nm">Sofia</div></div>
@@ -1098,22 +1116,6 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="adobe-foot"><img src="adobe-wordmark-red.svg" alt="Adobe"></div>
 </section>
 
-<!-- MEET LUKAS -->
-<section class="slide">
-  <div class="pintro">
-    <div class="portrait has-photo a1"><img src="assets/lukas-brunner.png" alt="Lukas Brunner"><div class="tag">Referral</div></div>
-    <div class="pbody a2">
-      <div class="pk">Meet Lukas</div>
-      <h2>Lukas Brunner, 35</h2>
-      <p class="pr">Engineering lead · Zurich · No Swisscard yet</p>
-      <div class="pblock"><div class="bl">Life situation</div><div class="bt">Marc's colleague. Flies to Berlin monthly. Uses a basic bank card — no miles programme. Asks Marc about travel perks after seeing how he earns miles on everyday Swiss spend.</div></div>
-      <div class="pblock"><div class="bl">The opportunity</div><div class="bt">High travel intent + <strong>trusted recommendation</strong>. Perfect referral — not in acquisition suppression lists.</div></div>
-      <div class="pblock"><div class="bl">Channel</div><div class="bt">WhatsApp link → personalised <strong>/ref</strong> landing → apply in Swisscard app</div></div>
-      <div class="pblock"><div class="bl">Starting profile</div><div class="chips"><span>Referral Click</span><span>Travel Intent</span><span>Prospect</span></div></div>
-    </div>
-  </div>
-</section>
-
 <!-- TODAY — REFERRAL PROBLEM -->
 <section class="slide divider">
   <div class="glw"></div>
@@ -1131,6 +1133,22 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <p class="ph-tag a3">Close the loop</p>
   <p class="ph-sub a4">From CSV batch to automated loop — Marc refers Lukas, attribution end-to-end.</p>
   <div class="pill a5">Member-get-Member · 10–20× cheaper than paid</div>
+</section>
+
+<!-- MEET LUKAS -->
+<section class="slide">
+  <div class="pintro">
+    <div class="portrait has-photo a1"><img src="assets/lukas-brunner.png" alt="Lukas Brunner"><div class="tag">Referral</div></div>
+    <div class="pbody a2">
+      <div class="pk">Meet Lukas</div>
+      <h2>Lukas Brunner, 35</h2>
+      <p class="pr">Engineering lead · Zurich · No Swisscard yet</p>
+      <div class="pblock"><div class="bl">Life situation</div><div class="bt">Marc's colleague. Flies to Berlin monthly. Uses a basic bank card — no miles programme. Asks Marc about travel perks after seeing how he earns miles on everyday Swiss spend.</div></div>
+      <div class="pblock"><div class="bl">The opportunity</div><div class="bt">High travel intent + <strong>trusted recommendation</strong>. Perfect referral — not in acquisition suppression lists.</div></div>
+      <div class="pblock"><div class="bl">Channel</div><div class="bt">WhatsApp link → personalised <strong>/ref</strong> landing → apply in Swisscard app</div></div>
+      <div class="pblock"><div class="bl">Starting profile</div><div class="chips"><span>Referral Click</span><span>Travel Intent</span><span>Prospect</span></div></div>
+    </div>
+  </div>
 </section>
 
 <!-- SLIDE 26: REFERRAL TRIGGER -->
@@ -1528,7 +1546,23 @@ function scaleStage(){
   const k=Math.min(innerWidth/1920,innerHeight/1080);
   s.style.transform=`translate(${(innerWidth-1920*k)/2}px,${(innerHeight-1080*k)/2}px) scale(${k})`;
 }
-addEventListener('resize',scaleStage);scaleStage();
+function alignJourneyNodes(){
+  const slide=document.querySelector('.slide.journey');
+  if(!slide)return;
+  const path=slide.querySelector('.jpath');
+  const nodes=[...slide.querySelectorAll('.jnode')];
+  if(!path||!nodes.length)return;
+  const len=path.getTotalLength();
+  if(!len)return;
+  nodes.forEach((node,i)=>{
+    const pt=path.getPointAtLength(len*(i/(nodes.length-1)));
+    node.style.left=pt.x+'px';
+    node.style.top=pt.y+'px';
+  });
+}
+requestAnimationFrame(()=>requestAnimationFrame(alignJourneyNodes));
+addEventListener('resize',()=>{scaleStage();alignJourneyNodes();});
+scaleStage();
 const sl=[...document.querySelectorAll('.slide:not(.slide-hidden)')],cur=document.getElementById('cur'),tot=document.getElementById('tot');let i=0;
 if(tot)tot.textContent=String(sl.length).padStart(2,'0');
 const fmt=n=>n.toLocaleString('en-CH');
