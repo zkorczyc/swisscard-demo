@@ -139,9 +139,9 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 .phone-frame.device-frame::before{content:"";position:absolute;top:14px;left:50%;transform:translateX(-50%);width:30%;height:28px;background:#0a0a0a;border-radius:18px;z-index:2;pointer-events:none;}
 .phone-frame.device-frame .device-in-frame{width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:38px;display:block;background:#fff;}
 .slide.instant-approval .screen.screen-device{right:24px;}
-.slide.sofia-winback-email .screen.screen-device{left:820px;right:40px;top:96px;bottom:108px;height:auto;display:flex;align-items:center;justify-content:center;overflow:visible;}
-.slide.sofia-winback-email .device-shot-wrap{height:auto;max-height:100%;width:auto;max-width:100%;display:flex;align-items:center;justify-content:center;}
-.slide.sofia-winback-email .device-shot{height:auto;max-height:100%;width:auto;max-width:100%;object-fit:contain;object-position:center center;}
+.slide.sofia-winback-email .screen.screen-device{left:830px;right:24px;top:90px;height:min(880px,calc(100vh - 120px));display:flex;align-items:center;justify-content:center;}
+.slide.sofia-winback-email .device-shot-wrap{height:100%;display:flex;align-items:center;justify-content:center;}
+.slide.sofia-winback-email .phone-frame.device-frame .device-in-frame{object-fit:contain;object-position:top center;}
 .ig-post .img .copy{color:#fff;}
 .ig-post .img .copy h3{margin:0 0 8px;font-size:28px;font-weight:700;}
 .ig-post .img .copy p{margin:0;font-size:16px;opacity:.9;}
@@ -744,15 +744,29 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 <!-- MEET SOFIA -->
 <section class="slide">
   <div class="pintro">
-    <div class="portrait has-photo a1"><img src="assets/sofia-family-life-change.png" alt="Sofia Müller with her family in Zurich — life-stage shift"><div class="tag">Life changed</div></div>
+    <div class="portrait has-photo a1"><img src="assets/sofia-keller.png" alt="Sofia Müller"><div class="tag">Retention</div></div>
     <div class="pbody a2">
       <div class="pk">Meet Sofia</div>
       <h2>Sofia Müller, 34</h2>
       <p class="pr">Marketing Manager · Zurich</p>
-      <div class="pblock"><div class="bl">Then</div><div class="bt">Five years on the <strong>Cashback card</strong> — single, online shopping, dining out, fashion. Partner offers felt valuable.</div></div>
-      <div class="pblock"><div class="bl">Now</div><div class="bt">Married, a child, joint finances. Spend moved to <strong>TWINT</strong> and the joint account. Still checks the <strong>web portal</strong> — ignores lifestyle emails.</div></div>
-      <div class="pblock"><div class="bl">The insight</div><div class="bt">Not dissatisfaction — <strong>relevance</strong>. Swisscard kept talking to who she used to be.</div></div>
-      <div class="pblock"><div class="bl">Segment</div><div class="chips"><span>Life-Stage Shift</span><span>Household Win-Back</span><span>Cashback</span></div></div>
+      <div class="pblock"><div class="bl">Card relationship</div><div class="bt">Five years on the <strong>Cashback card</strong> — one of Swisscard's engaged holders. Online shopping, dining out, fashion. Partner offers felt valuable.</div></div>
+      <div class="pblock"><div class="bl">Lifestyle</div><div class="bt">Single, travels often, high engagement with <strong>lifestyle and fashion</strong> campaigns. The customer Swisscard thought they knew.</div></div>
+      <div class="pblock"><div class="bl">Starting segment</div><div class="chips"><span>Cashback</span><span>Lifestyle Enthusiasts</span><span>High engagement</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SOFIA — LIFE CHANGED -->
+<section class="slide">
+  <div class="pintro">
+    <div class="portrait has-photo a1"><img src="assets/sofia-family-life-change.png" alt="Sofia Müller with her family in Zurich"><div class="tag">Life changed</div></div>
+    <div class="pbody a2">
+      <div class="pk">Then vs now</div>
+      <h2>Her life changed — her messaging didn't</h2>
+      <p class="pr">Married · Young family · Zurich</p>
+      <div class="pblock"><div class="bl">Now</div><div class="bt">Married, a young daughter, joint finances. Spend moved to <strong>TWINT</strong>, groceries, and pharmacy — away from fashion and dining.</div></div>
+      <div class="pblock"><div class="bl">Behaviour shift</div><div class="bt">Card spend down ~70%. Email engagement collapsed. Swisscard still sent <strong>Lifestyle · Fashion</strong> — the wrong conversation for two years.</div></div>
+      <div class="pblock"><div class="bl">Audience</div><div class="chips"><span>High Churn Risk — Existing Cardholders</span><span>Win-Back Eligible</span><span>Household Win-Back</span></div></div>
     </div>
   </div>
 </section>
@@ -763,7 +777,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="story a1">
     <div class="numdisc a1">8</div>
     <h2 class="htitle a2">Life-stage shift detected</h2>
-    <p class="narr a3">Claudia builds <strong>High Churn Risk — Existing Cardholders</strong> — active customers 12+ months with spend down, TWINT rising, and engagement collapsing. Sofia Müller matches: Cashback holder 5 years, categories pivot from fashion/dining to household.</p>
+    <p class="narr a3">Claudia builds <strong>High Churn Risk — Existing Cardholders</strong> — active customers 12+ months with spend down, TWINT rising, and engagement collapsing. <strong>Sofia Müller matches</strong> — married, new mum, categories pivot from fashion/dining to household.</p>
     <div class="claudia-lab a4">Claudia's screen</div>
     <div class="prodcard a5">RTCDP Audience Builder — spend decline, share-of-wallet shift, alternative payment use, and no email or offer engagement in 6–12 months. Not "no app opens" — a customer who changed, not left.</div>
     <div class="takeaway a5">The signal isn't silence. It's a life change written in transaction data.</div>
@@ -784,7 +798,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="story a1">
     <div class="numdisc a1">9</div>
     <h2 class="htitle a2">Relevance — not dissatisfaction</h2>
-    <p class="narr a3">Sofia's profile timeline: <strong>2019–2021</strong> online, dining, fashion — then <strong>2022–now</strong> groceries, pharmacy, TWINT. Marketing still sent <strong>Lifestyle · Fashion</strong> campaigns. Wrong message for two years.</p>
+    <p class="narr a3">Sofia's profile timeline: <strong>2019–2021</strong> online, dining, fashion — then life changed. <strong>2022–now</strong> married, a daughter, groceries, pharmacy, TWINT. Marketing still sent <strong>Lifestyle · Fashion</strong> campaigns. Wrong message for two years.</p>
     <div class="claudia-lab a4">Claudia's screen</div>
     <div class="prodcard a5">RTCDP unified profile — spend category evolution + campaign history overlay. The issue wasn't the card. It was the conversation.</div>
     <div class="takeaway a5">Partner overlap replaced by a story Swisscard owns: life-stage relevance from first-party data.</div>
@@ -810,15 +824,9 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
     <div class="prodcard a5">AJO Experience Decisioning — rules, propensity, capping. Same engine as Marc's app home — different life stage, different offer.</div>
     <div class="takeaway a5">Win-back isn't one message — it's the right benefit for who she is now.</div>
   </div>
-  <div class="screen a3">
-    <div class="panel">
-      <h3>AJO · Experience Decisioning</h3>
-      <div class="app-offers" style="margin-top:8px;">
-        <div class="app-offer top"><div class="rk">1</div><div class="ot"><h4>Family cashback — groceries &amp; pharmacy</h4><p>Sofia · score 0.91</p></div></div>
-        <div class="app-offer"><div class="rk">2</div><div class="ot"><h4>Spend insights + Add to Wallet</h4><p>Household categories · score 0.82</p></div></div>
-        <div class="app-offer"><div class="rk">3</div><div class="ot"><h4>Instant cashback notifications</h4><p>score 0.68</p></div></div>
-      </div>
-      <div class="knows" style="margin-top:16px;"><div class="row"><span class="k">Qualified</span><span class="v">348 of 412</span></div><div class="row"><span class="k">Suppressed</span><span class="v">Lifestyle · Fashion</span></div></div>
+  <div class="screen screen-product a3">
+    <div class="product-shot-wrap">
+      <img class="product-shot" src="assets/sofia-experience-decisioning.png" alt="AJO Experience Decisioning — ranked offers for Sofia, family cashback selected, Lifestyle Fashion suppressed">
     </div>
   </div>
   <div class="persona a5"><div class="av" style="background:linear-gradient(150deg,var(--red),var(--red-dk))">C</div><div class="nm">Claudia</div></div>
@@ -862,7 +870,9 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   </div>
   <div class="screen screen-device a3">
     <div class="device-shot-wrap">
-      <img class="device-shot" src="assets/sofia-winback-email.png" alt="Swisscard win-back email — Everyday spending deserves rewards, Sofia">
+      <div class="phone-frame device-frame">
+        <img class="device-in-frame" src="assets/sofia-winback-email-screen.png" alt="Swisscard win-back email — Everyday spending deserves rewards, Sofia">
+      </div>
     </div>
   </div>
   <div class="persona a5"><div class="av" style="background:linear-gradient(150deg,#c9a24a,#8a6c25)">S</div><div class="nm">Sofia</div></div>
