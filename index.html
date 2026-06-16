@@ -139,6 +139,9 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 .phone-frame.device-frame::before{content:"";position:absolute;top:14px;left:50%;transform:translateX(-50%);width:30%;height:28px;background:#0a0a0a;border-radius:18px;z-index:2;pointer-events:none;}
 .phone-frame.device-frame .device-in-frame{width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:38px;display:block;background:#fff;}
 .slide.instant-approval .screen.screen-device{right:24px;}
+.slide.sofia-winback-email .screen.screen-device{left:820px;right:40px;top:96px;bottom:108px;height:auto;display:flex;align-items:center;justify-content:center;overflow:visible;}
+.slide.sofia-winback-email .device-shot-wrap{height:auto;max-height:100%;width:auto;max-width:100%;display:flex;align-items:center;justify-content:center;}
+.slide.sofia-winback-email .device-shot{height:auto;max-height:100%;width:auto;max-width:100%;object-fit:contain;object-position:center center;}
 .ig-post .img .copy{color:#fff;}
 .ig-post .img .copy h3{margin:0 0 8px;font-size:28px;font-weight:700;}
 .ig-post .img .copy p{margin:0;font-size:16px;opacity:.9;}
@@ -539,36 +542,14 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="adobe-foot"><img src="adobe-wordmark-red.svg" alt="Adobe"></div>
 </section>
 
-<!-- SLIDE 11: RICH PROFILE ON SUBMIT -->
-<section class="slide marc-aep-known" data-phase="acq">
-  <div class="phase-pill a1">01 · Acquisition</div>
-  <div class="story a1">
-    <div class="numdisc a1">6</div>
-    <h2 class="htitle a2">Marc's rich profile — on submit</h2>
-    <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp">Application submitted</span><span class="pp np">Marc Weber</span><span class="pp np">Email identified</span></div>
-    <p class="narr a3">Marc hits <strong>Continue</strong>. Application data merges into the CDP profile — <strong>Marc Weber</strong>, <strong>marc.weber@email.com</strong>, Miles &amp; More loyalty, collaboration audiences, and apply propensity preserved from first click.</p>
-    <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">RTCDP Profile — <strong>Active Miles &amp; More Members (30–45)</strong>, <strong>High Travel Affinity Prospects</strong>, <strong>Frequent SWISS Travelers Switzerland</strong>, <strong>Premium Urban Professionals</strong>, <strong>High Conversion Propensity</strong>.</div>
-    <div class="takeaway a5">Submit doesn't reset the story — every signal from the anonymous visit survives in one profile.</div>
-  </div>
-  <div class="screen screen-product a3">
-    <div class="product-shot-wrap">
-      <img class="product-shot" src="assets/marc-aep-profile-rich.png" alt="Adobe RTCDP Profile — Marc Weber after application submit, collaboration loyalty, audiences and apply propensity scores">
-    </div>
-  </div>
-  <div class="persona a5"><div class="av" style="background:linear-gradient(150deg,var(--red),var(--red-dk))">C</div><div class="nm">Claudia</div></div>
-  <div class="phasebar a5"><span class="ph on">Acquisition</span><span class="ph">Retention</span><span class="ph">Deepening</span><span class="ph">Referral</span></div>
-  <div class="adobe-foot"><img src="adobe-wordmark-red.svg" alt="Adobe"></div>
-</section>
-
-<!-- SLIDE 12: APPLICATION RECEIVED — EMAIL -->
+<!-- SLIDE 11: APPLICATION RECEIVED — EMAIL -->
 <section class="slide" data-phase="acq">
   <div class="phase-pill a1">01 · Acquisition</div>
   <div class="story a1">
-    <div class="numdisc a1">7</div>
+    <div class="numdisc a1">6</div>
     <h2 class="htitle a2">Confirmation email — instantly</h2>
     <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp">Application submitted</span><span class="pp np">Email triggered</span><span class="pp np">AEM fragment</span></div>
-    <p class="narr a3">With the profile enriched, AJO fires on <strong>application_submitted</strong> — confirmation email in Marc's inbox within seconds. AEM fragment <strong>apply-received-v1</strong>, personalised with his name.</p>
+    <p class="narr a3">Marc hits <strong>Continue</strong>. AJO fires on <strong>application_submitted</strong> — confirmation email in his inbox within seconds. AEM fragment <strong>apply-received-v1</strong>, personalised with his name.</p>
     <div class="quote a4">"Thank you, Marc! We've received your Miles &amp; More Swisscard application."</div>
     <div class="claudia-lab a4">Claudia's screen</div>
     <div class="prodcard a5">AJO journey <strong>application_received</strong> → email branch · same CDP profile · campaign attribution preserved.</div>
@@ -590,7 +571,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 <section class="slide" data-phase="acq">
   <div class="phase-pill a1">01 · Acquisition</div>
   <div class="story a1">
-    <div class="numdisc a1">8</div>
+    <div class="numdisc a1">7</div>
     <h2 class="htitle a2">Instant approval</h2>
     <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp">Application submitted</span><span class="pp np">Instant decision</span><span class="pp np">Approved</span></div>
     <p class="narr a3">For Marc's collaboration segment, decisioning returns in seconds — <strong>instant approval</strong>. AJO journey <strong>approval_instant</strong> branches: approval SMS and web confirmation, app download link queued.</p>
@@ -613,7 +594,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 <section class="slide" data-phase="acq">
   <div class="phase-pill a1">01 · Acquisition</div>
   <div class="story a1">
-    <div class="numdisc a1">9</div>
+    <div class="numdisc a1">8</div>
     <h2 class="htitle a2">Approval SMS — same minute</h2>
     <p class="narr a3">Seconds after approval, Marc gets a mobile message — <strong>SMS or RCS via AJO</strong> — with app download, Wallet setup, and welcome bonus context. Parallel to the web confirmation screen.</p>
     <div class="quote a4">"Marc, your Swisscard Miles &amp; More Gold is approved. Download the app: swisscard.ch/app"</div>
@@ -635,7 +616,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 <section class="slide" data-phase="acq">
   <div class="phase-pill a1">01 · Acquisition</div>
   <div class="story a1">
-    <div class="numdisc a1">10</div>
+    <div class="numdisc a1">9</div>
     <h2 class="htitle a2">Download app — add to Wallet</h2>
     <p class="narr a3">Marc downloads the Swisscard app from the SMS link. On his lock screen, a <strong>push notification</strong> nudges him to <strong>Add to Apple Wallet</strong> — one tap to activate.</p>
     <div class="quote a4">"Hi Marc, thank you for installing our app. Don't forget to add your card to Apple Wallet for the easiest way to pay."</div>
@@ -653,21 +634,21 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="adobe-foot"><img src="adobe-wordmark-red.svg" alt="Adobe"></div>
 </section>
 
-<!-- SLIDE 14: UNIFIED CUSTOMER PROFILE -->
+<!-- SLIDE 14: MARC'S RICH PROFILE -->
 <section class="slide marc-aep-known" data-phase="acq">
   <div class="phase-pill a1">01 · Acquisition</div>
   <div class="story a1">
     <div class="numdisc a1">11</div>
-    <h2 class="htitle a2">Unified profile — known customer</h2>
-    <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp">Marc Weber</span><span class="pp np">Email identified</span><span class="pp np">SWISScard M&amp;M owner</span></div>
-    <p class="narr a3">Marc is now a known customer. RTCDP merges anonymous edge profile with Application ID and Customer ID — <strong>marc.weber@gmail.com</strong>, collaboration audiences, and <strong>Travel Card Interest 0.87</strong> preserved from first Instagram click.</p>
+    <h2 class="htitle a2">Marc's rich profile</h2>
+    <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp">Marc Weber</span><span class="pp np">Application submitted</span><span class="pp np">Email identified</span></div>
+    <p class="narr a3">After application submit, RTCDP merges anonymous edge profile with Application ID — <strong>Marc Weber</strong>, <strong>marc.weber@email.com</strong>, Miles &amp; More loyalty, collaboration audiences, and apply propensity preserved from first Instagram click.</p>
     <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">RTCDP Profile — <strong>Marc Weber</strong> · <strong>Active Miles &amp; More Members (30–45)</strong>, <strong>High Travel Affinity Prospects</strong>, <strong>Frequent SWISS Travelers Switzerland</strong>, <strong>SWISScard Miles&amp;More Card owner</strong>.</div>
+    <div class="prodcard a5">RTCDP Profile — <strong>Active Miles &amp; More Members (30–45)</strong>, <strong>High Travel Affinity Prospects</strong>, <strong>Frequent SWISS Travelers Switzerland</strong>, <strong>Premium Urban Professionals</strong>, <strong>High Conversion Propensity</strong>.</div>
     <div class="takeaway a5">Everything from the anonymous visit survives authentication — no attribution gap.</div>
   </div>
   <div class="screen screen-product a3">
     <div class="product-shot-wrap">
-      <img class="product-shot" src="assets/marc-aep-profile-known.png" alt="Adobe RTCDP Profile — Marc Weber, known customer, collaboration audiences and Travel Card Interest 0.87">
+      <img class="product-shot" src="assets/marc-aep-profile-rich.png" alt="Adobe RTCDP Profile — Marc Weber, rich profile after application submit, collaboration loyalty, audiences and apply propensity scores">
     </div>
   </div>
   <div class="persona a5"><div class="av" style="background:linear-gradient(150deg,var(--red),var(--red-dk))">C</div><div class="nm">Claudia</div></div>
@@ -763,7 +744,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 <!-- MEET SOFIA -->
 <section class="slide">
   <div class="pintro">
-    <div class="portrait has-photo a1"><img src="assets/sofia-keller.png" alt="Sofia Müller"><div class="tag">Retention</div></div>
+    <div class="portrait has-photo a1"><img src="assets/sofia-family-life-change.png" alt="Sofia Müller with her family in Zurich — life-stage shift"><div class="tag">Life changed</div></div>
     <div class="pbody a2">
       <div class="pk">Meet Sofia</div>
       <h2>Sofia Müller, 34</h2>
@@ -818,20 +799,20 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="adobe-foot"><img src="adobe-wordmark-red.svg" alt="Adobe"></div>
 </section>
 
-<!-- SLIDE 16: OFFER DECISIONING -->
+<!-- SLIDE 16: EXPERIENCE DECISIONING -->
 <section class="slide" data-phase="ret">
   <div class="phase-pill ret a1">02 · Retention</div>
   <div class="story a1">
     <div class="numdisc a1">10</div>
     <h2 class="htitle a2">Who gets what offer</h2>
-    <p class="narr a3">AJO Decisioning ranks for Sofia: (1) <strong>family cashback</strong> — groceries, pharmacy, (2) spend insights + wallet, (3) instant cashback push. <strong>348 qualified</strong> from 412 in segment. Legacy lifestyle offers suppressed.</p>
+    <p class="narr a3">AJO Experience Decisioning ranks for Sofia: (1) <strong>family cashback</strong> — groceries, pharmacy, (2) spend insights + wallet, (3) instant cashback push. <strong>348 qualified</strong> from 412 in segment. Legacy lifestyle offers suppressed.</p>
     <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">XD Offer Decisioning panel — rules, propensity, capping. Same engine as Marc's app home — different life stage, different offer.</div>
+    <div class="prodcard a5">AJO Experience Decisioning — rules, propensity, capping. Same engine as Marc's app home — different life stage, different offer.</div>
     <div class="takeaway a5">Win-back isn't one message — it's the right benefit for who she is now.</div>
   </div>
   <div class="screen a3">
     <div class="panel">
-      <h3>AJO · Offer Decisioning</h3>
+      <h3>AJO · Experience Decisioning</h3>
       <div class="app-offers" style="margin-top:8px;">
         <div class="app-offer top"><div class="rk">1</div><div class="ot"><h4>Family cashback — groceries &amp; pharmacy</h4><p>Sofia · score 0.91</p></div></div>
         <div class="app-offer"><div class="rk">2</div><div class="ot"><h4>Spend insights + Add to Wallet</h4><p>Household categories · score 0.82</p></div></div>
@@ -853,7 +834,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
     <h2 class="htitle a2">Journey published</h2>
     <p class="narr a3">Claudia activates <strong>Win-Back · Household Relevance</strong> in AJO — suppress lifestyle track → segment entry → wait → email → branch on open → push if no action.</p>
     <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">AJO Journey canvas — XD step R5. While Marc thrives, this runs for 412 life-stage profiles including Sofia.</div>
+    <div class="prodcard a5">AJO Journey canvas — <strong>Win-Back · Household Relevance</strong>. While Marc thrives, this runs for 412 life-stage profiles including Sofia.</div>
     <div class="takeaway a5">Parallel journeys on one platform — not a separate retention tool.</div>
   </div>
   <div class="screen a3">
@@ -868,7 +849,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 </section>
 
 <!-- SLIDE 18: EMAIL OFFER -->
-<section class="slide" data-phase="ret">
+<section class="slide sofia-winback-email" data-phase="ret">
   <div class="phase-pill ret a1">02 · Retention</div>
   <div class="story a1">
     <div class="numdisc a1">12</div>
@@ -895,7 +876,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="story a1">
     <div class="numdisc a1">13</div>
     <h2 class="htitle a2">Portal — personalised on mobile web</h2>
-    <p class="narr a3">Sofia taps <strong>Reactivate My Benefits</strong> and lands on <strong>swisscard.ch</strong> — same decisioning policy as email: <strong>5% grocery cashback</strong>, family rewards, spending insights. She's a portal user; no app download required.</p>
+    <p class="narr a3">Sofia taps <strong>Reactivate My Benefits</strong> and lands on <strong>swisscard.ch</strong> — same Experience Decisioning policy as email: <strong>5% grocery cashback</strong>, family rewards, spending insights. She's a portal user; no app download required.</p>
     <div class="quote a4">"Welcome back, Sofia — earn up to 5% cashback on your next grocery shop."</div>
     <div class="claudia-lab a4">Claudia's screen</div>
     <div class="prodcard a5">AJO Experience Decisioning — policy <strong>household-winback-v1</strong> on web surface. Same ranked offers as email, personalised for Cashback.</div>
@@ -979,7 +960,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
     <h2 class="htitle a2">Pre-trip partner offers</h2>
     <p class="narr a3">Email to Marc: London <strong>dining cashback</strong>, Miles &amp; More <strong>partner hotels</strong>, miles earn reminder before he flies — AEM fragments from one content model.</p>
     <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">AJO Email triggered by <strong>upcoming_trip_LON</strong> · XD step D2 — was missing in demo3.</div>
+    <div class="prodcard a5">AJO Email triggered by <strong>upcoming_trip_LON</strong> — was missing in demo3.</div>
     <div class="takeaway a5">Deepening starts before departure — not only on flight day.</div>
   </div>
   <div class="screen a3">
@@ -1036,7 +1017,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
     <h2 class="htitle a2">Real-time at destination</h2>
     <p class="narr a3">Marc dines in London on a business trip — international spend fires. Push: <strong>miles confirmed</strong> + SWISS partner offer. Category-based if no geo — same decision engine as app home.</p>
     <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">XD step D5 — Resy replaced with Swiss partner merchants. Real-time event → AJO push.</div>
+    <div class="prodcard a5">Real-time event → AJO push. Resy replaced with Swiss partner merchants.</div>
     <div class="takeaway a5">The message matches the moment — abroad, at the till, in the app.</div>
   </div>
   <div class="screen a3">
@@ -1094,7 +1075,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
     <h2 class="htitle a2">Prove deepening ROI</h2>
     <p class="narr a3">Claudia measures the London trip campaign in <strong>CJA</strong> — personalised journey vs generic control. Higher benefit activation, incremental spend in travel and dining.</p>
     <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">XD step D6 — test vs control. Incremental category spend +23% · email open rate 2.4× vs batch newsletter.</div>
+    <div class="prodcard a5">Test vs control. Incremental category spend +23% · email open rate 2.4× vs batch newsletter.</div>
     <div class="takeaway a5">Deepening isn't faith — it's measurable incremental value per customer.</div>
   </div>
   <div class="screen a3">
@@ -1114,15 +1095,6 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="persona a5"><div class="av" style="background:linear-gradient(150deg,var(--red),var(--red-dk))">C</div><div class="nm">Claudia</div></div>
   <div class="phasebar a5"><span class="ph">Acquisition</span><span class="ph">Retention</span><span class="ph on">Deepening</span><span class="ph">Referral</span></div>
   <div class="adobe-foot"><img src="adobe-wordmark-red.svg" alt="Adobe"></div>
-</section>
-
-<!-- TODAY — REFERRAL PROBLEM -->
-<section class="slide divider">
-  <div class="glw"></div>
-  <div class="pk a1">Today</div>
-  <h1 class="a2">Spreadsheet &amp; Batch</h1>
-  <p class="ph-sub a3">Quarterly CSV export to email. No timing logic. No friend recovery. Rewards processed manually.</p>
-  <div class="pill a4">The gap the CFO can see immediately</div>
 </section>
 
 <!-- ACT 04 TITLE -->
