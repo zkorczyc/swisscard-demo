@@ -149,12 +149,18 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 .slide.lukas-referral-recovery .device-shot-wrap{height:100%;display:flex;align-items:center;justify-content:center;}
 .slide.lukas-application-confirmation .screen.screen-device{left:830px;right:24px;top:90px;height:min(880px,calc(100vh - 120px));display:flex;align-items:center;justify-content:center;}
 .slide.lukas-application-confirmation .device-shot-wrap{height:100%;display:flex;align-items:center;justify-content:center;}
+.slide.lukas-first-spend .screen.screen-device{left:830px;right:24px;top:90px;height:min(880px,calc(100vh - 120px));display:flex;align-items:center;justify-content:center;}
+.slide.lukas-first-spend .device-shot-wrap{height:100%;display:flex;align-items:center;justify-content:center;}
 .slide.marc-referral-approved .screen.screen-product{left:820px;right:60px;top:108px;bottom:108px;height:auto;display:flex;align-items:center;justify-content:center;}
 .slide.marc-referral-approved .screen.screen-product .product-shot-wrap{max-height:100%;}
 .slide.marc-referral-approved .screen.screen-product .product-shot{max-height:100%;object-fit:contain;}
-.slide.cja-referral-performance .screen.screen-product{left:720px;right:40px;top:100px;bottom:100px;height:auto;}
-.slide.cja-referral-performance .screen.screen-product .product-shot-wrap{width:100%;max-height:100%;}
-.slide.cja-referral-performance .screen.screen-product .product-shot{width:100%;max-height:100%;object-fit:contain;object-position:center top;}
+.slide.cja-referral-performance .screen.screen-product{left:900px;right:48px;top:108px;bottom:108px;height:auto;display:flex;align-items:flex-start;justify-content:center;overflow:hidden;}
+.slide.cja-referral-performance .screen.screen-product .product-shot-wrap{width:100%;max-width:100%;max-height:100%;}
+.slide.cja-referral-performance .screen.screen-product .product-shot{width:100%;max-width:min(680px,100%);max-height:100%;height:auto;object-fit:contain;object-position:center top;}
+.slide.exec-summary-three-acts .story{width:620px;}
+.slide.exec-summary-three-acts .screen.screen-product{left:760px;right:40px;top:96px;bottom:88px;height:auto;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.slide.exec-summary-three-acts .screen.screen-product .product-shot-wrap{width:100%;max-height:100%;}
+.slide.exec-summary-three-acts .screen.screen-product .product-shot{width:100%;max-width:min(900px,100%);max-height:100%;height:auto;object-fit:contain;object-position:center;}
 .ig-post .img .copy{color:#fff;}
 .ig-post .img .copy h3{margin:0 0 8px;font-size:28px;font-weight:700;}
 .ig-post .img .copy p{margin:0;font-size:16px;opacity:.9;}
@@ -1300,34 +1306,20 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 </section>
 
 <!-- SLIDE 32: LUKAS ACTIVATES -->
-<section class="slide" data-phase="ref">
+<section class="slide lukas-first-spend" data-phase="ref">
   <div class="phase-pill reward a1">04 · Referral · Activate</div>
   <div class="story a1">
     <div class="numdisc a1">27</div>
     <h2 class="htitle a2">First spend — referral complete</h2>
     <p class="narr a3">Lukas's card is approved. On his first trip through <strong>Zurich Airport</strong>, he uses the lounge — <strong>first real spend</strong>. That's activation, not just an application in the system. The platform links Lukas back to <strong>Marc's invite</strong> and starts the referrer reward — no manual check, no spreadsheet.</p>
-    <div class="quote a4">"First spend confirmed! CHF 12.00 at Zurich Airport lounge."</div>
-    <div class="claudia-lab a4">Claudia's screen</div>
+    <div class="quote a4">"Hi Lukas — first spend confirmed! CHF 12.00 cashback at Zurich Airport lounge."</div>
+    <div class="claudia-lab a4">Lukas's phone</div>
     <div class="prodcard a5">Claudia defined activation as <strong>first spend</strong>, not application submitted. When Lukas pays at the lounge, his profile links to Marc as referrer — Marc's CHF 50 reward journey starts automatically. The business only pays when the friend actually uses the card.</div>
     <div class="takeaway a5">Activation is the real conversion — not application submitted. Claudia set the rule once; the platform enforces it.</div>
   </div>
-  <div class="screen a3">
-    <div class="phone-wrap">
-      <div class="phone-frame">
-        <div class="browser">
-          <div class="mockbody app">
-            <div class="app-status"></div>
-            <div class="app-header"><h3>Welcome, Lukas</h3><p>SWISS Miles &amp; More Gold · ··· 9104</p></div>
-            <div style="padding:16px;">
-              <div class="push-toast" style="margin:0 0 14px"><div class="pt-hdr"><span class="pt-app">Swisscard</span><span class="pt-time">Now</span></div><p>First spend confirmed! CHF 12.00 cashback at Zurich Airport lounge.</p></div>
-              <div class="knows">
-                <div class="row" style="font-size:15px"><span class="k">Referrer</span><span class="v">Marc Weber</span></div>
-                <div class="row" style="font-size:15px"><span class="k">Marc's reward</span><span class="v" style="color:var(--red)">Triggered ✓</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="screen screen-device a3">
+    <div class="device-shot-wrap">
+      <img class="device-shot" src="assets/lukas-first-spend-push.png" alt="Lukas lock screen — Swisscard push, first spend confirmed, CHF 12.00 at Zurich Airport lounge">
     </div>
   </div>
   <div class="persona a5"><div class="av" style="background:linear-gradient(150deg,#2d6a4f,#1b4332)">L</div><div class="nm">Lukas</div></div>
@@ -1383,14 +1375,14 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="phase-pill today a1">04 · Referral · Tomorrow</div>
   <div class="story a1">
     <div class="numdisc a1">30</div>
-    <h2 class="htitle a2">Today without Adobe — tomorrow with Adobe</h2>
-    <p class="narr a3">Same referral programme. Same CHF 50 reward. Completely different economics — because tomorrow, Marc's moment, Lukas's recovery, and Claudia's ROI proof all run on one platform.</p>
+    <h2 class="htitle a2">Same programme, different economics</h2>
+    <p class="narr a3">Same CHF 50 reward. Same referral rules. What changes is how the loop runs — Marc's moment, Lukas's recovery, and Claudia's ROI proof on one platform instead of a quarterly CSV.</p>
     <div class="takeaway a5">Best customers become your cheapest acquisition channel — when the loop runs itself.</div>
   </div>
   <div class="screen a3">
     <div class="vs-grid">
       <div class="vs-col bad">
-        <h4>Today · without Adobe</h4>
+        <h4>Today without Adobe</h4>
         <ul>
           <li>Quarterly CSV export — batch email to everyone</li>
           <li>No timing logic — buried in the newsletter</li>
@@ -1405,7 +1397,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
         </div>
       </div>
       <div class="vs-col good">
-        <h4>Tomorrow · with Adobe</h4>
+        <h4>Tomorrow with Adobe</h4>
         <ul>
           <li>Right moment in app — Marc shares after bonus miles</li>
           <li>Personal code, tracked from first WhatsApp tap</li>
@@ -1423,22 +1415,17 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 </section>
 
 <!-- SLIDE 36: EXEC SUMMARY -->
-<section class="slide">
+<section class="slide exec-summary-three-acts">
   <div class="phase-pill deep a1">Executive Summary</div>
   <div class="story a1">
     <div class="numdisc a1">✓</div>
     <h2 class="htitle a2">The full picture</h2>
-    <p class="narr a3">Three customers, one platform. <strong>Marc</strong> acquires on mobile — from collaboration audience to instant approval. <strong>Sofia</strong> is won back when life changes — relevance, not another lifestyle promo. <strong>Marc</strong> refers <strong>Lukas</strong> — abandoned, recovered, activated, rewarded. Every signal connected: ad, web, app, email, SMS, analytics.</p>
-    <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">Claudia sees acquisition, retention, and referral in one view — not separate tools, separate spreadsheets, separate guesses. One Adobe experience platform that listens and responds as one.</div>
+    <p class="narr a3"><strong>Sofia</strong> won back with relevance. <strong>Marc</strong> acquired on mobile. <strong>Lukas</strong> referred, recovered, activated, rewarded. Three customers — acquire, retain, refer, activate, reward — on one platform.</p>
     <div class="takeaway a5">You already have the data and the app. What you need is one layer that orchestrates it all.</div>
   </div>
-  <div class="screen a3">
-    <div class="kpigrid">
-      <div class="kpi dark"><div class="v cu" data-to="40" data-suf=" → 6">0 → 6</div><div class="l">Landing pages → dynamic variants (AEM)</div></div>
-      <div class="kpi"><div class="v cu" data-to="34" data-pre="−" data-suf="%">−0%</div><div class="l">Paid media CPA — lookalike vs broad</div></div>
-      <div class="kpi"><div class="v" style="font-size:40px;">App-first</div><div class="l">Apply · home · push · referral — one mobile surface</div></div>
-      <div class="kpi dark"><div class="v" style="font-size:36px;">CSV → Auto</div><div class="l">Referral loop — attributed end to end, no batch export</div></div>
+  <div class="screen screen-product a3">
+    <div class="product-shot-wrap">
+      <img class="product-shot" src="assets/exec-summary-three-acts.png" alt="Swisscard executive summary — Sofia relevance win-back, Marc acquisition, Lukas referral journey, acquire to reward">
     </div>
   </div>
   <div class="persona a5"><div class="av" style="background:linear-gradient(150deg,var(--red),var(--red-dk))">C</div><div class="nm">Claudia</div></div>
