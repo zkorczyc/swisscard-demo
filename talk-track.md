@@ -84,25 +84,25 @@
 ### Then vs now — *Her life changed — her messaging didn't*
 > "Married, young daughter, joint finances. Spend moved to TWINT and groceries. Card spend down seventy percent. We still sent Lifestyle · Fashion for two years."
 
-### 8 · Relevance — not dissatisfaction
+### 1 · Relevance — not dissatisfaction
 > "Profile timeline tells the story: 2019–2021 lifestyle; 2022–now family spend. The issue wasn't the card — it was the conversation."
 
-### 9 · Life-stage shift detected
+### 2 · Life-stage shift detected
 > "Claudia builds High Churn Risk — existing cardholders. Spend declining, TWINT rising, emails ignored. Sofia is in the audience. Still a customer — not the same one we were messaging."
 
-### 10 · Who gets what offer
+### 3 · Who gets what offer
 > "Win-back campaign: family cashback, spend insights, instant cashback push. Experience Decisioning ranks for Sofia — family cashback wins at 0.91. Lifestyle · Fashion suppressed."
 
-### 11 · High-churn journey — live
+### 4 · High-churn journey — live
 > "AJO journey orchestrates email, portal, push — one life-stage win-back, not a batch promo."
 
-### 12 · Email first — family relevance
+### 5 · Email first — family relevance
 > "Email leads: everyday family spending, cashback that fits now. Not CHF 100 to bribe her back — relevance."
 
-### 13 · Same relevance — web and app
+### 6 · Same relevance — web and app
 > "Portal and app show the same repositioned message. Cross-channel consistency."
 
-### 14 · Push completes the journey
+### 7 · Push completes the journey
 > "Push closes the loop. Sofia re-engages — same card, new life-stage fit."
 
 ---
@@ -117,37 +117,37 @@
 ### Meet Lukas
 > "Lukas Brunner, 35, Marc's colleague. Flies to Berlin monthly, no miles card. Trusted recommendation — not in suppression lists. WhatsApp link to a personalised /ref landing."
 
-### 20 · The right moment — not a batch
+### 1 · The right moment — not a batch
 > "Marc's 3,000 welcome bonus miles post after Zurich Airport partner spend. Experience Decisioning scores referral 0.91 — next best action on app home, not buried in the newsletter. The ask lands when Marc is happiest."
 
-### 21 · Personalised invite in the app
+### 2 · Personalised invite in the app
 > "Push plus in-app card: REF-MARC-7X2K, CHF 50 for both. One-tap WhatsApp share. Claudia built it once — every invite tracked."
 
-### 22 · Lukas receives the link
+### 3 · Lukas receives the link
 > "Marc shares on WhatsApp. Referrer ID and code stitched at first click — before Lukas lands."
 
-### 23 · "Marc invited you"
+### 4 · "Marc invited you"
 > "Personalised /ref hero: Marc's name, CHF 50, everyday miles story. Same acquisition logic as Act One — referral context preserved."
 
-### 24 · Apply — code attached
+### 5 · Apply — code attached
 > "Lukas applies on mobile web. Code pre-filled. ECID → Application ID → Referrer ID — same stitch Marc had. No manual entry, no attribution lost."
 
-### 25 · Friend drops off — journey recovers
+### 6 · Friend drops off — journey recovers
 > "Lukas abandons at step two. Journey Optimizer: email then SMS — Marc's name, CHF 50, link back. Referral programmes leak at application; recovery protects Marc's invite."
 
-### 26 · Application sent — referral intact
+### 7 · Application sent — referral intact
 > "Lukas finishes. Confirmation on screen — CHF 50 promised, download the app. Marc's invite never dropped from the profile."
 
-### 27 · First spend — referral complete
+### 8 · First spend — referral complete
 > "Activation is first spend — lounge at Zurich Airport — not 'application submitted.' Platform links Lukas to Marc; referrer reward starts automatically."
 
-### 28 · Marc rewarded — automatically
+### 9 · Marc rewarded — automatically
 > "Push on Marc's phone: Lukas activated, CHF 50 credited. Same day. No finance ticket, no CSV."
 
-### 29 · Full funnel proof
+### 10 · Full funnel proof
 > "CJA: Marc from collaboration to approval, Sofia won back, Lukas referred recovered activated. Referral CPA CHF 42 vs paid CHF 680 — sixteen times cheaper. For the CFO: unit economics with a receipt."
 
-### 30 · Same programme, different economics
+### 11 · Same programme, different economics
 > "Same CHF 50 reward. What changes: right moment, tracked invite, automated recovery, automatic payout, full funnel proof. Best customers become your cheapest acquisition channel."
 
 ### Executive Summary — *The full picture*
