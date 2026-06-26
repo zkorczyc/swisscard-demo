@@ -38,11 +38,11 @@
 ### 2 · The ad that speaks to how he already lives
 > "Marc scrolls Instagram. The ad isn't generic credit — it's *you already earn miles when you fly; now earn miles every day.* Personalised creative from the collaboration audience. He clicks."
 
-### 3 · Marc explores the offer
-> "First click stitches campaign ID to an edge profile. RTCDP Edge Segmentation recognises him — not Acxiom, first-party from the ad click. Personalisation starts at the click."
+### 3 · Personalised mobile landing
+> "Marc clicks the ad and lands on swisscard.ch on his phone. Same message as Instagram — turn every purchase into miles. Experience Decisioning picks hero, benefits, and CTA from his segment. No static page."
 
-### 4 · Personalised mobile landing
-> "Same URL, Marc's segment: Miles & More Gold, welcome bonus, everyday miles. AEM Content Fragments — no Adobe Target. Built for mobile."
+### 4 · Marc explores the offer
+> "Behind that page, Claudia sees what Marc can't. First click stitched campaign ID to an edge profile — Travel Card Intent, interest score 0.87. Still anonymous, but personalisation already started at the click."
 
 ### 5 · Apply on mobile web
 > "Marc applies on mobile web — four steps, pre-filled where we can. Application ID stitched to ECID. He's not in the app yet; that's realistic for a prospect."
