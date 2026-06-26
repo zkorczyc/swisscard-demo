@@ -265,11 +265,11 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 .jnode .nl{font-size:20px;font-weight:700;color:#fff;}
 .jnode .ns{font-size:13px;color:rgba(255,255,255,.65);margin-top:2px;letter-spacing:.04em;text-transform:uppercase;}
 /* Closing */
-.closing{position:absolute;inset:0;background:#fff;display:grid;place-items:center;text-align:center;padding:0 200px;}
+.closing{position:absolute;inset:0;background:#fff;display:flex;align-items:center;justify-content:center;text-align:center;}
 .closing .glow{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 10%,rgba(235,16,0,.10),transparent 55%);pointer-events:none;}
-.closing .big{font-size:96px;font-weight:300;color:var(--navy);margin:0 0 10px;}
-.closing p{font-size:28px;line-height:1.55;color:var(--ink);margin:0 0 22px;}
-.closing .em{color:var(--red);font-weight:700;}
+.closing-inner{display:flex;flex-direction:column;align-items:center;position:relative;z-index:1;padding:0 120px;}
+.closing .thanks{font-size:108px;font-weight:300;color:var(--navy);line-height:1;margin:0;letter-spacing:-.01em;}
+.closing .ad-logo{height:78px;margin-top:56px;}
 .profilebar .plab{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-right:2px;flex-shrink:0;}
 .profilebar .pp{font-size:15px;font-weight:600;color:var(--navy);background:#EEF2F8;border:1px solid var(--line);padding:6px 13px;border-radius:999px;white-space:nowrap;}
 .profilebar .pp.np{background:linear-gradient(120deg,#FEF0F0,#fff);border-color:var(--red);color:#a00;}
@@ -1137,11 +1137,11 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="story a1">
     <div class="numdisc a1">1</div>
     <h2 class="htitle a2">The right moment — not a batch</h2>
-    <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp np">Welcome bonus posted</span><span class="pp np">Partner spend · CH</span><span class="pp np">Referral eligible</span></div>
-    <p class="narr a3">Marc's <strong>3,000 welcome bonus miles</strong> post after partner spend at <strong>Zurich Airport</strong>. He's feeling the full Miles &amp; More value — travel, partners, everyday spend. <strong>Experience Decisioning</strong> scores referral as his next best action (0.91) — not buried in the monthly newsletter.</p>
-    <div class="quote a4">"You just earned 3,000 bonus miles. Know someone who'd love turning everyday spend into miles? Share Miles &amp; More Gold — you both earn CHF 50."</div>
+    <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp np">Recent miles earned</span><span class="pp np">Shopping + travel</span><span class="pp np">Referral eligible</span></div>
+    <p class="narr a3">Marc's latest miles just posted — from <strong>everyday shopping at Migros</strong> and <strong>partner spend at Zurich Airport</strong> on his way to Berlin. Not a one-off welcome bonus; the programme working in daily life. He's feeling the full Miles &amp; More value — travel, partners, everyday spend. <strong>Experience Decisioning</strong> scores referral as his next best action (0.91) — not buried in the monthly newsletter.</p>
+    <div class="quote a4">"You just earned miles on everyday spend. Know someone who'd love turning purchases into miles? Share Miles &amp; More Gold — you both earn CHF 50."</div>
     <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">Claudia wired referral into <strong>Experience Decisioning</strong> — when bonus miles post and engagement is high, the ask ranks first on the app home screen, above partner perks and everyday miles offers. Not a newsletter blast on a fixed date.</div>
+    <div class="prodcard a5">Claudia wired referral into <strong>Experience Decisioning</strong> — when recent miles from shopping or travel post and engagement is high, the ask ranks first on the app home screen, above partner perks and everyday miles offers. Not a newsletter blast on a fixed date.</div>
     <div class="takeaway a5">The ask lands when Marc is happiest — not when marketing's calendar says so.</div>
   </div>
   <div class="screen a3">
@@ -1150,10 +1150,10 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
         <div class="browser">
           <div class="mockbody app">
             <div class="app-status"></div>
-            <div class="app-header"><h3>Bonus miles credited!</h3><p>3,000 miles · Welcome bonus · Zurich Airport</p></div>
+            <div class="app-header"><h3>Miles just posted!</h3><p>420 miles · Migros + Zurich Airport</p></div>
             <div style="padding:16px;">
               <div class="knows" style="gap:6px;margin-bottom:14px;">
-                <div class="row" style="font-size:15px"><span class="k">Moment</span><span class="v">Bonus miles credited</span></div>
+                <div class="row" style="font-size:15px"><span class="k">Moment</span><span class="v">Miles from spend</span></div>
                 <div class="row" style="font-size:15px"><span class="k">NBA score</span><span class="v" style="color:var(--red)">Referral 0.91</span></div>
               </div>
               <div class="img-ph" style="min-height:120px;font-size:13px;">Decisioning rank<span>Referral beats partner offers</span></div>
@@ -1394,7 +1394,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
       <div class="vs-col good">
         <h4>Tomorrow with Adobe</h4>
         <ul>
-          <li>Right moment in app — Marc shares after bonus miles</li>
+          <li>Right moment in app — Marc shares after earning miles</li>
           <li>Personal code, tracked from first WhatsApp tap</li>
           <li>Journey Optimizer recovers Lukas — email, then SMS</li>
           <li>CHF 50 on activation — automatic, same day</li>
@@ -1430,10 +1430,10 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 <!-- SLIDE 22: CLOSING -->
 <section class="slide closing">
   <div class="glow"></div>
-  <div class="big a1" style="font-size:60px;font-weight:300;color:var(--navy);line-height:1.2;">One platform.<br>Three customers.<br>Every signal connected.</div>
-  <p class="a2">From Marc's first ad to Sofia's relevance win-back to Lukas's activation — <span class="em">acquisition</span>, <span class="em">retention</span>, and <span class="em">referral</span> on a single Swisscard experience.</p>
-  <p class="a3" style="font-size:22px;color:var(--grey);">You already have the data and the app. What you need is one layer that listens — and responds — as one.</p>
-  <div class="a4" style="margin-top:20px;font-size:18px;color:var(--soft);letter-spacing:.2em;text-transform:uppercase;">Swisscard × Adobe</div>
+  <div class="closing-inner">
+    <h1 class="thanks a2">Thank you</h1>
+    <img class="ad-logo a4" src="adobe-wordmark-red.svg" alt="Adobe">
+  </div>
 </section>
 
 </div>

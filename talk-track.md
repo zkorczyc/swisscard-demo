@@ -118,7 +118,7 @@
 > "Lukas Brunner, 35, Marc's colleague. Flies to Berlin monthly, no miles card. Trusted recommendation — not in suppression lists. WhatsApp link to a personalised /ref landing."
 
 ### 1 · The right moment — not a batch
-> "Marc's 3,000 welcome bonus miles post after Zurich Airport partner spend. Experience Decisioning scores referral 0.91 — next best action on app home, not buried in the newsletter. The ask lands when Marc is happiest."
+> "Marc's latest miles post — Migros shop and partner spend at Zurich Airport on his Berlin trip. Not welcome bonus; everyday value landing. Experience Decisioning scores referral 0.91 — next best action on app home, not buried in the newsletter. The ask lands when Marc is happiest."
 
 ### 2 · Personalised invite in the app
 > "Push plus in-app card: REF-MARC-7X2K, CHF 50 for both. One-tap WhatsApp share. Claudia built it once — every invite tracked."
