@@ -50,10 +50,10 @@
 ### 6 · Instant approval
 > "Marc submits — success screen right away on the instant path. Backend verification runs; page says check email and RCS within minutes. Download app is the on-screen CTA."
 
-### 7 · Confirmation email — within minutes
+### 7 · In his inbox — approval recorded
 > "After verification completes, AJO sends email within minutes — approval confirmed, download link, next steps."
 
-### 8 · Approval message — within minutes
+### 8 · On his phone — RCS, one tap
 > "RCS follows verification — within minutes, same journey as email. Marc doesn't have to go looking."
 
 ### 9 · Download app — add to Wallet
@@ -63,7 +63,7 @@
 > "Unified profile: acquisition source, Travel Rewards overlap, spend signals, engagement. Claudia sees one customer, not channel silos."
 
 ### 11 · App home — ranked for Marc
-> "Welcome back, Marc — same Gold experience as web. Decisioning ranks travel offers and lounge access first; Migros and Apple Store transactions visible below. One engine, app and web."
+> "Marc opens the app after approval — Welcome back with a ranked home from day one. Decisioning puts travel offers and lounge access first; Migros and Apple Store spend visible below. Personalisation starts in the app, not a static banner."
 
 ### 12 · Web matches app
 > "Marc logs in on swisscard.ch — Gold cardholder home with exclusive travel offers, lounge access, partner perks, rewards balance. Same Experience Decisioning as the app. One engine, every surface."
