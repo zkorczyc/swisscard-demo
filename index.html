@@ -151,13 +151,19 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 .slide.lukas-application-confirmation .device-shot-wrap{height:100%;display:flex;align-items:center;justify-content:center;}
 .slide.lukas-first-spend .screen.screen-device{left:830px;right:24px;top:90px;height:min(880px,calc(100vh - 120px));display:flex;align-items:center;justify-content:center;}
 .slide.lukas-first-spend .device-shot-wrap{height:100%;display:flex;align-items:center;justify-content:center;}
-.slide.marc-referral-approved .screen.screen-product{left:820px;right:60px;top:108px;bottom:108px;height:auto;display:flex;align-items:center;justify-content:center;}
-.slide.marc-referral-approved .screen.screen-product .product-shot-wrap{max-height:100%;}
-.slide.marc-referral-approved .screen.screen-product .product-shot{max-height:100%;object-fit:contain;}
+.slide.marc-referral-approved .screen.screen-product{left:820px;right:60px;top:108px;bottom:108px;height:auto;display:flex;align-items:flex-start;justify-content:center;overflow:visible;}
+.slide.marc-referral-approved .screen.screen-product .product-shot-wrap{max-height:100%;overflow:visible;align-items:flex-start;}
+.slide.marc-referral-approved .screen.screen-product .product-shot{max-height:100%;object-fit:contain;object-position:top center;}
 .slide.cja-referral-performance .screen.screen-product{left:880px;right:32px;top:90px;bottom:90px;height:auto;display:flex;align-items:center;justify-content:center;overflow:hidden;}
 .slide.cja-referral-performance .screen.screen-product .product-shot-wrap{width:100%;height:100%;max-height:100%;display:flex;align-items:center;justify-content:center;}
 .slide.cja-referral-performance .screen.screen-product .product-shot{width:100%;max-width:100%;max-height:100%;height:auto;object-fit:contain;object-position:center;}
 .slide.exec-summary-three-acts .story{width:620px;}
+.slide.exec-summary-three-acts .story .htitle{font-size:52px;margin-bottom:14px;}
+.slide.exec-summary-three-acts .story .narr{font-size:22px;margin-bottom:14px;}
+.benefit-lab{font-size:15px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin:0 0 10px;}
+.benefit-list{margin:0 0 18px;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px;}
+.benefit-list li{font-size:18px;line-height:1.4;color:var(--grey);padding-left:14px;border-left:3px solid var(--navy);}
+.benefit-list li strong{color:var(--navy);}
 .slide.exec-summary-three-acts .screen.screen-product{left:760px;right:40px;top:96px;bottom:88px;height:auto;display:flex;align-items:center;justify-content:center;overflow:hidden;}
 .slide.exec-summary-three-acts .screen.screen-product .product-shot-wrap{width:100%;max-height:100%;}
 .slide.exec-summary-three-acts .screen.screen-product .product-shot{width:100%;max-width:min(900px,100%);max-height:100%;height:auto;object-fit:contain;object-position:center;}
@@ -277,6 +283,25 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 .collab-merged .prodcard{font-size:17px;padding:12px 16px;margin-bottom:14px;}
 .collab-merged .takeaway{font-size:18px;line-height:1.35;}
 .collab-merged .claudia-lab{margin-bottom:6px;}
+/* Referral trigger — dense left panel, keep clear of persona + 6-step phasebar */
+.referral-trigger .story{top:92px;bottom:200px;width:660px;max-width:660px;}
+.referral-trigger .story .htitle{font-size:48px;margin:14px 0 10px;line-height:1.04;}
+.referral-trigger .story .profilebar{margin-bottom:12px;}
+.referral-trigger .story .narr{font-size:20px;line-height:1.42;margin-bottom:12px;}
+.referral-trigger .story .quote{font-size:19px;padding:12px 18px;margin-bottom:12px;line-height:1.4;}
+.referral-trigger .prodcard{font-size:17px;line-height:1.4;padding:12px 16px;margin-bottom:12px;}
+.referral-trigger .takeaway{font-size:18px;line-height:1.35;}
+.referral-trigger .persona{bottom:148px;}
+.referral-trigger .fp-hero,.referral-invite .fp-hero{border-left:5px solid var(--red);background:linear-gradient(120deg,#FEF5F5,#fff);padding:14px 20px;border-radius:0 12px 12px 0;margin:0 0 14px;font-size:21px;font-weight:700;color:var(--navy);line-height:1.35;}
+.referral-trigger .fp-points{display:flex;flex-direction:column;gap:8px;margin:0 0 14px;}
+.referral-trigger .fp-point{display:flex;gap:10px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 12px;box-shadow:0 6px 18px rgba(16,32,70,.05);}
+.referral-trigger .fp-point .ic{width:32px;height:32px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;background:linear-gradient(150deg,var(--navy),#0a1c3d);color:#fff;font-size:14px;font-weight:700;}
+.referral-trigger .fp-point .tx{font-size:15px;line-height:1.32;color:var(--ink);}
+.referral-trigger .fp-point .tx strong{color:var(--navy);}
+.referral-trigger .story .quote{margin-bottom:14px;}
+.referral-trigger .screen{right:60px;top:108px;bottom:108px;left:820px;width:auto;height:auto;}
+.referral-trigger .screen .product-shot-wrap{height:100%;display:flex;align-items:center;justify-content:center;}
+.referral-trigger .screen .product-shot{max-height:100%;width:auto;max-width:100%;object-fit:contain;border-radius:16px;box-shadow:0 24px 60px rgba(16,32,70,.18);}
 .collab-mock{background:#f5f6f8;flex:1;display:flex;flex-direction:column;font-size:13px;color:var(--ink);overflow:hidden;}
 .collab-mock .cm-top{background:#fff;border-bottom:1px solid #e4e9f2;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;}
 .collab-mock .cm-crumb{font-size:12px;color:var(--soft);margin-bottom:4px;}
@@ -940,7 +965,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   </div>
   <div class="screen screen-device a3">
     <div class="device-shot-wrap">
-      <img class="device-shot" src="assets/sofia-app-home.png" alt="Swisscard app — Welcome back Sofia Müller, Amex Gold, recommended offers and spending insights">
+      <img class="device-shot" src="assets/sofia-app-home.png" alt="Swisscard app — Welcome back Sofia Müller, dining credit, travel and family benefits, spending insights">
     </div>
   </div>
   <div class="persona a5"><div class="av" style="background:linear-gradient(150deg,#c9a24a,#8a6c25)">S</div><div class="nm">Sofia</div></div>
@@ -1180,35 +1205,24 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 </section>
 
 <!-- SLIDE 26: REFERRAL TRIGGER -->
-<section class="slide" data-phase="ref">
+<section class="slide referral-trigger" data-phase="ref">
   <div class="phase-pill trigger a1">04 · Referral · Trigger</div>
   <div class="story a1">
     <div class="numdisc a1">1</div>
     <h2 class="htitle a2">The right moment — not the calendar</h2>
-    <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp np">Recent miles earned</span><span class="pp np">Shopping + travel</span><span class="pp np">Referral eligible</span></div>
-    <p class="narr a3">Marc's latest rewards just posted — from <strong>everyday shopping at Migros</strong> and <strong>partner spend at Zurich Airport</strong> on his way to Berlin. Not a one-off welcome bonus; the programme working in daily life. He's feeling the full <strong>Travel Rewards</strong> value — travel, partners, everyday spend. <strong>Experience Decisioning</strong> scores referral as his next best action (0.91) — not buried in the monthly newsletter.</p>
-    <div class="quote a4">"You just earned rewards on everyday spend. Know someone who'd love turning purchases into miles? Share Travel Gold — you both earn CHF 50."</div>
-    <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">Claudia wired referral into <strong>Experience Decisioning</strong> — when recent miles from shopping or travel post and engagement is high, the ask ranks first on the app home screen, above partner perks and everyday miles offers. Not another triggered email on a fixed date — <strong>next-best action</strong> in the moment.</div>
-    <div class="takeaway a5">The ask lands when Marc is happiest — not when the campaign calendar says so.</div>
+    <div class="fp-hero a2">Miles land → referral ask appears. No fixed campaign date.</div>
+    <p class="narr a3">Marc is using his card regularly — spend, miles, and engagement are all visible in his profile. <strong>Experience Decisioning</strong> scores referral as next best action <strong>(0.91)</strong> because the signals are strong, not because a campaign calendar says so.</p>
+    <div class="fp-points a4">
+      <div class="fp-point"><div class="ic">1</div><div class="tx"><strong>High card usage detected</strong> — everyday spend posting miles and rewards.</div></div>
+      <div class="fp-point"><div class="ic">2</div><div class="tx"><strong>Experience Decisioning</strong> ranks referral first <strong>(0.91)</strong> — above partner offers and generic promos.</div></div>
+      <div class="fp-point"><div class="ic">3</div><div class="tx"><strong>Refer-a-friend card</strong> surfaces in the app — the right ask at the right moment.</div></div>
+    </div>
+    <div class="quote a4">"You just earned rewards on everyday spend. Share Travel Gold — you both earn CHF 50."</div>
+    <div class="takeaway a5">Trigger on behaviour — not the 15th of the month.</div>
   </div>
-  <div class="screen a3">
-    <div class="phone-wrap">
-      <div class="phone-frame">
-        <div class="browser">
-          <div class="mockbody app">
-            <div class="app-status"></div>
-            <div class="app-header"><h3>Miles just posted!</h3><p>420 miles · Migros + Zurich Airport</p></div>
-            <div style="padding:16px;">
-              <div class="knows" style="gap:6px;margin-bottom:14px;">
-                <div class="row" style="font-size:15px"><span class="k">Moment</span><span class="v">Miles from spend</span></div>
-                <div class="row" style="font-size:15px"><span class="k">NBA score</span><span class="v" style="color:var(--red)">Referral 0.91</span></div>
-              </div>
-              <div class="img-ph" style="min-height:120px;font-size:13px;">Decisioning rank<span>Referral beats partner offers</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="screen screen-product a3">
+    <div class="product-shot-wrap">
+      <img class="product-shot" src="assets/marc-referral-trigger.png" alt="Marc at Migros — miles notification and Experience Decisioning selects Referral Link, score 0.91">
     </div>
   </div>
   <div class="persona a5"><div class="av">M</div><div class="nm">Marc</div></div>
@@ -1217,16 +1231,17 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 </section>
 
 <!-- SLIDE 27: INVITE IN APP -->
-<section class="slide marc-referral-app" data-phase="ref">
+<section class="slide marc-referral-app referral-invite" data-phase="ref">
   <div class="phase-pill trigger a1">04 · Referral · Invite</div>
   <div class="story a1">
     <div class="numdisc a1">2</div>
     <h2 class="htitle a2">Personalised invite in the app</h2>
-    <p class="narr a3">Push + in-app referral card. Marc's name, unique code <strong>REF-MARC-7X2K</strong>, CHF 50 for both. Share in one tap via WhatsApp.</p>
+    <div class="fp-hero a2">Decisioning chose referral → Marc opens the app</div>
+    <p class="narr a3"><strong>Experience Decisioning</strong> selected referral as Marc's next best offer — he opens the Swisscard app and sees it waiting for him. Personalised message, unique code <strong>REF-MARC-7X2K</strong>, CHF 50 for both. Not a generic promo — the right ask, ready to share.</p>
     <div class="quote a4">"Love earning miles every day? Share Travel Gold — you both earn CHF 50."</div>
-    <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">Claudia built the referral flow once — unique code per customer, push notification, in-app card, and a share link in one tap. Every invite is tracked back to the referrer, from first share to reward.</div>
-    <div class="takeaway a5">Personal, tracked, app-native — not a generic email footer.</div>
+    <div class="claudia-lab a4">Marc's phone</div>
+    <div class="prodcard a5">One referral flow, built once — unique code per customer, in-app card, and share in one tap. Every invite tracked from first open to reward.</div>
+    <div class="takeaway a5">The score becomes an experience — personalised, app-native, one tap to invite.</div>
   </div>
   <div class="screen screen-device a3">
     <div class="device-shot-wrap">
@@ -1239,15 +1254,17 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 </section>
 
 <!-- SLIDE 28: LUKAS RECEIVES LINK -->
-<section class="slide marc-referral-whatsapp" data-phase="ref">
+<section class="slide marc-referral-whatsapp referral-invite" data-phase="ref">
   <div class="phase-pill friend a1">04 · Referral · Friend</div>
   <div class="story a1">
     <div class="numdisc a1">3</div>
     <h2 class="htitle a2">Lukas receives the link</h2>
-    <p class="narr a3">Marc shares via WhatsApp. The link carries <strong>referrer ID + code</strong> from first click — stitched to Lukas's profile before he lands.</p>
-    <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">First click on Marc's link — referrer and code stitched to Lukas's profile before he even lands. Attribution starts here, not at application review.</div>
-    <div class="takeaway a5">Attribution starts at the click — not when someone tags the application manually.</div>
+    <div class="fp-hero a2">One tap to share → friend gets a tracked link</div>
+    <p class="narr a3">Marc taps share in the app and sends Lukas a personalised WhatsApp message — a recommendation from a colleague he trusts, not a cold campaign. The link carries Marc's referrer ID and code <strong>REF-MARC-7X2K</strong> from the first click.</p>
+    <div class="quote a4">"Hey Lukas — I've been earning miles on everyday spend with Travel Gold. Use my link — we both get CHF 50."</div>
+    <div class="claudia-lab a4">Marc's phone · WhatsApp</div>
+    <div class="prodcard a5"><strong>RT-CDP</strong> stitches referrer and code to Lukas's profile before he lands on swisscard.ch — attribution starts at the click, not when someone manually tags the application later.</div>
+    <div class="takeaway a5">Trusted recommendation, tracked from the first tap.</div>
   </div>
   <div class="screen screen-device a3">
     <div class="device-shot-wrap">
@@ -1288,14 +1305,14 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
     <div class="numdisc a1">5</div>
     <h2 class="htitle a2">Apply — code attached</h2>
     <div class="profilebar a2"><span class="plab">Lukas's profile</span><span class="pp">Referral click</span><span class="pp">Code pre-filled</span><span class="pp np">Application started</span></div>
-    <p class="narr a3">Lukas taps <strong>Apply Now</strong> and starts the same <strong>4-step Travel Gold application</strong> form on mobile web — referral code <strong>REF-MARC-7X2K</strong> and referrer already filled in. <strong>ECID → Application ID → Referrer ID</strong> stitched in one profile — same stitch Marc had in Act 01.</p>
-    <div class="claudia-lab a4">Claudia's screen</div>
+    <p class="narr a3">Lukas taps <strong>Apply Now</strong> and starts the same <strong>4-step Travel Gold application</strong> on mobile web — referral code <strong>REF-MARC-7X2K</strong> and <strong>Referred by: Marc Weber</strong> already filled in. One profile connects his click, application, and referrer from the start.</p>
+    <div class="claudia-lab a4">Lukas's phone · application</div>
     <div class="prodcard a5">Referrer Marc Weber and code REF-MARC-7X2K travel with Lukas from first click — no manual entry, no attribution lost at application review.</div>
     <div class="takeaway a5">No manual code errors — attribution is structural, not operational.</div>
   </div>
   <div class="screen screen-device a3">
     <div class="device-shot-wrap">
-      <img class="device-shot" src="assets/lukas-mobile-apply.png" alt="Swisscard mobile application — Lukas Brunner, Step 1 Personal details, referral code REF-MARC-7X2K pre-filled">
+      <img class="device-shot" src="assets/lukas-mobile-apply.png" alt="Swisscard Miles & More application — Lukas Brunner, referral code REF-MARC-7X2K and Referred by Marc Weber pre-filled">
     </div>
   </div>
   <div class="persona a5"><div class="av" style="background:linear-gradient(150deg,#2d6a4f,#1b4332)">L</div><div class="nm">Lukas</div></div>
@@ -1332,15 +1349,15 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
     <div class="numdisc a1">7</div>
     <h2 class="htitle a2">Application sent — referral intact</h2>
     <div class="profilebar a2"><span class="plab">Lukas's profile</span><span class="pp">Referral click</span><span class="pp">Code pre-filled</span><span class="pp np">Application submitted</span></div>
-    <p class="narr a3">Lukas picks up from the recovery email and finishes his application. Confirmation on screen — <strong>application received</strong>, <strong>CHF 50 referral bonus</strong> promised, <strong>download the app</strong> as next step. Marc's invite never dropped off the profile.</p>
-    <div class="quote a4">"Application sent, Lukas! 50 CHF will be added to your account."</div>
-    <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">Same journey Claudia built for Marc — submit triggers instant confirmation on mobile web. For Lukas, the referral context carries through: Marc's invite, the CHF 50 promise, and the app download ask. No black hole after submit.</div>
+    <p class="narr a3">Lukas picks up from the recovery email and finishes his application. Confirmation on screen — <strong>application received</strong>, <strong>CHF 50 referral bonus</strong> promised after his <strong>first card spend</strong>, <strong>download the app</strong> as next step. Marc's invite never dropped off the profile.</p>
+    <div class="quote a4">"50 CHF will be added to your account after your first purchase with your new card."</div>
+    <div class="claudia-lab a4">Lukas's phone · confirmation</div>
+    <div class="prodcard a5">Same journey Claudia built for Marc — submit triggers instant confirmation on mobile web. For Lukas, the referral context carries through: Marc's invite, the CHF 50 promise on first use, and the app download ask. No black hole after submit.</div>
     <div class="takeaway a5">Recovery worked — Lukas finished. Attribution still intact from first click.</div>
   </div>
   <div class="screen screen-device a3">
     <div class="device-shot-wrap">
-      <img class="device-shot" src="assets/lukas-application-confirmation.png" alt="Swisscard application confirmation — Application sent Lukas, CHF 50 referral bonus, download the app">
+      <img class="device-shot" src="assets/lukas-application-confirmation.png" alt="Swisscard confirmation — Application sent Lukas, 50 CHF after first purchase, download the app">
     </div>
   </div>
   <div class="persona a5"><div class="av" style="background:linear-gradient(150deg,#2d6a4f,#1b4332)">L</div><div class="nm">Lukas</div></div>
@@ -1378,23 +1395,13 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
     <h2 class="htitle a2">Marc rewarded — automatically</h2>
     <p class="narr a3">Lukas activates. The journey doesn't stop at a congratulatory push — <strong>Adobe Journey Optimizer</strong> calls Swisscard's <strong>fulfilment and payment APIs</strong>, waits for the credit to complete, then notifies Marc. Seconds later, a <strong>push notification</strong> lands on his phone — <strong>Referral approved!</strong> CHF 50 credited. Fulfilment and comms in one orchestrated flow — same day.</p>
     <div class="quote a4">"Great news, Marc! Lukas activated his Travel Gold. CHF 50 credited to your account."</div>
-    <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5"><strong>Adobe Journey Optimizer</strong> can trigger external fulfilment and payment systems via APIs, monitor completion events, and continue customer communications automatically — Marc's reward is not a manual step in finance.</div>
+    <div class="claudia-lab a4">Reward fulfilment · behind the push</div>
+    <div class="prodcard a5"><strong>First spend</strong> → AJO calls payment API → fulfilment complete → push to Marc. Adobe Journey Optimizer orchestrates through to the bank account — Marc's reward is not a manual step in finance.</div>
     <div class="takeaway a5">Orchestration ends at the bank account — not just the marketing message.</div>
   </div>
-  <div class="screen screen-product fulfil-stack a3">
+  <div class="screen screen-product a3">
     <div class="product-shot-wrap">
       <img class="product-shot" src="assets/marc-referral-approved.png" alt="Marc at Zurich Airport — Swisscard push, Referral approved, Lukas activated, CHF 50 credited">
-      <div class="fulfil-panel">
-        <h4>Reward fulfilment · behind the push</h4>
-        <div class="fulfil-steps">
-          <div class="fulfil-step"><div class="n">Step 1</div><div class="t">First spend event</div></div>
-          <div class="fulfil-step key"><div class="n">Step 2</div><div class="t">AJO → payment API</div></div>
-          <div class="fulfil-step key"><div class="n">Step 3</div><div class="t">Fulfilment complete</div></div>
-          <div class="fulfil-step"><div class="n">Step 4</div><div class="t">Push to Marc</div></div>
-        </div>
-        <div class="fulfil-arrows">→ → →</div>
-      </div>
     </div>
   </div>
   <div class="persona a5"><div class="av">M</div><div class="nm">Marc</div></div>
@@ -1423,59 +1430,22 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="adobe-foot"><img src="adobe-wordmark-red.svg" alt="Adobe"></div>
 </section>
 
-<!-- SLIDE 35: TODAY VS TOMORROW -->
-<section class="slide" data-phase="ref">
-  <div class="phase-pill today a1">04 · Referral · Tomorrow</div>
-  <div class="story a1">
-    <div class="numdisc a1">11</div>
-    <h2 class="htitle a2">Same programme, different economics</h2>
-    <p class="narr a3">Same CHF 50 reward. Same referral rules. Swisscard already automates — the shift is <strong>how coordinated the loop is</strong>: integrated profiles, personalised referral landing, next-best-action timing, omnichannel recovery, API fulfilment, and ROI proof on one platform.</p>
-    <div class="takeaway a5">Not from zero automation — to orchestration that connects every channel and every handoff.</div>
-  </div>
-  <div class="screen a3">
-    <div class="vs-grid">
-      <div class="vs-col bad">
-        <h4>Today's gaps</h4>
-        <ul>
-          <li>Triggered email and journeys — already running</li>
-          <li>Channels orchestrated separately — email, app, web, paid</li>
-          <li>Segment-level personalisation — not individual NBA across surfaces</li>
-          <li>Landing and referral pages updated per campaign — not profile-driven in real time</li>
-          <li>Friend drops off — recovery not coordinated across channels</li>
-          <li>Reward fulfilment sits outside the journey — marketing vs finance handoff</li>
-          <li>Full funnel ROI assembled across tools — not one customer view</li>
-        </ul>
-        <div class="csv-mock">
-          <div class="hdr">referral_ops_handoff.xlsx</div>
-          <table><tr><th>referrer</th><th>status</th></tr><tr><td>marc@…</td><td>pending finance</td></tr><tr><td>lukas@…</td><td>activated</td></tr></table>
-        </div>
-      </div>
-      <div class="vs-col good">
-        <h4>With Experience Platform</h4>
-        <ul>
-          <li><strong>Integrated profiles</strong> — one Marc from ad click to referral reward</li>
-          <li><strong>Personalised landing pages</strong> — same URL, profile-driven hero and offer</li>
-          <li><strong>Next-best-action decisioning</strong> — referral ranked 0.91 in the app, not buried in email</li>
-          <li><strong>Coordinated omnichannel execution</strong> — WhatsApp → web → email → push → API fulfilment</li>
-          <li><strong>Deeper personalisation</strong> — life stage for Sofia, intent for Marc, moment for referral</li>
-          <li>Customer Journey Analytics — invite to activation to reward in one view</li>
-          <li>Referral CPA CHF 42 vs paid CHF 680</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="persona a5"><div class="av" style="background:linear-gradient(150deg,var(--red),var(--red-dk))">C</div><div class="nm">Claudia</div></div>
-  <div class="phasebar a5"><span class="ph bad">Today</span><span class="ph">Trigger</span><span class="ph">Invite</span><span class="ph">Friend</span><span class="ph on">Reward</span><span class="ph loop on">Loop</span></div>
-  <div class="adobe-foot"><img src="adobe-wordmark-red.svg" alt="Adobe"></div>
-</section>
-
 <!-- SLIDE 36: EXEC SUMMARY -->
 <section class="slide exec-summary-three-acts">
   <div class="phase-pill deep a1">Executive Summary</div>
   <div class="story a1">
     <div class="numdisc a1">✓</div>
     <h2 class="htitle a2">The full picture</h2>
-    <p class="narr a3"><strong>Sofia</strong> won back with relevance. <strong>Marc</strong> acquired through partner collaboration and relevant social campaigns — personalised ad, mobile apply, instant approval. <strong>Lukas</strong> referred, recovered, activated, rewarded. Three customers — acquire, retain, refer, activate, reward — on one platform.</p>
+    <p class="narr a3"><strong>Sofia</strong> won back with relevance. <strong>Marc</strong> acquired through partner collaboration — personalised ad, mobile apply, instant approval. <strong>Lukas</strong> referred via Marc's personal code, recovered, rewarded on first spend. Three customers — acquire, retain, refer — on one platform.</p>
+    <div class="benefit-lab a4">What changes with Experience Platform</div>
+    <ul class="benefit-list a4">
+      <li><strong>Integrated profiles</strong> — one view from ad click to referral reward</li>
+      <li><strong>Personal referral codes</strong> — unique code per customer, pre-filled from share to application</li>
+      <li><strong>Personalised landing</strong> — profile-driven hero, not a new page per campaign</li>
+      <li><strong>Next-best-action</strong> — referral ranked in the app at the right moment</li>
+      <li><strong>Coordinated channels</strong> — WhatsApp → web → email → push → API fulfilment</li>
+      <li><strong>Full-funnel proof</strong> — referral CPA CHF 42 vs paid CHF 680</li>
+    </ul>
     <div class="takeaway a5">You already have the data and the app. What you need is one layer that orchestrates it all.</div>
   </div>
   <div class="screen screen-product a3">

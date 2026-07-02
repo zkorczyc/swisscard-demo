@@ -118,25 +118,25 @@
 > "Lukas Brunner, 35, Marc's colleague. Flies to Berlin monthly, no travel rewards card. Trusted recommendation — not in suppression lists. WhatsApp link to a personalised /ref landing."
 
 ### 1 · The right moment — not the calendar
-> "Marc's latest rewards post — Migros shop and partner spend at Zurich Airport on his Berlin trip. Not welcome bonus; everyday value landing. Experience Decisioning scores referral 0.91 — next best action on app home, not another email on the campaign calendar. The ask lands when Marc is happiest."
+> "Marc uses his card regularly — spend, miles, and engagement are visible in his profile. Experience Decisioning scores referral as next best action, 0.91, because the signals are strong — not because a campaign calendar says so. Refer-a-friend card surfaces in the app. Image shows the everyday moment that triggers it."
 
 ### 2 · Personalised invite in the app
-> "Push plus in-app card: REF-MARC-7X2K, CHF 50 for both. One-tap WhatsApp share. Claudia built it once — every invite tracked."
+> "Experience Decisioning selected referral as Marc's next best offer — he opens the app and sees it waiting. Personalised message, REF-MARC-7X2K, CHF 50 for both. Not a generic promo — ready to share in one tap."
 
 ### 3 · Lukas receives the link
-> "Marc shares on WhatsApp. Referrer ID and code stitched at first click — before Lukas lands."
+> "Marc taps share — personalised WhatsApp to Lukas, trusted recommendation not a cold ad. Link carries REF-MARC-7X2K from first click. RT-CDP stitches referrer to Lukas's profile before he lands. Attribution starts at the click."
 
 ### 4 · "Marc invited you"
 > "Personalised /ref hero: Marc's name, CHF 50, everyday rewards story. Same acquisition logic as Act One — referral context preserved."
 
 ### 5 · Apply — code attached
-> "Lukas applies on mobile web. Code pre-filled. ECID → Application ID → Referrer ID — same stitch Marc had. No manual entry, no attribution lost."
+> "Lukas applies on mobile web. Code and referrer pre-filled. One profile connects his click, application, and Marc from the start — no manual entry, no attribution lost."
 
 ### 6 · Friend drops off — journey recovers
 > "Lukas abandons at step two. Journey Optimizer: email then SMS — Marc's name, CHF 50, link back. Referral programmes leak at application; recovery protects Marc's invite."
 
 ### 7 · Application sent — referral intact
-> "Lukas finishes. Confirmation on screen — CHF 50 promised, download the app. Marc's invite never dropped from the profile."
+> "Lukas finishes. Confirmation on screen — CHF 50 promised after first card spend, not on approval alone. Download the app as next step. Marc's invite never dropped from the profile."
 
 ### 8 · First spend — referral complete
 > "Activation is first spend at Zurich Airport lounge — not application submitted. Platform links Lukas to Marc and starts the reward journey: API call to fulfilment, wait for payment completion."
@@ -147,11 +147,12 @@
 ### 10 · Full funnel proof
 > "CJA: Marc from Travel Rewards collaboration to approval, Sofia won back, Lukas referred recovered activated. Referral CPA CHF 42 vs paid CHF 680 — sixteen times cheaper. For the CFO: unit economics with a receipt."
 
-### 11 · Same programme, different economics
-> "Same CHF 50 reward. Swisscard already automates — what changes is orchestration: integrated profiles, personalised referral landing, next-best-action timing, coordinated recovery across channels, API fulfilment, and full-funnel proof in one view. Not from zero automation — to a loop where every handoff is connected."
-
 ### Executive Summary — *The full picture*
-> "Sofia won back with relevance. Marc acquired through Travel Rewards collaboration and personalised social. Lukas referred, recovered, activated, rewarded. Three customers — acquire, retain, refer — on one platform. You already have the data and the app. What you need is one layer that orchestrates it all."
+> "Sofia won back with relevance. Marc acquired through Travel Rewards collaboration — personalised ad, mobile apply, instant approval. Lukas referred via Marc's personal code, recovered, rewarded on first spend. Three customers — acquire, retain, refer — on one platform."
+>
+> "What changes: integrated profiles, personal referral codes tracked from share to reward, personalised landing, next-best-action in the app, coordinated channels through to API fulfilment, and full-funnel proof — referral CPA CHF 42 vs paid CHF 680."
+>
+> "You already have the data and the app. What you need is one layer that orchestrates it all."
 
 ---
 
