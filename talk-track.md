@@ -1,6 +1,6 @@
 # Swisscard Executive Demo — Talk Track
 
-**Deck:** `demo-unified/index.html` · **~35 min** with Q&A · **Navigate:** ← → or space
+**Deck:** `demo-unified/index.html` · **~35 min** with Q&A · **Navigate:** ← → or space · **Deep link:** `#18` opens slide 18
 
 **Cast:** Marc (acquisition + referral) · Sofia (retention) · Claudia (practitioner) · Lukas (referred friend)
 
@@ -17,7 +17,7 @@
 > "Acquisition finds Marc before he applies. Retention catches Sofia when relevance drops — not when she cancels. Referral turns Marc's best moment into Lukas as a new customer. Analytics ties it all together."
 
 ### Three Perspectives, One Platform
-> "Marc is our acquisition story — Miles & More Gold. Sofia is retention — same Cashback card, new life stage. Claudia runs the platform: segments, journeys, decisioning, and CJA. Lukas appears in Act Four — we'll get there."
+> "Marc is our acquisition story — Travel Gold. Sofia is retention — same Amex Gold, new life stage. Claudia runs the platform: segments, journeys, decisioning, and CJA. Lukas appears in Act Four — we'll get there."
 
 ---
 
@@ -27,19 +27,19 @@
 > "Act One: privacy-safe collaboration reach, personalised message, instant approval, full activation on web and app."
 
 ### Meet Marc
-> "Marc Weber, 38, Zurich PM. Loyal SWISS traveller, active Miles & More member — but not a Swisscard customer yet. High travel affinity, strong spend. Claudia finds him through RTCDP Collaboration with Miles & More — no PII exchanged."
+> "Marc Weber, 38, Zurich PM. Loyal traveller, active Travel Rewards member — but not a Swisscard customer yet. High travel affinity, strong spend. Claudia finds him through RTCDP Collaboration with Travel Rewards — no PII exchanged."
 
 ### Meet Claudia
-> "Claudia owns acquisition ROI, retention, referral, and reporting. Before: forty static landing pages, Monday CSV exports to Meta, no proof from ad to apply to retain. After: one platform for Marc, Sofia, and every referred friend."
+> "Claudia owns acquisition ROI, retention, referral, and reporting. Swisscard already runs triggered email and marketing automation — the gap isn't 'no automation.' It's integrated profiles, personalised landing pages, next-best-action decisioning, and coordinated omnichannel execution. That's what changes for Marc, Sofia, and every referred friend."
 
 ### 1 · Find Marc — without sharing customer data
-> "Claudia explores partner audiences in Collaboration — active M&M members 30–45, high travel affinity, frequent SWISS flyers in Switzerland. One click, segment live on Instagram. Partner insight, zero data exchange."
+> "Match first-party with first-party — RTCDP Collaboration with Travel Rewards in a clean room. No PII exchanged. Marc fits three audiences on screen; Claudia activates to Instagram in one click. Three wins: better audiences than cookies, partner insight without data exchange, activate everywhere from one place."
 
 ### 2 · The ad that speaks to how he already lives
-> "Marc scrolls Instagram. The ad isn't generic credit — it's *you already earn miles when you fly; now earn miles every day.* Personalised creative from the collaboration audience. He clicks."
+> "Marc scrolls Instagram. The ad isn't generic credit — it's *you already earn rewards when you travel; now earn rewards every day.* Personalised creative from the collaboration audience. He clicks."
 
 ### 3 · Personalised mobile landing
-> "Marc clicks the ad and lands on swisscard.ch on his phone. Same message as Instagram — turn every purchase into miles. Experience Decisioning picks hero, benefits, and CTA from his segment. No static page."
+> "Marc clicks the ad and lands on swisscard.ch on his phone. Same message as Instagram — turn every purchase into rewards. Experience Decisioning picks hero, benefits, and CTA from his profile — one landing model, personalised per visitor."
 
 ### 4 · Marc explores the offer
 > "Behind that page, Claudia sees what Marc can't. First click stitched campaign ID to an edge profile — Travel Card Intent, interest score 0.87. Still anonymous, but personalisation already started at the click."
@@ -60,16 +60,16 @@
 > "App download, card in Apple Wallet. Activation isn't 'approved in a system' — it's usable today."
 
 ### 10 · Marc's rich profile
-> "Unified profile: acquisition source, M&M overlap, spend signals, engagement. Claudia sees one customer, not channel silos."
+> "Unified profile: acquisition source, Travel Rewards overlap, spend signals, engagement. Claudia sees one customer, not channel silos."
 
 ### 11 · App home — ranked for Marc
-> "Experience Decisioning ranks Marc's home: welcome bonus first, partner perks, everyday miles. Same engine we'll see for Sofia — different person, different winner."
+> "Welcome back, Marc — same Gold experience as web. Decisioning ranks travel offers and lounge access first; Migros and Apple Store transactions visible below. One engine, app and web."
 
 ### 12 · Web matches app
-> "Authenticated web shows the same ranked offers. One decisioning layer, every surface."
+> "Marc logs in on swisscard.ch — Gold cardholder home with exclusive travel offers, lounge access, partner perks, rewards balance. Same Experience Decisioning as the app. One engine, every surface."
 
 ### 13 · Smarter paid media — automatically
-> "Marc converts — suppression from acquisition campaigns, seed for lookalikes. Paid media closes the loop without a manual export. That's the ad-to-app story your CMO asked for."
+> "Marc converts — suppression from acquisition campaigns, seed for lookalikes. Paid media closes the loop without re-exporting segments channel by channel. That's the ad-to-app story your CMO asked for."
 
 ---
 
@@ -79,7 +79,7 @@
 > "Act Two: Sofia didn't churn because we failed. Her life changed — and we kept talking to who she used to be."
 
 ### Meet Sofia
-> "Sofia Müller, 34, five years on Cashback. Online, dining, fashion — she loved partner offers. High engagement. The customer we thought we knew."
+> "Sofia Müller, 34, five years on Amex Gold. Online, dining, fashion, travel — she loved premium partner offers. High engagement. The aspirational customer we thought we knew."
 
 ### Then vs now — *Her life changed — her messaging didn't*
 > "Married, young daughter, joint finances. Spend moved to TWINT and groceries. Card spend down seventy percent. We still sent Lifestyle · Fashion for two years."
@@ -91,19 +91,19 @@
 > "Claudia builds High Churn Risk — existing cardholders. Spend declining, TWINT rising, emails ignored. Sofia is in the audience. Still a customer — not the same one we were messaging."
 
 ### 3 · Who gets what offer
-> "Win-back campaign: family cashback, spend insights, instant cashback push. Experience Decisioning ranks for Sofia — family cashback wins at 0.91. Lifestyle · Fashion suppressed."
+> "Win-back campaign: family membership rewards, spend insights, premium family benefits push. Experience Decisioning ranks for Sofia — family rewards wins at 0.91. Lifestyle · Fashion suppressed."
 
 ### 4 · High-churn journey — live
-> "AJO journey orchestrates email, portal, push — one life-stage win-back, not a batch promo."
+> "AJO journey — Swisscard Win Back Churn Customers. Enter segment, wait 7 days, personalised retention email, branch on open. No open? SMS with call-centre follow-up. One canvas for the whole high-churn audience — Sofia is customer 2,460."
 
 ### 5 · Email first — family relevance
-> "Email leads: everyday family spending, cashback that fits now. Not CHF 100 to bribe her back — relevance."
+> "Email leads: everyday family spending, Amex Gold rewards that fit now. Not CHF 100 to bribe her back — relevance."
 
 ### 6 · Same relevance — web and app
 > "Portal and app show the same repositioned message. Cross-channel consistency."
 
 ### 7 · Push completes the journey
-> "Push closes the loop. Sofia re-engages — same card, new life-stage fit."
+> "Push closes the loop. Sofia re-engages — same Amex Gold, new life-stage fit."
 
 ---
 
@@ -112,13 +112,13 @@
 *Note: Act 03 Deepening is hidden in this deck build.*
 
 ### Divider — *Close the loop*
-> "Act Four: from quarterly CSV to automated member-get-member — invite, recover, activate, reward, with attribution."
+> "Act Four: Swisscard already has referral programmes and triggered comms — this act shows coordinated orchestration: right moment, tracked invite, recovery, API fulfilment, full attribution."
 
 ### Meet Lukas
-> "Lukas Brunner, 35, Marc's colleague. Flies to Berlin monthly, no miles card. Trusted recommendation — not in suppression lists. WhatsApp link to a personalised /ref landing."
+> "Lukas Brunner, 35, Marc's colleague. Flies to Berlin monthly, no travel rewards card. Trusted recommendation — not in suppression lists. WhatsApp link to a personalised /ref landing."
 
-### 1 · The right moment — not a batch
-> "Marc's latest miles post — Migros shop and partner spend at Zurich Airport on his Berlin trip. Not welcome bonus; everyday value landing. Experience Decisioning scores referral 0.91 — next best action on app home, not buried in the newsletter. The ask lands when Marc is happiest."
+### 1 · The right moment — not the calendar
+> "Marc's latest rewards post — Migros shop and partner spend at Zurich Airport on his Berlin trip. Not welcome bonus; everyday value landing. Experience Decisioning scores referral 0.91 — next best action on app home, not another email on the campaign calendar. The ask lands when Marc is happiest."
 
 ### 2 · Personalised invite in the app
 > "Push plus in-app card: REF-MARC-7X2K, CHF 50 for both. One-tap WhatsApp share. Claudia built it once — every invite tracked."
@@ -127,7 +127,7 @@
 > "Marc shares on WhatsApp. Referrer ID and code stitched at first click — before Lukas lands."
 
 ### 4 · "Marc invited you"
-> "Personalised /ref hero: Marc's name, CHF 50, everyday miles story. Same acquisition logic as Act One — referral context preserved."
+> "Personalised /ref hero: Marc's name, CHF 50, everyday rewards story. Same acquisition logic as Act One — referral context preserved."
 
 ### 5 · Apply — code attached
 > "Lukas applies on mobile web. Code pre-filled. ECID → Application ID → Referrer ID — same stitch Marc had. No manual entry, no attribution lost."
@@ -139,19 +139,19 @@
 > "Lukas finishes. Confirmation on screen — CHF 50 promised, download the app. Marc's invite never dropped from the profile."
 
 ### 8 · First spend — referral complete
-> "Activation is first spend — lounge at Zurich Airport — not 'application submitted.' Platform links Lukas to Marc; referrer reward starts automatically."
+> "Activation is first spend at Zurich Airport lounge — not application submitted. Platform links Lukas to Marc and starts the reward journey: API call to fulfilment, wait for payment completion."
 
 ### 9 · Marc rewarded — automatically
-> "Push on Marc's phone: Lukas activated, CHF 50 credited. Same day. No finance ticket, no CSV."
+> "Marc's push is the last mile — not the whole story. AJO triggered Swisscard's fulfilment and payment APIs when Lukas activated. Completion event returned; journey continued; Marc notified same day. Fulfilment lives in the journey — not a marketing-to-finance handoff. Adobe orchestrates through to payment — not just the congratulatory message."
 
 ### 10 · Full funnel proof
-> "CJA: Marc from collaboration to approval, Sofia won back, Lukas referred recovered activated. Referral CPA CHF 42 vs paid CHF 680 — sixteen times cheaper. For the CFO: unit economics with a receipt."
+> "CJA: Marc from Travel Rewards collaboration to approval, Sofia won back, Lukas referred recovered activated. Referral CPA CHF 42 vs paid CHF 680 — sixteen times cheaper. For the CFO: unit economics with a receipt."
 
 ### 11 · Same programme, different economics
-> "Same CHF 50 reward. What changes: right moment, tracked invite, automated recovery, automatic payout, full funnel proof. Best customers become your cheapest acquisition channel."
+> "Same CHF 50 reward. Swisscard already automates — what changes is orchestration: integrated profiles, personalised referral landing, next-best-action timing, coordinated recovery across channels, API fulfilment, and full-funnel proof in one view. Not from zero automation — to a loop where every handoff is connected."
 
 ### Executive Summary — *The full picture*
-> "Sofia won back with relevance. Marc acquired through collaboration and personalised social. Lukas referred, recovered, activated, rewarded. Three customers — acquire, retain, refer — on one platform. You already have the data and the app. What you need is one layer that orchestrates it all."
+> "Sofia won back with relevance. Marc acquired through Travel Rewards collaboration and personalised social. Lukas referred, recovered, activated, rewarded. Three customers — acquire, retain, refer — on one platform. You already have the data and the app. What you need is one layer that orchestrates it all."
 
 ---
 
@@ -169,9 +169,12 @@
 |---|---|
 | Why no Adobe Target? | AEM Content Fragments + RTCDP edge segmentation + Experience Decisioning |
 | Why mobile web before app? | Realistic for prospects; app comes after approval |
-| Is Sofia churned? | No — life-stage drift; win-back on same Cashback card |
+| Is Sofia churned? | No — life-stage drift; win-back on same Amex Gold |
 | Why separate Sofia arc? | Proves platform handles retention, not just acquisition |
 | Lukas vs Marc? | Lukas mirrors Marc's acquisition — loop closes |
+| How is the referral reward paid? | AJO calls external fulfilment/payment APIs, listens for completion events, then continues the journey and notifies Marc |
+| Why Travel Rewards not a real airline programme? | Demo-safe partner name; Collaboration pattern works with any loyalty partner |
+| We already have marketing automation | Yes — the story is the next level: integrated profiles, personalised landing pages, next-best-action decisioning, coordinated omnichannel execution, and full-funnel attribution |
 
 ---
 

@@ -264,6 +264,39 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 .jnode .jicon svg{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
 .jnode .nl{font-size:20px;font-weight:700;color:#fff;}
 .jnode .ns{font-size:13px;color:rgba(255,255,255,.65);margin-top:2px;letter-spacing:.04em;text-transform:uppercase;}
+/* Collaboration — merged into acquisition step 1 */
+.collab-merged .story{width:640px;max-width:640px;top:96px;}
+.collab-merged .story .htitle{font-size:50px;margin:16px 0 10px;}
+.collab-merged .fp-hero{border-left:5px solid var(--red);background:linear-gradient(120deg,#FEF5F5,#fff);padding:14px 20px;border-radius:0 12px 12px 0;margin:0 0 14px;font-size:22px;font-weight:700;color:var(--navy);line-height:1.3;letter-spacing:-.01em;}
+.collab-merged .story .narr{font-size:20px;line-height:1.42;margin-bottom:10px;}
+.collab-merged .fp-points{display:flex;flex-direction:column;gap:8px;margin:0 0 14px;}
+.collab-merged .fp-point{display:flex;gap:10px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 12px;box-shadow:0 6px 18px rgba(16,32,70,.05);}
+.collab-merged .fp-point .ic{width:32px;height:32px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;background:linear-gradient(150deg,var(--navy),#0a1c3d);color:#fff;font-size:14px;font-weight:700;}
+.collab-merged .fp-point .tx{font-size:15px;line-height:1.32;color:var(--ink);}
+.collab-merged .fp-point .tx strong{color:var(--navy);}
+.collab-merged .prodcard{font-size:17px;padding:12px 16px;margin-bottom:14px;}
+.collab-merged .takeaway{font-size:18px;line-height:1.35;}
+.collab-merged .claudia-lab{margin-bottom:6px;}
+.collab-mock{background:#f5f6f8;flex:1;display:flex;flex-direction:column;font-size:13px;color:var(--ink);overflow:hidden;}
+.collab-mock .cm-top{background:#fff;border-bottom:1px solid #e4e9f2;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;}
+.collab-mock .cm-crumb{font-size:12px;color:var(--soft);margin-bottom:4px;}
+.collab-mock .cm-title{font-size:18px;font-weight:700;color:var(--navy);}
+.collab-mock .cm-partner{display:flex;align-items:center;gap:12px;padding:14px 18px;background:#fff;border-bottom:1px solid #e4e9f2;}
+.collab-mock .cm-logo{width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,#173A87,#0E2A5E);color:#fff;display:grid;place-items:center;font-weight:800;font-size:11px;letter-spacing:.04em;}
+.collab-mock .cm-pname{font-size:16px;font-weight:700;}
+.collab-mock .cm-pmeta{font-size:12px;color:var(--soft);}
+.collab-mock .cm-badge{font-size:11px;font-weight:700;color:#0a7a3e;background:#e8f8ee;padding:4px 10px;border-radius:999px;}
+.collab-mock .cm-table{flex:1;overflow:auto;padding:0 12px 12px;}
+.collab-mock table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e4e9f2;border-radius:10px;overflow:hidden;}
+.collab-mock th,.collab-mock td{padding:10px 12px;text-align:left;border-bottom:1px solid #eef2f8;font-size:12px;vertical-align:top;}
+.collab-mock th{background:#f8fafc;font-size:11px;font-weight:700;color:var(--soft);text-transform:uppercase;letter-spacing:.06em;}
+.collab-mock tr:last-child td{border-bottom:none;}
+.collab-mock .aud-name{font-weight:700;color:var(--navy);font-size:13px;}
+.collab-mock .aud-desc{color:var(--grey);line-height:1.35;margin-top:2px;}
+.collab-mock .aud-size{font-weight:700;white-space:nowrap;}
+.collab-mock .cm-ch{display:flex;gap:4px;}
+.collab-mock .cm-ch span{width:22px;height:22px;border-radius:6px;background:#eef2f8;display:grid;place-items:center;font-size:10px;font-weight:700;color:var(--navy);}
+.collab-mock .cm-act{font-size:11px;font-weight:700;color:#fff;background:var(--navy);padding:6px 12px;border-radius:6px;white-space:nowrap;}
 /* Closing */
 .closing{position:absolute;inset:0;background:#fff;display:flex;align-items:center;justify-content:center;text-align:center;}
 .closing .glow{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 10%,rgba(235,16,0,.10),transparent 55%);pointer-events:none;}
@@ -314,6 +347,16 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 .vs-col li{font-size:18px;line-height:1.55;margin-bottom:12px;}
 .vs-col.bad li{color:#4B5563;}
 .vs-col.good li{color:rgba(255,255,255,.9);}
+.fulfil-panel{margin-top:18px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:0 12px 28px rgba(16,32,70,.10);}
+.fulfil-panel h4{margin:0 0 12px;font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red);}
+.fulfil-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;align-items:stretch;}
+.fulfil-step{border:1px solid var(--line);border-radius:10px;padding:12px 10px;background:#F8FAFD;text-align:center;}
+.fulfil-step .n{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);margin-bottom:6px;}
+.fulfil-step .t{font-size:14px;font-weight:700;color:var(--navy);line-height:1.3;}
+.fulfil-step.key{border-color:var(--red);background:#FEF8F8;}
+.fulfil-arrows{display:flex;justify-content:center;gap:6px;margin:8px 0 0;font-size:18px;color:var(--red);letter-spacing:.35em;}
+.screen.fulfil-stack .product-shot-wrap{display:flex;flex-direction:column;gap:0;height:100%;}
+.screen.fulfil-stack .product-shot{max-height:58%;object-fit:contain;}
 .csv-mock{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:13px;font-family:monospace;margin-top:12px;}
 .csv-mock .hdr{background:#F1F4F9;padding:10px 14px;border-bottom:1px solid var(--line);color:var(--grey);font-family:'Adobe Clean',adobe-clean,'Source Sans 3',sans-serif;font-weight:600;}
 .phasebar .ph.loop.on{background:var(--red);border-color:var(--red);}
@@ -378,8 +421,8 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 <section class="slide tp">
   <h2 class="a1">Three Perspectives, One Platform</h2>
   <div class="row a2" style="gap:24px;">
-    <div class="pcard a3"><div class="av has-photo"><img src="assets/marc-weber.png" alt="Marc Weber"></div><div class="nm">Marc Weber</div><div class="rl">Acquisition</div><div class="ds">RTCDP Collaboration audience → personalised Instagram ad → Miles &amp; More Gold — privacy-safe reach, instant approval, full activation.</div><span class="tg cust">Customer</span></div>
-    <div class="pcard a4"><div class="av has-photo"><img src="assets/sofia-keller.png" alt="Sofia Müller"></div><div class="nm">Sofia Müller</div><div class="rl">Retention</div><div class="ds">Cashback holder for 5 years — life changed, spend moved to TWINT. Win-back through relevance, not another lifestyle promo.</div><span class="tg cust">Customer</span></div>
+    <div class="pcard a3"><div class="av has-photo"><img src="assets/marc-weber.png" alt="Marc Weber"></div><div class="nm">Marc Weber</div><div class="rl">Acquisition</div><div class="ds">RTCDP Collaboration audience → personalised Instagram ad → Travel Gold — privacy-safe reach, instant approval, full activation.</div><span class="tg cust">Customer</span></div>
+    <div class="pcard a4"><div class="av has-photo"><img src="assets/sofia-keller.png" alt="Sofia Müller"></div><div class="nm">Sofia Müller</div><div class="rl">Retention</div><div class="ds">Amex Gold holder for 5 years — life changed, spend moved to TWINT. Win-back through relevance, not another lifestyle promo.</div><span class="tg cust">Customer</span></div>
     <div class="pcard a5"><div class="av has-photo"><img src="assets/claudia-meier.png" alt="Claudia Meier"></div><div class="nm">Claudia Meier</div><div class="rl">Head of Digital Marketing</div><div class="ds">Segments, journeys, life-stage win-back, edge personalisation, and CJA — one practitioner throughout.</div><span class="tg prac">Practitioner</span></div>
   </div>
 </section>
@@ -391,7 +434,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <h1 class="a2">Acquisition</h1>
   <p class="ph-tag a3">Win the right customer</p>
   <p class="ph-sub a4">Privacy-safe collaboration audience → personalised reach → instant approval and activation on web and app.</p>
-  <div class="pill a5">Miles &amp; More Gold · Collaboration acquisition</div>
+  <div class="pill a5">Travel Gold · Collaboration acquisition</div>
 </section>
 
 <!-- MEET MARC -->
@@ -403,9 +446,9 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
       <h2>Marc Weber, 38</h2>
       <p class="pr">Product Manager · Zurich</p>
       <div class="pblock"><div class="bl">Who he is</div><div class="bt">Successful career, busy schedule — discovers new places whenever work or personal travel takes him abroad. <strong>Loyal SWISS traveller</strong> across Europe.</div></div>
-      <div class="pblock"><div class="bl">Loyalty today</div><div class="bt">Active <strong>Miles &amp; More</strong> member — earns miles on flights. <strong>Not a Swisscard customer.</strong> Ideal acquisition: high travel affinity, strong purchasing power, loyalty already engaged.</div></div>
-      <div class="pblock"><div class="bl">How Swisscard finds him</div><div class="bt"><strong>RTCDP Collaboration</strong> — M&amp;M audience of active members without a Miles &amp; More Swisscard. Privacy-safe overlap — no sensitive data shared.</div></div>
-      <div class="pblock"><div class="bl">Starting audience</div><div class="chips"><span>Active Miles &amp; More Members (30–45)</span><span>High Travel Affinity Prospects</span><span>Frequent SWISS Travelers Switzerland</span></div></div>
+      <div class="pblock"><div class="bl">Loyalty today</div><div class="bt">Active <strong>Travel Rewards</strong> member — earns rewards on flights and hotels. <strong>Not a Swisscard customer.</strong> Ideal acquisition: high travel affinity, strong purchasing power, loyalty already engaged.</div></div>
+      <div class="pblock"><div class="bl">How Swisscard finds him</div><div class="bt"><strong>RTCDP Collaboration</strong> — Travel Rewards audience of active members without a Swisscard Travel Gold card. Privacy-safe overlap — no sensitive data shared.</div></div>
+      <div class="pblock"><div class="bl">Starting audience</div><div class="chips"><span>Early Bookers</span><span>Frequent International Travelers</span><span>High-Value Travelers</span></div></div>
     </div>
   </div>
 </section>
@@ -419,26 +462,31 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
       <h2>Claudia Meier, 41</h2>
       <p class="pr">Head of Digital Marketing, Swisscard</p>
       <div class="pblock"><div class="bl">Responsibility</div><div class="bt">Owns acquisition ROI, retention, referral programme, and CJA reporting across all card products.</div></div>
-      <div class="pblock"><div class="bl">Before AEP</div><div class="bt">40+ static landing pages. CSV referral exports. Segments to Meta every Monday. Can't prove ad → apply → retain → refer.</div></div>
-      <div class="pblock"><div class="bl">After</div><div class="bt">Edge personalisation, automated journeys, life-stage win-back, and full-funnel attribution — one platform for Marc, Sofia, and every referred friend.</div></div>
+      <div class="pblock"><div class="bl">Today's stack</div><div class="bt">Swisscard already runs <strong>triggered email</strong> and marketing automation. The gap: channels sit on <strong>separate data</strong>, landing pages are managed <strong>variant by variant</strong>, and teams can't follow one customer from ad → apply → retain → refer on a <strong>single profile</strong>.</div></div>
+      <div class="pblock"><div class="bl">What changes</div><div class="bt"><strong>Integrated profiles</strong> · <strong>personalised landing pages</strong> · <strong>next-best-action decisioning</strong> · <strong>coordinated omnichannel journeys</strong> — deeper personalisation, not replacing basic automation.</div></div>
     </div>
   </div>
 </section>
 
 <!-- SLIDE 6: RTCDP COLLABORATION -->
-<section class="slide instant-approval" data-phase="acq">
+<section class="slide collab-merged" data-phase="acq">
   <div class="phase-pill a1">01 · Acquisition</div>
   <div class="story a1">
     <div class="numdisc a1">1</div>
     <h2 class="htitle a2">Find Marc — without sharing customer data</h2>
-    <p class="narr a3">Marc hasn't applied yet — but Claudia already knows he's out there. Through <strong>RTCDP Collaboration</strong> with Miles &amp; More, she explores partner audiences built in a privacy-safe environment — no names, no emails exchanged. Marc fits three of them: <strong>active members aged 30–45</strong>, <strong>high travel affinity</strong>, and <strong>frequent SWISS flyers in Switzerland</strong>. One click, and the segment is live on Instagram.</p>
-    <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">Seven partner audiences ready to use · check overlap before you activate · push to Meta, Google, or Display from one place.</div>
-    <div class="takeaway a5">Find people like Marc before they come to you — partner insight, zero data exchange.</div>
+    <div class="fp-hero a2">Match first-party data with first-party data</div>
+    <p class="narr a3"><strong>RTCDP Collaboration</strong> matches Swisscard with <strong>Travel Rewards</strong> in a privacy-safe clean room — no emails exchanged, no lists exported. Marc hasn't applied yet, but Claudia already sees the overlap.</p>
+    <div class="profilebar a3"><span class="plab">Marc's audiences</span><span class="pp">Early Bookers</span><span class="pp np">Frequent International Travelers</span><span class="pp np">High-Value Travelers</span></div>
+    <div class="fp-points a4">
+      <div class="fp-point"><div class="ic">1</div><div class="tx"><strong>Higher audience quality</strong> than broad targeting or third-party cookies.</div></div>
+      <div class="fp-point"><div class="ic">2</div><div class="tx"><strong>Clean room</strong> — partner insight without sharing PII.</div></div>
+      <div class="fp-point"><div class="ic">3</div><div class="tx"><strong>One click</strong> to Meta, Google, or owned channels.</div></div>
+    </div>
+    <div class="takeaway a5">Find people like Marc before they come to you.</div>
   </div>
   <div class="screen screen-product a3">
     <div class="product-shot-wrap">
-      <img class="product-shot" src="assets/collaboration-portal.png" alt="Adobe RTCDP Collaboration — Miles &amp; More partner audiences">
+      <img class="product-shot" src="assets/collaboration-travel-rewards.png" alt="Adobe RTCDP Collaboration — Travel Rewards partner audiences">
     </div>
   </div>
   <div class="persona a5"><div class="av" style="background:linear-gradient(150deg,var(--red),var(--red-dk))">C</div><div class="nm">Claudia</div></div>
@@ -452,11 +500,11 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="story a1">
     <div class="numdisc a1">2</div>
     <h2 class="htitle a2">The ad that speaks to how he already lives</h2>
-    <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp">Active Miles &amp; More Members (30–45)</span><span class="pp np">High Travel Affinity Prospects</span><span class="pp np">Frequent SWISS Travelers Switzerland</span></div>
-    <p class="narr a3">Marc scrolls Instagram. Not a generic card ad — a message tied to behaviour he already values: <strong>"You already earn miles when you fly. Now earn miles every day."</strong> Coffee, shopping, restaurants, subscriptions — all toward his next flight.</p>
-    <div class="quote a4">"You already earn miles when you fly. Now earn miles every day."</div>
+    <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp">Early Bookers</span><span class="pp np">Frequent International Travelers</span><span class="pp np">High-Value Travelers</span></div>
+    <p class="narr a3">Marc scrolls Instagram. Not a generic card ad — a message tied to behaviour he already values: <strong>"You already earn rewards when you travel. Now earn rewards every day."</strong> Coffee, shopping, restaurants, subscriptions — all toward his next trip.</p>
+    <div class="quote a4">"You already earn rewards when you travel. Now earn rewards every day."</div>
     <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">Collaboration audiences activated to Meta — <strong>Active Miles &amp; More Members (30–45)</strong>, <strong>High Travel Affinity Prospects</strong>, <strong>Frequent SWISS Travelers Switzerland</strong>.</div>
+    <div class="prodcard a5">Collaboration audiences activated to Meta — <strong>Early Bookers</strong>, <strong>Frequent International Travelers</strong>, <strong>High-Value Travelers</strong>.</div>
     <div class="takeaway a5">He isn't joining a new programme — he's maximising one he already uses.</div>
   </div>
   <div class="screen screen-ig a3">
@@ -466,7 +514,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
         <div class="ig-top"><img src="assets/instagram-logo.png" alt="Instagram" class="logo-img"></div>
         <div class="ig-post">
           <div class="hdr"><div class="av-sm">SC</div>swisscard · Sponsored</div>
-          <div class="img has-creative"><img src="assets/mm-gold-creative.png" alt="Miles &amp; More by Swisscard — You already earn miles when you fly. Now earn them every day."></div>
+          <div class="img has-creative"><img src="assets/mm-gold-creative.png" alt="Swisscard Travel Gold — You already earn rewards when you travel. Now earn them every day."></div>
         </div>
       </div>
     </div>
@@ -486,12 +534,12 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
     <p class="narr a3">Marc clicks the ad and lands on <strong>swisscard.ch</strong> on his phone. The page already knows he's a travel prospect — the hero speaks directly to him: <strong>"Turn every purchase into miles."</strong> Welcome bonus, wallet-ready, apply in under 5 minutes.</p>
     <div class="quote a4">"You're already collecting miles when you fly. Now collect them every day."</div>
     <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">Experience Decisioning picks the right hero, benefits, and CTA from Marc's profile — no static page, no manual variant.</div>
+    <div class="prodcard a5">Experience Decisioning picks the right hero, benefits, and CTA from Marc's profile — one landing model, personalised per visitor, not a library of static campaign variants.</div>
     <div class="takeaway a5">Same message as the Instagram ad — one content model, personalised on mobile web.</div>
   </div>
   <div class="screen screen-device a3">
     <div class="device-shot-wrap">
-      <img class="device-shot" src="assets/marc-mobile-landing.png" alt="Swisscard Miles &amp; More mobile landing — Turn every purchase into miles">
+      <img class="device-shot" src="assets/marc-mobile-landing.png" alt="Swisscard Travel Rewards mobile landing — Turn every purchase into miles">
     </div>
   </div>
   <div class="persona a5"><div class="av">M</div><div class="nm">Marc</div></div>
@@ -508,7 +556,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
     <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp">Collaboration audiences</span><span class="pp np">ECID created</span><span class="pp np">Travel Card Intent</span></div>
     <p class="narr a3">Behind that personalised page, Claudia sees what Marc can't — still anonymous, no name or email yet, but intent is already clear. He came for the <strong>travel card</strong>. An edge profile formed at the click, collaboration audiences attached, and he's in <strong>Travel Card Intent</strong> with a <strong>Travel Card Interest score of 0.87</strong>.</p>
     <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">Anonymous visitor — but intent is clear. Miles &amp; More segments, travel affinity, and a new <strong>Travel Card Intent</strong> audience. Marc clicked a travel card ad; Claudia can already personalise what he sees next.</div>
+    <div class="prodcard a5">Anonymous visitor — but intent is clear. Travel Rewards segments, travel affinity, and a new <strong>Travel Card Intent</strong> audience. Marc clicked a travel card ad; Claudia can already personalise what he sees next.</div>
     <div class="takeaway a5">We know what Marc wants before he tells us — Travel Card Intent from the very first click.</div>
   </div>
   <div class="screen screen-product a3">
@@ -528,8 +576,8 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
     <div class="numdisc a1">5</div>
     <h2 class="htitle a2">Apply on mobile web</h2>
     <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp">Same visitor as ad click</span><span class="pp">Instagram campaign</span><span class="pp np">Application started</span></div>
-    <p class="narr a3">Marc taps <strong>Apply Now</strong> and starts the <strong>4-step Miles &amp; More Swisscard</strong> form on mobile web. He's still anonymous for now — but in a few minutes he'll become a known customer. Claudia can already see it's the same person who clicked the ad and visited the landing page moments ago.</p>
-    <div class="quote a4">"Apply for your Miles &amp; More Swisscard — it only takes a few minutes."</div>
+    <p class="narr a3">Marc taps <strong>Apply Now</strong> and starts the <strong>4-step Travel Gold application</strong> form on mobile web. He's still anonymous for now — but in a few minutes he'll become a known customer. Claudia can already see it's the same person who clicked the ad and visited the landing page moments ago.</p>
+    <div class="quote a4">"Apply for your Travel Gold card — it only takes a few minutes."</div>
     <div class="claudia-lab a4">Claudia's screen</div>
     <div class="prodcard a5">One journey, connected — Instagram ad → landing page → application started. Marc is still anonymous, but Claudia knows exactly where he came from and what he's applying for.</div>
     <div class="takeaway a5">Net-new prospects apply on mobile web — no app download required. The app comes after approval.</div>
@@ -552,7 +600,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
     <h2 class="htitle a2">Instant approval</h2>
     <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp">Application submitted</span><span class="pp np">Instant approval path</span><span class="pp np">App download proposed</span></div>
     <p class="narr a3">Marc submits on mobile web. The confirmation screen appears right away — application received, approval on the <strong>instant path</strong>. Behind the scenes, Swisscard runs verification; the page tells him to <strong>check his email and RCS</strong> within minutes for the final confirmation and next steps. Decisioning has already chosen his <strong>next best step</strong>: <strong>download the mobile app</strong>.</p>
-    <div class="quote a4">"You're all set, Marc! Your SWISS Miles &amp; More Gold has been received and approved."</div>
+    <div class="quote a4">"You're all set, Marc! Your Swisscard Travel Gold has been received and approved."</div>
     <div class="claudia-lab a4">Claudia's screen</div>
     <div class="prodcard a5">Submit success on mobile web starts the journey. After backend verification completes, AJO sends confirmation email and RCS — typically within minutes. On screen, decisioning proposes download the app as the primary CTA while Marc is still in the browser.</div>
     <div class="takeaway a5">Success on mobile web first — email and RCS follow once verification completes.</div>
@@ -575,7 +623,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
     <h2 class="htitle a2">Confirmation email — within minutes</h2>
     <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp">Submit success</span><span class="pp np">Verification complete</span><span class="pp np">Email triggered</span></div>
     <p class="narr a3">Once verification completes, AJO sends the confirmation email — typically <strong>within minutes</strong> of submit. Same approval message, download link, and next steps — so Marc has a record even if he closes the browser.</p>
-    <div class="quote a4">"Thank you, Marc! Your SWISS Miles &amp; More Gold has been approved. Download the app to get started."</div>
+    <div class="quote a4">"Thank you, Marc! Your Swisscard Travel Gold has been approved. Download the app to get started."</div>
     <div class="claudia-lab a4">Claudia's screen</div>
     <div class="prodcard a5">Claudia wired the journey to fire after <strong>verification completes</strong> — not on raw submit. Email and RCS go out automatically within minutes, same approval content, no manual send.</div>
     <div class="takeaway a5">Email follows verification — fast, automated, and tied to the mobile web submit.</div>
@@ -599,14 +647,14 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
     <div class="numdisc a1">8</div>
     <h2 class="htitle a2">Approval message — within minutes</h2>
     <p class="narr a3">After verification completes, an <strong>RCS message</strong> lands on Marc's phone — typically <strong>within minutes</strong> of submit. Same recommendation he saw on screen: download the app. Rich, tappable, and hard to miss, even if he closes the browser.</p>
-    <div class="quote a4">"Marc, your Swisscard Miles &amp; More Gold is approved. Download the app: swisscard.ch/app"</div>
+    <div class="quote a4">"Marc, your Swisscard Travel Gold is approved. Download the app: swisscard.ch/app"</div>
     <div class="claudia-lab a4">Marc's phone</div>
     <div class="prodcard a5">Once verification passes, the RCS message goes out automatically — approved, with a link to download the app. Same ask as on the confirmation page, on the device Marc uses every day.</div>
     <div class="takeaway a5">Marc doesn't have to go looking — the next step comes to him.</div>
   </div>
   <div class="screen screen-device a3">
     <div class="device-shot-wrap">
-      <img class="device-shot" src="assets/marc-approval-sms.png" alt="Swisscard approval SMS — Marc, your Miles &amp; More Gold is approved, download the app">
+      <img class="device-shot" src="assets/marc-approval-rcs.png" alt="Swisscard RCS approval — Great news Marc, your Travel Gold is approved, download the app">
     </div>
   </div>
   <div class="persona a5"><div class="av">M</div><div class="nm">Marc</div></div>
@@ -643,9 +691,9 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
     <div class="numdisc a1">10</div>
     <h2 class="htitle a2">Marc's rich profile</h2>
     <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp">Application submitted</span><span class="pp np">Marc Weber</span><span class="pp np">Email identified</span></div>
-    <p class="narr a3">After application submit, RTCDP merges anonymous edge profile with Application ID — <strong>Marc Weber</strong>, <strong>marc.weber@email.com</strong>, Miles &amp; More loyalty, collaboration audiences, and apply propensity preserved from first Instagram click.</p>
+    <p class="narr a3">After application submit, RTCDP merges anonymous edge profile with Application ID — <strong>Marc Weber</strong>, <strong>marc.weber@email.com</strong>, Travel Rewards loyalty, collaboration audiences, and apply propensity preserved from first Instagram click.</p>
     <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">RTCDP Profile — <strong>Active Miles &amp; More Members (30–45)</strong>, <strong>High Travel Affinity Prospects</strong>, <strong>Frequent SWISS Travelers Switzerland</strong>, <strong>Premium Urban Professionals</strong>, <strong>High Conversion Propensity</strong>.</div>
+    <div class="prodcard a5">RTCDP Profile — <strong>Early Bookers</strong>, <strong>Frequent International Travelers</strong>, <strong>High-Value Travelers</strong>, <strong>Premium Urban Professionals</strong>, <strong>High Conversion Propensity</strong>.</div>
     <div class="takeaway a5">Everything from the anonymous visit survives authentication — no attribution gap.</div>
   </div>
   <div class="screen screen-product a3">
@@ -665,15 +713,15 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
     <div class="numdisc a1">11</div>
     <h2 class="htitle a2">App home — ranked for Marc</h2>
     <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp">New customer</span><span class="pp">Travel intent</span><span class="pp np">Wallet added</span></div>
-    <p class="narr a3">Marc opens the app. <strong>Experience Decisioning</strong> ranks his home screen — <strong>welcome bonus</strong> first, then <strong>SWISS partner benefits</strong>, then everyday miles offers. Not a generic banner rotation.</p>
-    <div class="quote a4">"Good Morning, Marc — nice to have you on board. Here are offers designed for you."</div>
+    <p class="narr a3">Marc opens the app. <strong>Welcome back, Marc</strong> — same Gold experience as on web. <strong>Experience Decisioning</strong> ranks his home: <strong>travel offers</strong> first, then <strong>lounge access</strong>, with his latest spend from Migros and Apple Store right below. Not a generic banner rotation.</p>
+    <div class="quote a4">"Enjoy the world. Earn more. — offers and miles balance, personalised for you in the app."</div>
     <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5"><strong>Experience Decisioning</strong> on the app — ranked by formulas and AI models. Welcome bonus 3,000 miles (0.92), Zurich Airport &amp; partner perks (0.86), everyday miles merchants (0.74).</div>
-    <div class="takeaway a5">Day-one personalisation — the right benefits for a new Miles &amp; More traveller.</div>
+    <div class="prodcard a5"><strong>Experience Decisioning</strong> on the app — ranked by formulas and AI models. Lufthansa miles offer (0.92), lounge access (0.86), partner benefits (0.74). Same engine as swisscard.ch.</div>
+    <div class="takeaway a5">Day-one personalisation — the right benefits for a new Travel Rewards member.</div>
   </div>
   <div class="screen screen-device a3">
     <div class="device-shot-wrap">
-      <img class="device-shot" src="assets/marc-app-home.png" alt="Swisscard app home — Good Morning Marc, welcome bonus and ranked offers">
+      <img class="device-shot" src="assets/marc-app-home.png" alt="Swisscard app — Welcome back Marc, Travel Gold home with ranked offers and transactions">
     </div>
   </div>
   <div class="persona a5"><div class="av">M</div><div class="nm">Marc</div></div>
@@ -687,15 +735,15 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="story a1">
     <div class="numdisc a1">12</div>
     <h2 class="htitle a2">Web matches app</h2>
-    <p class="narr a3">Marc logs in on desktop and sees the same home screen as in the app — <strong>welcome bonus</strong> first, <strong>partner benefits</strong> next, <strong>everyday miles</strong> below. One <strong>Experience Decisioning</strong> engine decides the order on every channel.</p>
-    <div class="quote a4">"Good Morning, Marc — same welcome bonus, partner benefits, and everyday miles on swisscard.ch."</div>
+    <p class="narr a3">Marc logs in on <strong>swisscard.ch</strong> and sees the same personalised Gold experience as in the app — <strong>exclusive travel offers</strong>, lounge access, partner perks, and his miles balance. One <strong>Experience Decisioning</strong> engine ranks what matters on every channel.</p>
+    <div class="quote a4">"Enjoy the world. Earn more. — your exclusive offers, ranked for you on swisscard.ch."</div>
     <div class="claudia-lab a4">Claudia's screen</div>
     <div class="prodcard a5">Claudia defined <strong>Experience Decisioning</strong> once — formulas, AI models, ranking rules. Now, every time Marc opens the app or logs in on web, the system picks the right offer in the right order. No manual updates, no channel-by-channel guesswork.</div>
     <div class="takeaway a5">Set it up once — it works everywhere Marc shows up.</div>
   </div>
   <div class="screen screen-product a3">
     <div class="product-shot-wrap">
-      <img class="product-shot" src="assets/marc-web-home.png" alt="Swisscard web home — Good Morning Marc, welcome bonus and ranked offers">
+      <img class="product-shot" src="assets/marc-web-home.png" alt="Swisscard web — Marc Weber Travel Gold home, exclusive travel offers and miles balance">
     </div>
   </div>
   <div class="persona a5"><div class="av">M</div><div class="nm">Marc</div></div>
@@ -709,17 +757,17 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="story a1">
     <div class="numdisc a1">13</div>
     <h2 class="htitle a2">Smarter paid media — automatically</h2>
-    <p class="narr a3">Marc just activated his <strong>Miles &amp; More Gold</strong> — so Swisscard <strong>stops showing him "Apply now" ads</strong> on Meta and Google. No more wasted spend on someone who already converted. At the same time, his profile joins a segment of <strong>activated travellers</strong> that helps find the <em>next</em> Marc — lookalike audiences built from people who actually activated.</p>
+    <p class="narr a3">Marc just activated his <strong>Travel Gold</strong> — so Swisscard <strong>stops showing him "Apply now" ads</strong> on Meta and Google. No more wasted spend on someone who already converted. At the same time, his profile joins a segment of <strong>activated travellers</strong> that helps find the <em>next</em> Marc — lookalike audiences built from people who actually activated.</p>
     <div class="claudia-lab a4">Claudia's screen</div>
     <div class="prodcard a5">Two things happen without Claudia lifting a finger: Marc moves to a <strong>suppression list</strong> (no more acquisition ads), and activated customers like him feed a <strong>lookalike audience</strong> for the next prospecting wave. Upsell and cross-sell run on separate segments — this is about not paying twice for acquisition.</div>
-    <div class="takeaway a5">Convert a customer → stop acquisition ads → use their profile to find more like them. The CDP keeps paid media honest.</div>
+    <div class="takeaway a5">Convert a customer → stop acquisition ads → use their profile to find more like them. Paid media closes the loop without re-exporting segments channel by channel.</div>
   </div>
   <div class="screen a3">
     <div class="panel">
       <h3>RTCDP · Destinations</h3>
       <div class="seglist">
         <div class="seg"><div><div class="sn">Existing customers — no more "Apply" ads</div><div class="sm">Meta · Google · incl. Marc Weber</div></div><span class="badge suppress">Suppression active</span></div>
-        <div class="seg"><div><div class="sn">Activated M&amp;M Travellers — lookalike seed</div><div class="sm">Meta Lookalike seed · 12,400 profiles</div></div><span class="badge sync">Synced 11m ago</span></div>
+        <div class="seg"><div><div class="sn">Activated Travel Rewards members — lookalike seed</div><div class="sm">Meta Lookalike seed · 12,400 profiles</div></div><span class="badge sync">Synced 11m ago</span></div>
         <div class="seg"><div><div class="sn">High Travel Affinity Lookalike — prospecting</div><div class="sm">Meta · Google · 240,000 profiles</div></div><span class="badge sync">Synced 4m ago</span></div>
       </div>
       <div style="margin-top:28px;display:flex;gap:40px;">
@@ -740,7 +788,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <h1 class="a2">Retention</h1>
   <p class="ph-tag a3">Win back with relevance</p>
   <p class="ph-sub a4">Life changed — messaging didn't. Detect the shift, reposition around family spending, recover on email, portal, and push.</p>
-  <div class="pill a5">Swisscard Cashback · Life-stage win-back</div>
+  <div class="pill a5">Amex Gold · Life-stage win-back</div>
 </section>
 
 <!-- MEET SOFIA -->
@@ -751,9 +799,9 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
       <div class="pk">Meet Sofia</div>
       <h2>Sofia Müller, 34</h2>
       <p class="pr">Marketing Manager · Zurich</p>
-      <div class="pblock"><div class="bl">Card relationship</div><div class="bt">Five years on the <strong>Cashback card</strong> — one of Swisscard's engaged holders. Online shopping, dining out, fashion. Partner offers felt valuable.</div></div>
+      <div class="pblock"><div class="bl">Card relationship</div><div class="bt">Five years on <strong>Amex Gold</strong> — one of Swisscard's aspirational holders. Online shopping, dining out, fashion, travel. Premium partner offers felt valuable.</div></div>
       <div class="pblock"><div class="bl">Lifestyle</div><div class="bt">Single, travels often, high engagement with <strong>lifestyle and fashion</strong> campaigns. The customer Swisscard thought they knew.</div></div>
-      <div class="pblock"><div class="bl">Starting segment</div><div class="chips"><span>Cashback</span><span>Lifestyle Enthusiasts</span><span>High engagement</span></div></div>
+      <div class="pblock"><div class="bl">Starting segment</div><div class="chips"><span>Amex Gold</span><span>Lifestyle Enthusiasts</span><span>High engagement</span></div></div>
     </div>
   </div>
 </section>
@@ -820,14 +868,14 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="story a1">
     <div class="numdisc a1">3</div>
     <h2 class="htitle a2">Who gets what offer</h2>
-    <p class="narr a3">Claudia builds a win-back campaign for the high-churn audience — several offers prepared: <strong>family cashback</strong> on groceries, <strong>spend insights</strong>, <strong>instant cashback push</strong>. She doesn't pick for each person. <strong>Experience Decisioning</strong> does — ranked by formulas and AI models. For Sofia, family cashback wins (0.91). Lifestyle · Fashion is suppressed.</p>
+    <p class="narr a3">Claudia builds a win-back campaign for the high-churn audience — several offers prepared: <strong>family membership rewards</strong> on everyday spend, <strong>spend insights</strong>, <strong>premium family benefits push</strong>. She doesn't pick for each person. <strong>Experience Decisioning</strong> does — ranked by formulas and AI models. For Sofia, family rewards wins (0.91). Lifestyle · Fashion is suppressed.</p>
     <div class="claudia-lab a4">Claudia's screen</div>
     <div class="prodcard a5">Claudia sets the campaign and the offer pool. <strong>Experience Decisioning</strong> chooses what Sofia sees — rules, propensity, and capping at work. Same engine as Marc's app home, different life stage, different winner.</div>
     <div class="takeaway a5">Claudia designs the campaign. AI decides the offer — one message for the segment, the right benefit for each person.</div>
   </div>
   <div class="screen screen-product a3">
     <div class="product-shot-wrap">
-      <img class="product-shot" src="assets/sofia-experience-decisioning.png" alt="AJO Experience Decisioning — ranked offers for Sofia, family cashback selected, Lifestyle Fashion suppressed">
+      <img class="product-shot" src="assets/sofia-experience-decisioning.png" alt="AJO Experience Decisioning — ranked offers for Sofia, family rewards selected, Lifestyle Fashion suppressed">
     </div>
   </div>
   <div class="persona a5"><div class="av" style="background:linear-gradient(150deg,var(--red),var(--red-dk))">C</div><div class="nm">Claudia</div></div>
@@ -841,14 +889,14 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="story a1">
     <div class="numdisc a1">4</div>
     <h2 class="htitle a2">High-churn journey — live</h2>
-    <p class="narr a3">Claudia publishes one win-back journey for the entire <strong>High Churn Customers</strong> audience — not a one-off for Sofia. Everyone in the segment enters the same flow: a <strong>7-day save period</strong>, a retention email with the best offer <strong>Experience Decisioning</strong> picks for them, then a follow-up push if they don't open. Sofia is customer number 2,460. The journey doesn't know her name — it knows her behaviour.</p>
+    <p class="narr a3">Claudia publishes one win-back journey for the entire <strong>High Churn Customers</strong> audience — not a one-off for Sofia. Everyone in the segment enters the same flow: a <strong>7-day save period</strong>, a retention email with the best offer <strong>Experience Decisioning</strong> picks for them, then <strong>SMS</strong> if they don't open. Sofia is customer number 2,460. The journey doesn't know her name — it knows her behaviour.</p>
     <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">One journey canvas, thousands of customers. Enter segment → wait 7 days → send personalised retention email → did they open? Yes: done. No: send a limited-time push. Claudia built the flow once. It runs for every at-risk cardholder automatically.</div>
+    <div class="prodcard a5">One journey canvas, thousands of customers. Enter segment → wait 7 days → send personalised retention email → did they open? Yes: track redemption and close. No: send SMS with call-centre follow-up. Claudia built the flow once. It runs for every at-risk cardholder automatically.</div>
     <div class="takeaway a5">One platform for acquisition and retention — Claudia doesn't switch tools when a customer starts to drift.</div>
   </div>
   <div class="screen screen-product a3">
     <div class="product-shot-wrap journey-wrap">
-      <img class="product-shot journey-shot" src="assets/sofia-winback-journey.png" alt="AJO Journey canvas — High Churn Customers segment, 7-day wait, retention email, branch on email opened, limited-time save offer push">
+      <img class="product-shot journey-shot" src="assets/sofia-winback-journey.png" alt="AJO Journey — Swisscard Win Back Churn Customers: High Churn audience, 7-day wait, retention email, branch on email opened, SMS fallback">
     </div>
   </div>
   <div class="persona a5"><div class="av" style="background:linear-gradient(150deg,var(--red),var(--red-dk))">C</div><div class="nm">Claudia</div></div>
@@ -862,15 +910,15 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="story a1">
     <div class="numdisc a1">5</div>
     <h2 class="htitle a2">Email first — family relevance</h2>
-    <p class="narr a3">The high-churn journey reaches Sofia by email — and <strong>Experience Decisioning</strong> has already chosen her offer: <strong>up to 1.5% cashback</strong> on groceries and household essentials. Not fashion. Not dining. The message that fits her life right now, with a link to reactivate on web or in the app.</p>
-    <div class="quote a4">"Hello Sofia — more rewards for everyday moments. Reactivate your benefits and earn cashback on what matters to your family."</div>
+    <p class="narr a3">The high-churn journey reaches Sofia by email — and <strong>Experience Decisioning</strong> has already chosen her offer: <strong>everyday extras</strong> that fit her life now — dining credit, shopping benefits, family moments. Not fashion. Not generic lifestyle. The message that fits, with a link to reactivate on web or in the app.</p>
+    <div class="quote a4">"Your Gold Card. Everyday extras."</div>
     <div class="claudia-lab a4">Sofia's phone</div>
-    <div class="prodcard a5">Sofia's inbox: a family cashback offer she actually cares about — sent at the right moment from the high-churn journey. No lifestyle promo. No generic blast.</div>
+    <div class="prodcard a5">Sofia's inbox: a family rewards offer she actually cares about — sent at the right moment from the high-churn journey. No lifestyle promo. No generic blast.</div>
     <div class="takeaway a5">Email opens the conversation — relevance, not another lifestyle promo.</div>
   </div>
   <div class="screen screen-device a3">
     <div class="device-shot-wrap">
-      <img class="device-shot" src="assets/sofia-winback-email-phone.png" alt="Sofia's iPhone — Swisscard win-back email, Everyday spending deserves rewards">
+      <img class="device-shot" src="assets/sofia-winback-email-phone.png" alt="Sofia's iPhone — Swisscard win-back email, Your Gold Card. Everyday extras">
     </div>
   </div>
   <div class="persona a5"><div class="av" style="background:linear-gradient(150deg,#c9a24a,#8a6c25)">S</div><div class="nm">Sofia</div></div>
@@ -884,15 +932,15 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="story a1">
     <div class="numdisc a1">6</div>
     <h2 class="htitle a2">Same relevance — web and app</h2>
-    <p class="narr a3">Sofia has been a Swisscard customer for five years — she already has the app. She taps <strong>Reactivate My Benefits</strong> in the email and lands on <strong>swisscard.ch</strong> on her phone. Same <strong>Experience Decisioning</strong> as the inbox: <strong>5% grocery cashback</strong>, family rewards, spending insights. Open the link or open the app — she sees the same ranked offers.</p>
-    <div class="quote a4">"Welcome back, Sofia — earn up to 5% cashback on your next grocery shop."</div>
+    <p class="narr a3">Sofia has been a Swisscard customer for five years — she already has the app. She taps <strong>Reactivate My Benefits</strong> in the email and lands on <strong>swisscard.ch</strong> on her phone. Same <strong>Experience Decisioning</strong> as the inbox: <strong>family membership rewards</strong>, premium partner offers, spending insights. Open the link or open the app — she sees the same ranked offers.</p>
+    <div class="quote a4">"Welcome back, Sofia — earn elevated rewards on your next grocery shop with Amex Gold."</div>
     <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5"><strong>Experience Decisioning</strong> on web and app — same ranked offers as the email, personalised for her Cashback card. Sofia doesn't get a different story depending on which door she walks through.</div>
+    <div class="prodcard a5"><strong>Experience Decisioning</strong> on web and app — same ranked offers as the email, personalised for her <strong>Amex Gold</strong>. Sofia doesn't get a different story depending on which door she walks through.</div>
     <div class="takeaway a5">Existing customers, existing app — but every channel tells the same relevant story.</div>
   </div>
   <div class="screen screen-device a3">
     <div class="device-shot-wrap">
-      <img class="device-shot" src="assets/sofia-portal-home.png" alt="Swisscard portal — Welcome back Sofia, grocery cashback and spending insights">
+      <img class="device-shot" src="assets/sofia-app-home.png" alt="Swisscard app — Welcome back Sofia Müller, Amex Gold, recommended offers and spending insights">
     </div>
   </div>
   <div class="persona a5"><div class="av" style="background:linear-gradient(150deg,#c9a24a,#8a6c25)">S</div><div class="nm">Sofia</div></div>
@@ -906,15 +954,15 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="story a1">
     <div class="numdisc a1">7</div>
     <h2 class="htitle a2">Push completes the journey</h2>
-    <p class="narr a3">Sofia starts adding her card to <strong>Apple Wallet</strong> in the app — then drops off halfway. The high-churn journey picks it up: a <strong>push</strong> lands on her lock screen with the same family cashback offer. Others who never opened the email get a push too. Sofia finishes — and makes her first grocery spend on the card again.</p>
-    <div class="quote a4">"Your personalised cashback offer is active. Add your card to Apple Wallet and start earning today."</div>
+    <p class="narr a3">Sofia starts adding her card to <strong>Apple Wallet</strong> in the app — then drops off halfway. The high-churn journey picks it up: a <strong>push</strong> lands on her lock screen with the same family rewards offer. Others who never opened the email get a push too. Sofia finishes — and makes her first grocery spend on the card again.</p>
+    <div class="quote a4">"Your personalised Amex Gold benefits are active. Add your card to Apple Wallet and start earning today."</div>
     <div class="claudia-lab a4">Claudia's screen</div>
     <div class="prodcard a5">Part of the same high-churn journey — if Sofia abandons mid-flow, a push brings her back. No separate recovery campaign. Claudia built the branch once; it fires automatically for anyone who stalls.</div>
     <div class="takeaway a5">Email, web, app, push — one journey catches Sofia wherever she drops off.</div>
   </div>
   <div class="screen screen-device a3">
     <div class="device-shot-wrap">
-      <img class="device-shot" src="assets/sofia-wallet-push.png" alt="Swisscard push — Add your card to Apple Wallet, cashback offer active">
+      <img class="device-shot" src="assets/sofia-wallet-push.png" alt="Sofia lock screen — Swisscard push, personalised Amex Gold benefits active, Add to Wallet">
     </div>
   </div>
   <div class="persona a5"><div class="av" style="background:linear-gradient(150deg,#c9a24a,#8a6c25)">S</div><div class="nm">Sofia</div></div>
@@ -929,7 +977,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <h1 class="a2">Deepening</h1>
   <p class="ph-tag a3">Grow every relationship</p>
   <p class="ph-sub a4">Every trip enriches the profile — pre-trip email, flight-day push, real-time offers abroad.</p>
-  <div class="pill a5">Marc Weber · SWISS Miles &amp; More Gold</div>
+  <div class="pill a5">Marc Weber · Swisscard Travel Gold</div>
 </section>
 
 <!-- SLIDE 18: TRAVEL ENRICHMENT -->
@@ -941,13 +989,13 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
     <p class="narr a3">Marc books <strong>SWISS ZRH–London</strong>. Transaction and travel category update his profile — segment <strong>Upcoming Business Trip</strong> — triggers personalised follow-up in app and email.</p>
     <div class="claudia-lab a4">Claudia's screen</div>
     <div class="prodcard a5">Experience Event → RTCDP profile · Edge segmentation in real time. Same profile that powers app home ranking.</div>
-    <div class="takeaway a5">Deepening isn't a campaign batch — it's a live signal that changes what Marc sees next.</div>
+    <div class="takeaway a5">Deepening isn't a fixed campaign send — it's a live signal that changes what Marc sees next.</div>
   </div>
   <div class="screen a3">
     <div class="panel">
       <h3>Profile · Marc Weber</h3>
       <div class="knows">
-        <div class="row"><span class="k">Product</span><span class="v">SWISS Miles &amp; More Gold</span></div>
+        <div class="row"><span class="k">Product</span><span class="v">Swisscard Travel Gold</span></div>
         <div class="row"><span class="k">Upcoming trip</span><span class="v">ZRH → LHR · 14 Jun</span></div>
         <div class="row"><span class="k">Segment</span><span class="v">Upcoming Business Trip</span></div>
         <div class="row"><span class="k">App last open</span><span class="v">Today</span></div>
@@ -966,7 +1014,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="story a1">
     <div class="numdisc a1">2</div>
     <h2 class="htitle a2">Pre-trip partner offers</h2>
-    <p class="narr a3">Email to Marc: London <strong>dining cashback</strong>, Miles &amp; More <strong>partner hotels</strong>, miles earn reminder before he flies — AEM fragments from one content model.</p>
+    <p class="narr a3">Email to Marc: London <strong>dining cashback</strong>, Travel Rewards <strong>partner hotels</strong>, miles earn reminder before he flies — AEM fragments from one content model.</p>
     <div class="claudia-lab a4">Claudia's screen</div>
     <div class="prodcard a5">AJO Email triggered by <strong>upcoming_trip_LON</strong> — was missing in demo3.</div>
     <div class="takeaway a5">Deepening starts before departure — not only on flight day.</div>
@@ -1005,7 +1053,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
           <div class="mockbody app">
             <div class="app-status"></div>
             <div class="push-toast"><div class="pt-hdr"><span class="pt-app">Swisscard</span><span class="pt-time">Now</span></div><p>Marc — Terminal 1 lounge access + restaurant cashback in London. Open app →</p></div>
-            <div class="app-header"><h3>Your trip to London</h3><p>SWISS Miles &amp; More Gold</p></div>
+            <div class="app-header"><h3>Your trip to London</h3><p>Swisscard Travel Gold</p></div>
             <div class="img-ph" style="margin:16px;min-height:200px;">Flight day screen placeholder</div>
           </div>
         </div>
@@ -1035,7 +1083,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
           <div class="mockbody app">
             <div class="app-status"></div>
             <div class="push-toast"><div class="pt-hdr"><span class="pt-app">Swisscard</span><span class="pt-time">Now</span></div><p>Marc — 180 miles earned at partner restaurant in London. Open app →</p></div>
-            <div class="app-header"><h3>London dining</h3><p>Miles &amp; More Gold · partner earn</p></div>
+            <div class="app-header"><h3>London dining</h3><p>Travel Gold · partner earn</p></div>
             <div class="img-ph" style="margin:16px;min-height:180px;">Destination offer placeholder</div>
           </div>
         </div>
@@ -1111,7 +1159,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="pk a1">04</div>
   <h1 class="a2">Referral</h1>
   <p class="ph-tag a3">Close the loop</p>
-  <p class="ph-sub a4">From CSV batch to automated loop — invite, recover, activate, and reward with full attribution.</p>
+  <p class="ph-sub a4">From channel silos to one coordinated loop — right moment, tracked invite, recovery, API fulfilment, full attribution.</p>
   <div class="pill a5">Member-get-Member · 10–20× cheaper than paid</div>
 </section>
 
@@ -1136,13 +1184,13 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="phase-pill trigger a1">04 · Referral · Trigger</div>
   <div class="story a1">
     <div class="numdisc a1">1</div>
-    <h2 class="htitle a2">The right moment — not a batch</h2>
+    <h2 class="htitle a2">The right moment — not the calendar</h2>
     <div class="profilebar a2"><span class="plab">Marc's profile</span><span class="pp np">Recent miles earned</span><span class="pp np">Shopping + travel</span><span class="pp np">Referral eligible</span></div>
-    <p class="narr a3">Marc's latest miles just posted — from <strong>everyday shopping at Migros</strong> and <strong>partner spend at Zurich Airport</strong> on his way to Berlin. Not a one-off welcome bonus; the programme working in daily life. He's feeling the full Miles &amp; More value — travel, partners, everyday spend. <strong>Experience Decisioning</strong> scores referral as his next best action (0.91) — not buried in the monthly newsletter.</p>
-    <div class="quote a4">"You just earned miles on everyday spend. Know someone who'd love turning purchases into miles? Share Miles &amp; More Gold — you both earn CHF 50."</div>
+    <p class="narr a3">Marc's latest rewards just posted — from <strong>everyday shopping at Migros</strong> and <strong>partner spend at Zurich Airport</strong> on his way to Berlin. Not a one-off welcome bonus; the programme working in daily life. He's feeling the full <strong>Travel Rewards</strong> value — travel, partners, everyday spend. <strong>Experience Decisioning</strong> scores referral as his next best action (0.91) — not buried in the monthly newsletter.</p>
+    <div class="quote a4">"You just earned rewards on everyday spend. Know someone who'd love turning purchases into miles? Share Travel Gold — you both earn CHF 50."</div>
     <div class="claudia-lab a4">Claudia's screen</div>
-    <div class="prodcard a5">Claudia wired referral into <strong>Experience Decisioning</strong> — when recent miles from shopping or travel post and engagement is high, the ask ranks first on the app home screen, above partner perks and everyday miles offers. Not a newsletter blast on a fixed date.</div>
-    <div class="takeaway a5">The ask lands when Marc is happiest — not when marketing's calendar says so.</div>
+    <div class="prodcard a5">Claudia wired referral into <strong>Experience Decisioning</strong> — when recent miles from shopping or travel post and engagement is high, the ask ranks first on the app home screen, above partner perks and everyday miles offers. Not another triggered email on a fixed date — <strong>next-best action</strong> in the moment.</div>
+    <div class="takeaway a5">The ask lands when Marc is happiest — not when the campaign calendar says so.</div>
   </div>
   <div class="screen a3">
     <div class="phone-wrap">
@@ -1175,14 +1223,14 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
     <div class="numdisc a1">2</div>
     <h2 class="htitle a2">Personalised invite in the app</h2>
     <p class="narr a3">Push + in-app referral card. Marc's name, unique code <strong>REF-MARC-7X2K</strong>, CHF 50 for both. Share in one tap via WhatsApp.</p>
-    <div class="quote a4">"Love earning miles every day? Share Miles &amp; More Gold — you both earn CHF 50."</div>
+    <div class="quote a4">"Love earning miles every day? Share Travel Gold — you both earn CHF 50."</div>
     <div class="claudia-lab a4">Claudia's screen</div>
     <div class="prodcard a5">Claudia built the referral flow once — unique code per customer, push notification, in-app card, and a share link in one tap. Every invite is tracked back to the referrer, from first share to reward.</div>
     <div class="takeaway a5">Personal, tracked, app-native — not a generic email footer.</div>
   </div>
   <div class="screen screen-device a3">
     <div class="device-shot-wrap">
-      <img class="device-shot" src="assets/marc-referral-app.png" alt="Swisscard app — Refer a friend, share Miles &amp; More Gold, REF-MARC-7X2K, WhatsApp share">
+      <img class="device-shot" src="assets/marc-referral-app.png" alt="Swisscard app — Refer a friend, share Travel Gold, REF-MARC-7X2K, WhatsApp share">
     </div>
   </div>
   <div class="persona a5"><div class="av">M</div><div class="nm">Marc</div></div>
@@ -1218,7 +1266,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
     <div class="numdisc a1">4</div>
     <h2 class="htitle a2">"Marc invited you"</h2>
     <p class="narr a3">Lukas lands on <strong>swisscard.ch/ref</strong> — personalised hero: Marc's name, referral benefit, everyday miles story. Same acquisition logic as Act 01, referral context preserved.</p>
-    <div class="quote a4">"Marc thinks you'd love Miles &amp; More Gold — miles on travel and everyday spend. Apply now, you both earn CHF 50."</div>
+    <div class="quote a4">"Marc thinks you'd love Travel Gold — miles on travel and everyday spend. Apply now, you both earn CHF 50."</div>
     <div class="claudia-lab a4">Claudia's screen</div>
     <div class="prodcard a5">Claudia built the referral landing once — referrer name and benefit pulled dynamically from Marc's profile and the link context.</div>
     <div class="takeaway a5">The friend feels the personal recommendation — not a generic product page.</div>
@@ -1240,7 +1288,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
     <div class="numdisc a1">5</div>
     <h2 class="htitle a2">Apply — code attached</h2>
     <div class="profilebar a2"><span class="plab">Lukas's profile</span><span class="pp">Referral click</span><span class="pp">Code pre-filled</span><span class="pp np">Application started</span></div>
-    <p class="narr a3">Lukas taps <strong>Apply Now</strong> and starts the same <strong>4-step Miles &amp; More Swisscard</strong> form on mobile web — referral code <strong>REF-MARC-7X2K</strong> and referrer already filled in. <strong>ECID → Application ID → Referrer ID</strong> stitched in one profile — same stitch Marc had in Act 01.</p>
+    <p class="narr a3">Lukas taps <strong>Apply Now</strong> and starts the same <strong>4-step Travel Gold application</strong> form on mobile web — referral code <strong>REF-MARC-7X2K</strong> and referrer already filled in. <strong>ECID → Application ID → Referrer ID</strong> stitched in one profile — same stitch Marc had in Act 01.</p>
     <div class="claudia-lab a4">Claudia's screen</div>
     <div class="prodcard a5">Referrer Marc Weber and code REF-MARC-7X2K travel with Lukas from first click — no manual entry, no attribution lost at application review.</div>
     <div class="takeaway a5">No manual code errors — attribution is structural, not operational.</div>
@@ -1306,10 +1354,10 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="story a1">
     <div class="numdisc a1">8</div>
     <h2 class="htitle a2">First spend — referral complete</h2>
-    <p class="narr a3">Lukas's card is approved. On his first trip through <strong>Zurich Airport</strong>, he uses the lounge — <strong>first real spend</strong>. That's activation, not just an application in the system. The platform links Lukas back to <strong>Marc's invite</strong> and starts the referrer reward — no manual check, no spreadsheet.</p>
+    <p class="narr a3">Lukas's card is approved. On his first trip through <strong>Zurich Airport</strong>, he uses the lounge — <strong>first real spend</strong>. That's activation, not just an application in the system. The platform links Lukas back to <strong>Marc's invite</strong> and starts the referrer reward in the same journey — no cross-system reconciliation.</p>
     <div class="quote a4">"Hi Lukas — first spend confirmed! CHF 12.00 cashback at Zurich Airport lounge."</div>
     <div class="claudia-lab a4">Lukas's phone</div>
-    <div class="prodcard a5">Claudia defined activation as <strong>first spend</strong>, not application submitted. When Lukas pays at the lounge, his profile links to Marc as referrer — Marc's CHF 50 reward journey starts automatically. The business only pays when the friend actually uses the card.</div>
+    <div class="prodcard a5">Claudia defined activation as <strong>first spend</strong>, not application submitted. When Lukas pays at the lounge, his profile links to Marc as referrer — the journey triggers <strong>fulfilment APIs</strong> and waits for payment completion before Marc is notified. The business only pays when the friend actually uses the card.</div>
     <div class="takeaway a5">Activation is the real conversion — not application submitted. Claudia set the rule once; the platform enforces it.</div>
   </div>
   <div class="screen screen-device a3">
@@ -1328,15 +1376,25 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="story a1">
     <div class="numdisc a1">9</div>
     <h2 class="htitle a2">Marc rewarded — automatically</h2>
-    <p class="narr a3">Lukas activates. Seconds later, a <strong>push notification</strong> lands on Marc's phone at the airport — <strong>Referral approved!</strong> CHF 50 credited. No finance ticket. No CSV reconciliation. Same day.</p>
-    <div class="quote a4">"Great news, Marc! Lukas activated his Miles &amp; More Gold. CHF 50 credited to your account."</div>
-    <div class="claudia-lab a4">Marc's phone</div>
-    <div class="prodcard a5">Marc is boarding when the reward hits — instant confirmation on his lock screen. Claudia's referral journey closed the loop automatically: Lukas activated, Marc credited, attribution complete.</div>
-    <div class="takeaway a5">The loop closes in the moment — Marc sees instant gratification, Claudia sees attributed conversion.</div>
+    <p class="narr a3">Lukas activates. The journey doesn't stop at a congratulatory push — <strong>Adobe Journey Optimizer</strong> calls Swisscard's <strong>fulfilment and payment APIs</strong>, waits for the credit to complete, then notifies Marc. Seconds later, a <strong>push notification</strong> lands on his phone — <strong>Referral approved!</strong> CHF 50 credited. Fulfilment and comms in one orchestrated flow — same day.</p>
+    <div class="quote a4">"Great news, Marc! Lukas activated his Travel Gold. CHF 50 credited to your account."</div>
+    <div class="claudia-lab a4">Claudia's screen</div>
+    <div class="prodcard a5"><strong>Adobe Journey Optimizer</strong> can trigger external fulfilment and payment systems via APIs, monitor completion events, and continue customer communications automatically — Marc's reward is not a manual step in finance.</div>
+    <div class="takeaway a5">Orchestration ends at the bank account — not just the marketing message.</div>
   </div>
-  <div class="screen screen-product a3">
+  <div class="screen screen-product fulfil-stack a3">
     <div class="product-shot-wrap">
       <img class="product-shot" src="assets/marc-referral-approved.png" alt="Marc at Zurich Airport — Swisscard push, Referral approved, Lukas activated, CHF 50 credited">
+      <div class="fulfil-panel">
+        <h4>Reward fulfilment · behind the push</h4>
+        <div class="fulfil-steps">
+          <div class="fulfil-step"><div class="n">Step 1</div><div class="t">First spend event</div></div>
+          <div class="fulfil-step key"><div class="n">Step 2</div><div class="t">AJO → payment API</div></div>
+          <div class="fulfil-step key"><div class="n">Step 3</div><div class="t">Fulfilment complete</div></div>
+          <div class="fulfil-step"><div class="n">Step 4</div><div class="t">Push to Marc</div></div>
+        </div>
+        <div class="fulfil-arrows">→ → →</div>
+      </div>
     </div>
   </div>
   <div class="persona a5"><div class="av">M</div><div class="nm">Marc</div></div>
@@ -1371,34 +1429,36 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="story a1">
     <div class="numdisc a1">11</div>
     <h2 class="htitle a2">Same programme, different economics</h2>
-    <p class="narr a3">Same CHF 50 reward. Same referral rules. What changes is how the loop runs — Marc's moment, Lukas's recovery, and Claudia's ROI proof on one platform instead of a quarterly CSV.</p>
-    <div class="takeaway a5">Best customers become your cheapest acquisition channel — when the loop runs itself.</div>
+    <p class="narr a3">Same CHF 50 reward. Same referral rules. Swisscard already automates — the shift is <strong>how coordinated the loop is</strong>: integrated profiles, personalised referral landing, next-best-action timing, omnichannel recovery, API fulfilment, and ROI proof on one platform.</p>
+    <div class="takeaway a5">Not from zero automation — to orchestration that connects every channel and every handoff.</div>
   </div>
   <div class="screen a3">
     <div class="vs-grid">
       <div class="vs-col bad">
-        <h4>Today without Adobe</h4>
+        <h4>Today's gaps</h4>
         <ul>
-          <li>Quarterly CSV export — batch email to everyone</li>
-          <li>No timing logic — buried in the newsletter</li>
-          <li>Friend abandons — no recovery, referral lost</li>
-          <li>Finance reconciles rewards manually</li>
-          <li>No chain from invite → click → activation</li>
-          <li>CFO asks for ROI — marketing has a spreadsheet</li>
+          <li>Triggered email and journeys — already running</li>
+          <li>Channels orchestrated separately — email, app, web, paid</li>
+          <li>Segment-level personalisation — not individual NBA across surfaces</li>
+          <li>Landing and referral pages updated per campaign — not profile-driven in real time</li>
+          <li>Friend drops off — recovery not coordinated across channels</li>
+          <li>Reward fulfilment sits outside the journey — marketing vs finance handoff</li>
+          <li>Full funnel ROI assembled across tools — not one customer view</li>
         </ul>
         <div class="csv-mock">
-          <div class="hdr">referral_list_Q2.csv</div>
-          <table><tr><th>email</th><th>code</th></tr><tr><td>marc@…</td><td>REF-001</td></tr><tr><td>lukas@…</td><td>REF-002</td></tr></table>
+          <div class="hdr">referral_ops_handoff.xlsx</div>
+          <table><tr><th>referrer</th><th>status</th></tr><tr><td>marc@…</td><td>pending finance</td></tr><tr><td>lukas@…</td><td>activated</td></tr></table>
         </div>
       </div>
       <div class="vs-col good">
-        <h4>Tomorrow with Adobe</h4>
+        <h4>With Experience Platform</h4>
         <ul>
-          <li>Right moment in app — Marc shares after earning miles</li>
-          <li>Personal code, tracked from first WhatsApp tap</li>
-          <li>Journey Optimizer recovers Lukas — email, then SMS</li>
-          <li>CHF 50 on activation — automatic, same day</li>
-          <li>Customer Journey Analytics — full funnel proof</li>
+          <li><strong>Integrated profiles</strong> — one Marc from ad click to referral reward</li>
+          <li><strong>Personalised landing pages</strong> — same URL, profile-driven hero and offer</li>
+          <li><strong>Next-best-action decisioning</strong> — referral ranked 0.91 in the app, not buried in email</li>
+          <li><strong>Coordinated omnichannel execution</strong> — WhatsApp → web → email → push → API fulfilment</li>
+          <li><strong>Deeper personalisation</strong> — life stage for Sofia, intent for Marc, moment for referral</li>
+          <li>Customer Journey Analytics — invite to activation to reward in one view</li>
           <li>Referral CPA CHF 42 vs paid CHF 680</li>
         </ul>
       </div>
@@ -1420,7 +1480,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   </div>
   <div class="screen screen-product a3">
     <div class="product-shot-wrap">
-      <img class="product-shot" src="assets/exec-summary-three-acts.png" alt="Swisscard executive summary — Sofia cashback win-back, Marc Miles &amp; More Gold approved, Lukas referral reward, acquire to reward">
+      <img class="product-shot" src="assets/exec-summary-three-acts.png" alt="Swisscard executive summary — Sofia Amex Gold win-back, Marc Travel Gold approved, Lukas referral reward, acquire to reward">
     </div>
   </div>
   <div class="persona a5"><div class="av" style="background:linear-gradient(150deg,var(--red),var(--red-dk))">C</div><div class="nm">Claudia</div></div>
@@ -1437,7 +1497,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 </section>
 
 </div>
-<div class="hint">← → to navigate</div>
+<div class="hint">← → · #18 for slide 18</div>
 <div class="counter"><b id="cur">01</b> / <span id="tot">29</span></div>
 </div>
 
@@ -1476,7 +1536,18 @@ function countUp(el){
 }
 function resetSlide(s){s.querySelectorAll('.cu').forEach(resetCu);}
 function animateActive(s){s.querySelectorAll('.cu').forEach(el=>countUp(el));}
-function show(n){
+function slideFromHash(){
+  const m=location.hash.match(/^#(\d+)$/);
+  if(!m)return 0;
+  const n=Math.max(1,Math.min(+m[1],sl.length));
+  return n-1;
+}
+function syncHash(){
+  const want='#'+(i+1);
+  if(location.hash!==want)history.replaceState(null,'',want);
+}
+function show(n,opts){
+  const skipHash=opts&&opts.skipHash;
   i=(n+sl.length)%sl.length;
   sl.forEach((s,x)=>{const on=x===i;s.classList.toggle('active',on);if(!on)resetSlide(s);});
   cur.textContent=String(i+1).padStart(2,'0');
@@ -1486,8 +1557,12 @@ function show(n){
   cur.style.color=dark?'#fff':'';
   if(tot)tot.style.color=dark?'rgba(255,255,255,.6)':'';
   resetSlide(a);animateActive(a);
+  if(!skipHash)syncHash();
 }
-sl.forEach((s,x)=>{if(x!==0)resetSlide(s);});animateActive(sl[0]);
+sl.forEach((s,x)=>{if(x!==0)resetSlide(s);});
+show(slideFromHash(),{skipHash:true});
+syncHash();
+addEventListener('hashchange',()=>show(slideFromHash(),{skipHash:true}));
 addEventListener('keydown',e=>{
   if([' ','ArrowRight','PageDown'].includes(e.key)){e.preventDefault();show(i+1);}
   else if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();show(i-1);}

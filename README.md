@@ -4,7 +4,7 @@ Interactive story deck — **Acquisition · Retention · Referral** (Act 03 Deep
 
 **Live demo:** [https://zkorczyc.github.io/swisscard-demo/](https://zkorczyc.github.io/swisscard-demo/)
 
-Navigate with **← →**, **space**, or **click**.
+Navigate with **← →**, **space**, or **click**. Jump to a slide with **`#18`** (1-based, visible slides only — hidden deepening slides are skipped).
 
 ---
 
@@ -20,7 +20,7 @@ python3 -m http.server 8080
 | Act | Persona | Tagline |
 |---|---|---|
 | **01 Acquisition** | Marc Weber | Win the right customer |
-| **02 Retention** | Sofia Müller | Win back with relevance |
+| **02 Retention** | Sofia Müller · Amex Gold | Win back with relevance |
 | **03 Deepening** | Marc Weber | *(hidden in deck)* Grow every relationship |
 | **04 Referral** | Marc → Lukas | Close the loop |
 
