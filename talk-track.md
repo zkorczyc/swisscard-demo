@@ -150,7 +150,7 @@
 ### Executive Summary — *The full picture*
 > "Sofia won back with relevance. Marc acquired through Travel Rewards collaboration — personalised ad, mobile apply, instant approval. Lukas referred via Marc's personal code, recovered, rewarded on first spend. Three customers — acquire, retain, refer — on one platform."
 >
-> "What changes: integrated profiles, personal referral codes tracked from share to reward, personalised landing, next-best-action in the app, coordinated channels through to API fulfilment, and full-funnel proof — referral CPA CHF 42 vs paid CHF 680."
+> "What Experience Platform delivers: integrated profiles, partner collaboration, personal referral codes, personalised landing, next-best-action in web and app, instant approval orchestration, coordinated journeys, life-stage win-back, API reward fulfilment, and full-funnel proof — referral CPA CHF 42 vs paid CHF 680."
 >
 > "You already have the data and the app. What you need is one layer that orchestrates it all."
 
