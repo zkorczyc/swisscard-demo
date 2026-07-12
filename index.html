@@ -362,6 +362,31 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 .phase-pill.friend{background:#EEF6FF;border-color:rgba(23,58,135,.25);color:var(--navy-mid);}
 .phase-pill.reward{background:var(--navy);color:#fff;border-color:var(--navy);}
 .phase-pill.today{background:#F3F4F6;border-color:#D1D5DB;color:#4B5563;}
+/* Acquisition landscape — broadcast channels problem */
+.acq-broadcast{position:absolute;inset:0;padding:108px 120px 88px;display:flex;flex-direction:column;}
+.acq-broadcast .phase-pill{position:relative;top:0;left:0;margin-bottom:28px;align-self:flex-start;}
+.acq-broadcast-head{max-width:920px;margin-bottom:36px;}
+.acq-broadcast-head .htitle{font-size:62px;font-weight:700;color:var(--navy);line-height:1.04;margin:0 0 16px;letter-spacing:-.01em;}
+.acq-broadcast-head .narr{font-size:26px;line-height:1.48;color:var(--grey);margin:0;}
+.acq-broadcast-body{flex:1;display:grid;grid-template-columns:1fr 420px;gap:48px;align-items:stretch;min-height:0;}
+.acq-channels{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;align-content:start;}
+.acq-channel{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 16px 20px;text-align:center;box-shadow:0 14px 36px rgba(16,32,70,.08);display:flex;flex-direction:column;align-items:center;gap:12px;min-height:168px;}
+.acq-channel .ic{width:52px;height:52px;border-radius:14px;background:linear-gradient(150deg,#EEF2F8,#F8FAFC);border:1px solid var(--line);display:grid;place-items:center;color:var(--navy);}
+.acq-channel .ic svg{width:28px;height:28px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.acq-channel .lb{font-size:17px;font-weight:700;color:var(--ink);line-height:1.25;}
+.acq-channel .sub{font-size:13px;color:var(--soft);line-height:1.35;margin-top:-4px;}
+.acq-problem{background:linear-gradient(160deg,#163566,#0E2247);border-radius:20px;padding:34px 32px;color:#fff;display:flex;flex-direction:column;justify-content:center;box-shadow:0 28px 64px rgba(10,28,61,.38);position:relative;overflow:hidden;}
+.acq-problem .gleam{position:absolute;inset:0;background:radial-gradient(ellipse at 90% 0%,rgba(235,16,0,.18),transparent 55%);pointer-events:none;}
+.acq-problem .lab{font-size:14px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#ff8888;margin:0 0 12px;position:relative;}
+.acq-problem h3{font-size:34px;font-weight:700;line-height:1.15;margin:0 0 22px;position:relative;}
+.acq-funnel{position:relative;display:flex;flex-direction:column;align-items:center;gap:0;margin:0 0 22px;}
+.acq-funnel .tier{width:100%;text-align:center;padding:14px 12px;font-size:15px;font-weight:600;line-height:1.3;border:1px solid rgba(255,255,255,.18);position:relative;}
+.acq-funnel .tier.wide{background:rgba(255,255,255,.08);border-radius:12px 12px 0 0;font-size:16px;}
+.acq-funnel .tier.mid{width:78%;background:rgba(255,255,255,.12);border-top:none;font-size:15px;}
+.acq-funnel .tier.narrow{width:46%;background:var(--red);border-color:#ff4444;border-radius:0 0 12px 12px;border-top:none;box-shadow:0 0 0 6px rgba(235,16,0,.22);font-size:15px;font-weight:700;}
+.acq-funnel .tier .n{display:block;font-size:28px;font-weight:300;line-height:1;margin-bottom:4px;letter-spacing:-.02em;}
+.acq-problem .pt{font-size:18px;line-height:1.45;color:rgba(255,255,255,.88);margin:0;position:relative;}
+.acq-broadcast-foot{margin-top:28px;border-left:4px solid var(--navy);padding:8px 0 8px 20px;font-size:24px;font-weight:700;color:var(--navy);line-height:1.35;max-width:1100px;}
 .chat-mock{background:#ECE5DD;flex:1;padding:20px 14px;display:flex;flex-direction:column;gap:10px;overflow:auto;}
 .chat-bubble{max-width:85%;padding:10px 14px;border-radius:12px;font-size:14px;line-height:1.45;}
 .chat-bubble.sent{align-self:flex-end;background:#DCF8C6;color:#111;}
@@ -468,22 +493,6 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="pill a5">Travel Gold · Collaboration acquisition</div>
 </section>
 
-<!-- MEET MARC -->
-<section class="slide">
-  <div class="pintro">
-    <div class="portrait has-photo a1"><img src="assets/marc-weber.png" alt="Marc Weber"><div class="tag">The Customer</div></div>
-    <div class="pbody a2">
-      <div class="pk">Meet Marc</div>
-      <h2>Marc Weber, 38</h2>
-      <p class="pr">Product Manager · Zurich</p>
-      <div class="pblock"><div class="bl">Who he is</div><div class="bt">Successful career, busy schedule — discovers new places whenever work or personal travel takes him abroad. <strong>Loyal SWISS traveller</strong> across Europe.</div></div>
-      <div class="pblock"><div class="bl">Loyalty today</div><div class="bt">Active <strong>Travel Rewards</strong> member — earns rewards on flights and hotels. <strong>Not a Swisscard customer.</strong> Ideal acquisition: high travel affinity, strong purchasing power, loyalty already engaged.</div></div>
-      <div class="pblock"><div class="bl">How Swisscard finds him</div><div class="bt"><strong>RTCDP Collaboration</strong> — Travel Rewards audience of active members without a Swisscard Travel Gold card. Privacy-safe overlap — no sensitive data shared.</div></div>
-      <div class="pblock"><div class="bl">Starting audience</div><div class="chips"><span>Early Bookers</span><span>Frequent International Travelers</span><span>High-Value Travelers</span></div></div>
-    </div>
-  </div>
-</section>
-
 <!-- MEET CLAUDIA -->
 <section class="slide">
   <div class="pintro">
@@ -497,6 +506,71 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
       <div class="pblock"><div class="bl">What changes</div><div class="bt"><strong>Integrated profiles</strong> · <strong>personalised landing pages</strong> · <strong>next-best-action decisioning</strong> · <strong>coordinated omnichannel journeys</strong> — deeper personalisation, not replacing basic automation.</div></div>
     </div>
   </div>
+</section>
+
+<!-- MEET MARC -->
+<section class="slide">
+  <div class="pintro">
+    <div class="portrait has-photo a1"><img src="assets/marc-weber.png" alt="Marc Weber"><div class="tag">The Customer</div></div>
+    <div class="pbody a2">
+      <div class="pk">Who is she looking for?</div>
+      <h2>People like Marc.</h2>
+      <p class="pr">Marc Weber, 38 · Product Manager · Zurich</p>
+      <div class="pblock"><div class="bl">Who he is</div><div class="bt">Successful career, busy schedule — discovers new places whenever work or personal travel takes him abroad. <strong>Loyal SWISS traveller</strong> across Europe.</div></div>
+      <div class="pblock"><div class="bl">Loyalty today</div><div class="bt">Active <strong>Travel Rewards</strong> member — earns rewards on flights and hotels. <strong>Not a Swisscard customer.</strong> Ideal acquisition: high travel affinity, strong purchasing power, loyalty already engaged.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ACQ: BROADCAST LANDSCAPE -->
+<section class="slide acq-broadcast" data-phase="acq">
+  <div class="phase-pill a1">01 · Acquisition</div>
+  <div class="acq-broadcast-head a2">
+    <h2 class="htitle">How most brands still acquire customers</h2>
+    <p class="narr">TV, billboards, mass social, search, even LLMs — the playbook is still <strong>reach everyone</strong>, hope the right people notice, and pay for every impression along the way.</p>
+  </div>
+  <div class="acq-broadcast-body a3">
+    <div class="acq-channels">
+      <div class="acq-channel a3">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M12 12v3"/></svg></div>
+        <div class="lb">TV ads</div>
+        <div class="sub">Prime-time spots · sponsorship</div>
+      </div>
+      <div class="acq-channel a4">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 19h10"/><path d="M12 5v14"/></svg></div>
+        <div class="lb">Billboards</div>
+        <div class="sub">Highways · airports · cities</div>
+      </div>
+      <div class="acq-channel a5">
+        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98"/><path d="M15.41 6.51l-6.82 3.98"/></svg></div>
+        <div class="lb">Mass social</div>
+        <div class="sub">Broad targeting · lookalikes</div>
+      </div>
+      <div class="acq-channel a4">
+        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></div>
+        <div class="lb">Search engines</div>
+        <div class="sub">Paid search · generic keywords</div>
+      </div>
+      <div class="acq-channel a5">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0-9 9c0 4 3 7 9 9 6-2 9-5 9-9a6 6 0 0 0-9-9z"/><path d="M9 12h6"/><path d="M12 9v6"/></svg></div>
+        <div class="lb">LLMs &amp; AI</div>
+        <div class="sub">Chat answers · sponsored prompts</div>
+      </div>
+    </div>
+    <div class="acq-problem a4">
+      <div class="gleam"></div>
+      <div class="lab">The economics</div>
+      <h3>Expensive reach.<br>Thin precision.</h3>
+      <div class="acq-funnel">
+        <div class="tier wide"><span class="n">Millions</span>see the message</div>
+        <div class="tier mid"><span class="n">Thousands</span>click or respond</div>
+        <div class="tier narrow"><span class="n">A handful</span>are actually the right people</div>
+      </div>
+      <p class="pt">High media cost. Low signal. Most budget spent on people who were never going to apply — or were never a fit for the product.</p>
+    </div>
+  </div>
+  <div class="acq-broadcast-foot a5">Finding Marc this way would cost a fortune. Claudia needs a sharper way in.</div>
+  <div class="adobe-foot"><img src="adobe-wordmark-red.svg" alt="Adobe"></div>
 </section>
 
 <!-- SLIDE 6: RTCDP COLLABORATION -->
