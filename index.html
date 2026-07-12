@@ -363,26 +363,24 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 .phase-pill.reward{background:var(--navy);color:#fff;border-color:var(--navy);}
 .phase-pill.today{background:#F3F4F6;border-color:#D1D5DB;color:#4B5563;}
 /* Acquisition landscape — broadcast channels problem */
-.acq-broadcast{position:absolute;inset:0;padding:96px 80px 72px;display:flex;flex-direction:column;}
-.acq-broadcast .phase-pill{position:relative;top:0;left:0;margin-bottom:20px;align-self:flex-start;}
-.acq-broadcast-head{max-width:1180px;margin-bottom:12px;}
-.acq-broadcast-head .htitle{font-size:52px;font-weight:700;color:var(--navy);line-height:1.04;margin:0 0 10px;letter-spacing:-.01em;}
-.acq-broadcast-head .narr{font-size:22px;line-height:1.45;color:var(--grey);margin:0;}
-.acq-broadcast-visual{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;margin:14px 0 18px;border-radius:16px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:0 20px 50px rgba(16,32,70,.12);}
-.acq-broadcast-visual img{width:100%;height:100%;object-fit:contain;object-position:center;display:block;}
-.acq-broadcast-bottom{display:grid;grid-template-columns:1fr 400px;gap:32px;align-items:stretch;}
-.acq-problem{background:linear-gradient(160deg,#163566,#0E2247);border-radius:18px;padding:24px 26px;color:#fff;display:flex;flex-direction:column;justify-content:center;box-shadow:0 24px 56px rgba(10,28,61,.34);position:relative;overflow:hidden;}
-.acq-problem .gleam{position:absolute;inset:0;background:radial-gradient(ellipse at 90% 0%,rgba(235,16,0,.18),transparent 55%);pointer-events:none;}
-.acq-problem .lab{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#ff8888;margin:0 0 8px;position:relative;}
-.acq-problem h3{font-size:28px;font-weight:700;line-height:1.15;margin:0 0 14px;position:relative;}
-.acq-funnel{position:relative;display:flex;flex-direction:column;align-items:center;gap:0;margin:0 0 12px;}
-.acq-funnel .tier{width:100%;text-align:center;padding:10px 10px;font-size:14px;font-weight:600;line-height:1.28;border:1px solid rgba(255,255,255,.18);position:relative;}
-.acq-funnel .tier.wide{background:rgba(255,255,255,.08);border-radius:10px 10px 0 0;}
-.acq-funnel .tier.mid{width:78%;background:rgba(255,255,255,.12);border-top:none;}
-.acq-funnel .tier.narrow{width:46%;background:var(--red);border-color:#ff4444;border-radius:0 0 10px 10px;border-top:none;box-shadow:0 0 0 5px rgba(235,16,0,.22);font-weight:700;}
-.acq-funnel .tier .n{display:block;font-size:22px;font-weight:300;line-height:1;margin-bottom:2px;letter-spacing:-.02em;}
-.acq-problem .pt{font-size:15px;line-height:1.4;color:rgba(255,255,255,.88);margin:0;position:relative;}
-.acq-broadcast-foot{margin:0;border-left:4px solid var(--navy);padding:8px 0 8px 20px;font-size:22px;font-weight:700;color:var(--navy);line-height:1.35;display:flex;align-items:center;}
+.slide.acq-broadcast .story{top:100px;width:640px;}
+.slide.acq-broadcast .story .htitle{font-size:48px;margin:18px 0 14px;line-height:1.06;}
+.slide.acq-broadcast .story .narr{font-size:22px;line-height:1.45;margin-bottom:22px;}
+.acq-econ{background:linear-gradient(160deg,#163566,#0E2247);border-radius:16px;padding:22px 24px;color:#fff;position:relative;overflow:hidden;margin-bottom:20px;box-shadow:0 20px 48px rgba(10,28,61,.28);}
+.acq-econ .gleam{position:absolute;inset:0;background:radial-gradient(ellipse at 100% 0%,rgba(235,16,0,.16),transparent 55%);pointer-events:none;}
+.acq-econ .lab{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#ff8888;margin:0 0 8px;position:relative;}
+.acq-econ h3{font-size:26px;font-weight:700;line-height:1.15;margin:0 0 16px;position:relative;}
+.acq-funnel-h{display:grid;grid-template-columns:1fr 24px 1fr 24px 1fr;gap:6px;align-items:stretch;margin:0 0 14px;position:relative;}
+.acq-funnel-h .arr{display:grid;place-items:center;color:#ff8888;font-size:22px;font-weight:700;line-height:1;}
+.acq-funnel-h .step{border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:12px 10px;text-align:center;background:rgba(255,255,255,.08);}
+.acq-funnel-h .step.key{background:var(--red);border-color:#ff4444;box-shadow:0 0 0 4px rgba(235,16,0,.2);}
+.acq-funnel-h .step .n{display:block;font-size:24px;font-weight:300;line-height:1;margin-bottom:4px;}
+.acq-funnel-h .step .t{font-size:13px;font-weight:600;line-height:1.25;opacity:.92;}
+.acq-econ .pt{font-size:16px;line-height:1.4;color:rgba(255,255,255,.88);margin:0;position:relative;}
+.slide.acq-broadcast .takeaway{font-size:20px;line-height:1.4;}
+.slide.acq-broadcast .screen.screen-product{left:780px;right:48px;top:96px;bottom:96px;height:auto;display:flex;align-items:center;justify-content:center;}
+.slide.acq-broadcast .acq-shot-wrap{width:100%;max-height:100%;background:#eceef1;border:none;border-radius:14px;box-shadow:0 28px 64px rgba(16,32,70,.16);overflow:hidden;}
+.slide.acq-broadcast .acq-channels-shot{width:100%;height:auto;max-height:100%;object-fit:contain;object-position:center;border:none;border-radius:0;background:transparent;}
 .chat-mock{background:#ECE5DD;flex:1;padding:20px 14px;display:flex;flex-direction:column;gap:10px;overflow:auto;}
 .chat-bubble{max-width:85%;padding:10px 14px;border-radius:12px;font-size:14px;line-height:1.45;}
 .chat-bubble.sent{align-self:flex-end;background:#DCF8C6;color:#111;}
@@ -521,25 +519,27 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 <!-- ACQ: BROADCAST LANDSCAPE -->
 <section class="slide acq-broadcast" data-phase="acq">
   <div class="phase-pill a1">01 · Acquisition</div>
-  <div class="acq-broadcast-head a2">
-    <h2 class="htitle">How most brands still acquire customers</h2>
-    <p class="narr">TV, digital banners, social, search, email — the same Miles &amp; More Gold message everywhere. <strong>Reach everyone</strong>, hope the right people notice, and pay for every impression along the way.</p>
-  </div>
-  <div class="acq-broadcast-visual a3">
-    <img src="assets/acq-broadcast-channels.png" alt="Swisscard acquisition channels — TV ad, digital banner, social media, search ad, and email marketing for Miles & More Gold">
-  </div>
-  <div class="acq-broadcast-bottom a4">
-    <div class="acq-broadcast-foot">Finding Marc this way would cost a fortune. Claudia needs a sharper way in.</div>
-    <div class="acq-problem">
+  <div class="story a1">
+    <h2 class="htitle a2">How most brands still acquire customers</h2>
+    <p class="narr a3">TV, digital banners, social, search, email — the same Miles &amp; More Gold message everywhere. <strong>Reach everyone</strong>, hope the right people notice, and pay for every impression.</p>
+    <div class="acq-econ a4">
       <div class="gleam"></div>
       <div class="lab">The economics</div>
-      <h3>Expensive reach.<br>Thin precision.</h3>
-      <div class="acq-funnel">
-        <div class="tier wide"><span class="n">Millions</span>see the message</div>
-        <div class="tier mid"><span class="n">Thousands</span>click or respond</div>
-        <div class="tier narrow"><span class="n">A handful</span>are the right people</div>
+      <h3>Expensive reach. Thin precision.</h3>
+      <div class="acq-funnel-h">
+        <div class="step"><span class="n">Millions</span><span class="t">see the message</span></div>
+        <div class="arr">→</div>
+        <div class="step"><span class="n">Thousands</span><span class="t">click or respond</span></div>
+        <div class="arr">→</div>
+        <div class="step key"><span class="n">A handful</span><span class="t">are the right people</span></div>
       </div>
       <p class="pt">High media cost. Low signal. Most budget spent on people who were never going to apply.</p>
+    </div>
+    <div class="takeaway a5">Finding Marc this way would cost a fortune. Claudia needs a sharper way in.</div>
+  </div>
+  <div class="screen screen-product a3">
+    <div class="product-shot-wrap acq-shot-wrap">
+      <img class="product-shot acq-channels-shot" src="assets/acq-broadcast-channels.png" alt="Swisscard acquisition channels — TV ad, digital banner, social media, search ad, and email marketing for Miles & More Gold">
     </div>
   </div>
   <div class="adobe-foot"><img src="adobe-wordmark-red.svg" alt="Adobe"></div>
