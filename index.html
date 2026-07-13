@@ -141,15 +141,12 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 .slide.instant-approval .screen.screen-device{right:24px;}
 .slide.sofia-winback-email .screen.screen-device{left:830px;right:24px;top:90px;height:min(880px,calc(100vh - 120px));display:flex;align-items:center;justify-content:center;}
 .slide.sofia-winback-email .device-shot-wrap{height:100%;display:flex;align-items:center;justify-content:center;}
-.slide.marc-lifestyle-email .screen.screen-device{left:830px;right:24px;top:90px;height:min(880px,calc(100vh - 120px));display:flex;align-items:center;justify-content:center;}
-.slide.marc-lifestyle-email .device-shot-wrap{height:100%;display:flex;align-items:center;justify-content:center;}
 .shot-swap{position:relative;cursor:pointer;height:100%;display:flex;align-items:center;justify-content:center;}
 .shot-swap .device-shot{transition:opacity .45s ease,transform .45s ease;}
 .shot-swap .shot-b{position:absolute;inset:0;margin:auto;width:auto;height:100%;max-width:100%;object-fit:contain;object-position:center top;opacity:0;pointer-events:none;transform:scale(.985);}
 .shot-swap.swapped .shot-a{opacity:0;transform:scale(1.01);pointer-events:none;}
 .shot-swap.swapped .shot-b{opacity:1;transform:scale(1);pointer-events:auto;}
 .shot-swap .swap-hint{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);background:rgba(14,42,94,.88);color:#fff;font-size:13px;font-weight:600;letter-spacing:.02em;padding:8px 14px;border-radius:999px;white-space:nowrap;box-shadow:0 8px 24px rgba(14,42,94,.22);pointer-events:none;transition:opacity .3s ease;}
-.shot-swap.swapped .swap-hint{opacity:0;}
 .slide.marc-referral-app .screen.screen-device,.slide.marc-referral-whatsapp .screen.screen-device{left:830px;right:24px;top:90px;height:min(880px,calc(100vh - 120px));display:flex;align-items:center;justify-content:center;}
 .slide.marc-referral-app .device-shot-wrap,.slide.marc-referral-whatsapp .device-shot-wrap{height:100%;display:flex;align-items:center;justify-content:center;}
 .slide.marc-instagram-ad .screen.screen-device{left:830px;right:24px;top:90px;height:min(880px,calc(100vh - 120px));display:flex;align-items:center;justify-content:center;}
@@ -1043,45 +1040,23 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
   <div class="adobe-foot"><img src="adobe-wordmark-red.svg" alt="Adobe"></div>
 </section>
 
-<!-- SLIDE 28: MARC PERSONALISED EMAIL -->
-<section class="slide marc-lifestyle-email" data-phase="ret">
-  <div class="phase-pill ret a1">02 · Retention</div>
-  <div class="story a1">
-    <div class="numdisc a1">5</div>
-    <h2 class="htitle a2">Marc's inbox — the right offer</h2>
-    <p class="narr a3">Same journey engine, different decision. Marc's travel pattern shifts — <strong>Experience Decisioning</strong> picks a cashback cross-sell that fits his new rhythm, not a generic lifestyle blast. AEM fragments, one model, personalised per profile.</p>
-    <div class="quote a4">"Hi Marc, let's make your everyday even more rewarding."</div>
-    <div class="claudia-lab a4">Marc's phone</div>
-    <div class="prodcard a5">Click the device to open the email — inbox notification first, then the full personalised message Claudia's journey sent.</div>
-    <div class="takeaway a5">One journey canvas — Sofia gets family rewards, Marc gets everyday cashback. Decisioning chooses the offer.</div>
-  </div>
-  <div class="screen screen-device a3">
-    <div class="device-shot-wrap shot-swap a4" role="button" tabindex="0" aria-label="Click to open Marc's email">
-      <img class="device-shot shot-a" src="assets/marc-approval-email.png" alt="Marc's iPhone inbox — Swisscard notification">
-      <img class="device-shot shot-b" src="assets/marc-lifestyle-email-phone.png" alt="Marc's personalised Swisscard email — travel changed, cashback offer">
-      <span class="swap-hint">Click to open Marc's email</span>
-    </div>
-  </div>
-  <div class="persona a5"><div class="av">M</div><div class="nm">Marc</div></div>
-  <div class="phasebar a5"><span class="ph">Acquisition</span><span class="ph on">Retention</span><span class="ph">Deepening</span><span class="ph">Referral</span></div>
-  <div class="adobe-foot"><img src="adobe-wordmark-red.svg" alt="Adobe"></div>
-</section>
-
-<!-- SLIDE 19: EMAIL OFFER -->
+<!-- SLIDE 18: EMAIL OFFER -->
 <section class="slide sofia-winback-email" data-phase="ret">
   <div class="phase-pill ret a1">02 · Retention</div>
   <div class="story a1">
-    <div class="numdisc a1">6</div>
+    <div class="numdisc a1">5</div>
     <h2 class="htitle a2">Email first — family relevance</h2>
     <p class="narr a3">The high-churn journey reaches Sofia by email — and <strong>Experience Decisioning</strong> has already chosen her offer: <strong>everyday extras</strong> that fit her life now — dining credit, shopping benefits, family moments. Not fashion. Not generic lifestyle. The message that fits, with a link to reactivate on web or in the app.</p>
     <div class="quote a4">"Your Gold Card. Everyday extras."</div>
     <div class="claudia-lab a4">Sofia's phone</div>
-    <div class="prodcard a5">Sofia's inbox: a family rewards offer she actually cares about — sent at the right moment from the high-churn journey. No lifestyle promo. No generic blast.</div>
+    <div class="prodcard a5">Sofia's inbox: a family rewards offer she actually cares about — sent at the right moment from the high-churn journey. <strong>Click the device</strong> to see how the same journey would look for Marc if his life had shifted instead.</div>
     <div class="takeaway a5">Email opens the conversation — relevance, not another lifestyle promo.</div>
   </div>
   <div class="screen screen-device a3">
-    <div class="device-shot-wrap">
-      <img class="device-shot" src="assets/sofia-winback-email-phone.png" alt="Sofia's iPhone — Swisscard win-back email, Your Gold Card. Everyday extras">
+    <div class="device-shot-wrap shot-swap a4" role="button" tabindex="0" aria-label="Click to see Marc's personalised email">
+      <img class="device-shot shot-a" src="assets/sofia-winback-email-phone.png" alt="Sofia's iPhone — Swisscard win-back email, Your Gold Card. Everyday extras">
+      <img class="device-shot shot-b" src="assets/marc-lifestyle-email-phone.png" alt="Marc's personalised Swisscard email — everyday cashback, not travel">
+      <span class="swap-hint">Click — see Marc's version</span>
     </div>
   </div>
   <div class="persona a5"><div class="av" style="background:linear-gradient(150deg,#c9a24a,#8a6c25)">S</div><div class="nm">Sofia</div></div>
@@ -1093,7 +1068,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 <section class="slide" data-phase="ret">
   <div class="phase-pill ret a1">02 · Retention</div>
   <div class="story a1">
-    <div class="numdisc a1">7</div>
+    <div class="numdisc a1">6</div>
     <h2 class="htitle a2">Same relevance — web and app</h2>
     <p class="narr a3">Sofia has been a Swisscard customer for five years — she already has the app. She taps <strong>Reactivate My Benefits</strong> in the email and lands on <strong>swisscard.ch</strong> on her phone. Same <strong>Experience Decisioning</strong> as the inbox: <strong>family membership rewards</strong>, premium partner offers, spending insights. Open the link or open the app — she sees the same ranked offers.</p>
     <div class="quote a4">"Welcome back, Sofia — earn elevated rewards on your next grocery shop with Amex Gold."</div>
@@ -1115,7 +1090,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a1628;fon
 <section class="slide" data-phase="ret">
   <div class="phase-pill ret a1">02 · Retention</div>
   <div class="story a1">
-    <div class="numdisc a1">8</div>
+    <div class="numdisc a1">7</div>
     <h2 class="htitle a2">Push completes the journey</h2>
     <p class="narr a3">Sofia starts adding her card to <strong>Apple Wallet</strong> in the app — then drops off halfway. The high-churn journey picks it up: a <strong>push</strong> lands on her lock screen with the same family rewards offer. Others who never opened the email get a push too. Sofia finishes — and makes her first grocery spend on the card again.</p>
     <div class="quote a4">"Your personalised Amex Gold benefits are active. Add your card to Apple Wallet and start earning today."</div>
@@ -1702,12 +1677,16 @@ function countUp(el){
 }
 function resetSlide(s){
   s.querySelectorAll('.cu').forEach(resetCu);
-  s.querySelectorAll('.shot-swap').forEach(el=>el.classList.remove('swapped'));
+  s.querySelectorAll('.shot-swap').forEach(el=>{
+    el.classList.remove('swapped');
+    const hint=el.querySelector('.swap-hint');
+    if(hint)hint.textContent='Click — see Marc\'s version';
+  });
 }
 function toggleShotSwap(el){
   el.classList.toggle('swapped');
   const hint=el.querySelector('.swap-hint');
-  if(hint)hint.textContent=el.classList.contains('swapped')?'':'Click to open Marc\'s email';
+  if(hint)hint.textContent=el.classList.contains('swapped')?'Click — back to Sofia':'Click — see Marc\'s version';
 }
 function animateActive(s){s.querySelectorAll('.cu').forEach(el=>countUp(el));}
 function slideFromHash(){

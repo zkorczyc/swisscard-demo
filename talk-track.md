@@ -109,11 +109,8 @@
 ### 4 · High-churn journey — live
 > "AJO journey — Swisscard Win Back Churn Customers. Enter segment, wait 7 days, personalised retention email, branch on open. No open? SMS with call-centre follow-up. One canvas for the whole high-churn audience — Sofia is customer 2,460."
 
-### 5 · Marc's inbox — the right offer
-> "Same journey engine, different decision. Marc's travel pattern shifts — Experience Decisioning picks cashback cross-sell that fits. **Click the phone** to open the full email: *Hi Marc, let's make your everyday even more rewarding.* Contrast with Sofia on the next slide — one canvas, two offers."
-
-### 6 · Email first — family relevance
-> "Email leads: everyday family spending, Amex Gold rewards that fit now. Not CHF 100 to bribe her back — relevance."
+### 5 · Email first — family relevance
+> "Sofia's inbox: family rewards that fit her life now — not fashion, not generic lifestyle. **Click the phone** to show Marc's version: same journey, different decision — his travel pattern shifted, so decisioning picks everyday cashback instead. Click again to return to Sofia."
 
 ### 6 · Same relevance — web and app
 > "Portal and app show the same repositioned message. Cross-channel consistency."
