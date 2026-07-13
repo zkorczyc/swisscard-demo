@@ -149,7 +149,7 @@
 > "Lukas abandons at step two. Journey Optimizer: email then SMS — Marc's name, CHF 50, link back. Referral programmes leak at application; recovery protects Marc's invite."
 
 ### 7 · Application sent — referral intact
-> "Lukas finishes. Confirmation on screen — CHF 50 promised after first card spend, not on approval alone. Download the app as next step. Marc's invite never dropped from the profile."
+> "Lukas finishes. Confirmation is application received and download the app — CHF 50 is promised, but only after his first transaction, not credited now. Marc's invite never dropped from the profile."
 
 ### 8 · First spend — referral complete
 > "Activation is first spend at Zurich Airport lounge — not application submitted. Platform links Lukas to Marc and starts the reward journey: API call to fulfilment, wait for payment completion."
