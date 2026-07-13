@@ -161,11 +161,16 @@
 > "CJA: Marc from Travel Rewards collaboration to approval, Sofia won back, Lukas referred recovered activated. Referral CPA CHF 42 vs paid CHF 680 — sixteen times cheaper. For the CFO: unit economics with a receipt."
 
 ### Executive Summary — *The full picture*
-> "Sofia won back with relevance. Marc acquired through Travel Rewards collaboration — personalised ad, mobile apply, instant approval. Lukas referred via Marc's personal code, recovered, rewarded on first spend. Three customers — acquire, retain, refer — on one platform."
+> "Step back from the individual screens. This isn't three separate campaigns — it's one operating model."
 >
-> "What Experience Platform delivers: integrated profiles, partner collaboration, personal referral codes, personalised landing, next-best-action in web and app, instant approval orchestration, coordinated journeys, life-stage win-back, API reward fulfilment, and full-funnel proof — referral CPA CHF 42 vs paid CHF 680."
+> "Sofia could have been a churn stat. Marc could have stayed behind broadcast spend. Lukas could have been the referral you lose at application. Different triggers — same profile, same decisioning, same journey canvas Claudia runs."
 >
-> "You already have the data and the app. What you need is one layer that orchestrates it all."
+> "Don't read the list — let them scan it. Your point: breadth without sprawl. Partner reach without exchanging PII. Personal codes without spreadsheets. Recovery without a second team. Rewards that run through to payment — and finance can see it in CJA."
+>
+> "Point at the flow bar: acquire → retain → refer → activate → reward. Closed loop. The question isn't whether you have data — it's whether one layer connects it."
+
+### Your stack · Next steps
+> "You're not starting from zero — RTCDP and CJA are live. AJO and AEM are the orchestration and content plays. Experimentation Accelerator sits on top of AJO: Adobe's AI-first app that analyzes what's working in your tests, explains why, suggests new experiments ranked by predicted lift, and gives teams one catalog so learnings scale — not another spreadsheet."
 
 ---
 
