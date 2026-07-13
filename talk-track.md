@@ -116,7 +116,7 @@
 > "Portal and app show the same repositioned message. Cross-channel consistency."
 
 ### 7 · Push completes the journey
-> "Push closes the loop. Sofia re-engages — same Amex Gold, new life-stage fit."
+> "Push closes the loop with confirmation — benefits active, Add to Wallet as the next step. Same journey as email and web; we can add extra offers when decisioning says they fit. Not abandonment recovery — completion."
 
 ---
 
